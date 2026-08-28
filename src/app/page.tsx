@@ -62,7 +62,7 @@ export default function HomePage() {
             </p>
 
             <p>
-              This foundation is not about grand claims or controlling external platforms, but about self-determination: providing open tools, primary PDF archives, and software datasets so our community can write its own history and shape its digital presence. What began as a solo effort in 2024 is now an open door in 2026 for anyone who wants to help.
+              This foundation is not about grand claims or controlling external platforms, but about self-determination: providing open tools, primary PDF archives, and software datasets so our community can write its own history and shape its digital presence. What began as a solo effort is now an open door for anyone who wants to help.
             </p>
           </div>
         </section>
@@ -121,7 +121,7 @@ export default function HomePage() {
             </p>
 
             <p>
-              By organizing as an open foundation in 2026, we lay down open contributor tools, software translation keys, and Hugging Face dataset mirrors so open-source maintainers, researchers, and developers can integrate Hmar for free on their own terms.
+              By organizing as an open foundation, we lay down open contributor tools, software translation keys, and Hugging Face dataset mirrors so open-source maintainers, researchers, and developers can integrate Hmar for free on their own terms.
             </p>
           </div>
         </section>
