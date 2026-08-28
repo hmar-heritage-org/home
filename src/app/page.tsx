@@ -20,10 +20,6 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/85 to-transparent z-10" />
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative z-20 space-y-4">
-          <div className="inline-flex items-center gap-2 px-2.5 py-0.5 rounded-md bg-white/10 border border-white/20 text-slate-200 font-mono text-[11px] uppercase tracking-widest backdrop-blur-sm">
-            <span>Early Test Build · Preserving Heritage · Empowering Open Technology · 2024–2026</span>
-          </div>
-
           <h1 className="text-3xl sm:text-5xl font-serif font-bold text-white leading-tight tracking-tight max-w-3xl">
             Bridging the Hmar Language for Open Technology & Culture
           </h1>

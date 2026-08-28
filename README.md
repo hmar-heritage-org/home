@@ -3,8 +3,6 @@
 > **Digital Preservation & Cultural Stewardship**  
 > *A non-profit foundation dedicated to language standardization, open AI datasets, software locales, and raw PDF archives for the Hmar language.*
 
-> **Notice**: This repository contains an early test build for the Hmar Heritage Foundation portal.
-
 ---
 
 ## Overview
