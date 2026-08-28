@@ -12,7 +12,7 @@ export default function PeoplePage() {
     {
       name: "Donal Muolhoi",
       initials: "DM",
-      role: "Founder, Project Lead & Data Architect",
+      role: "Founder & Project Lead",
       type: "Executive Lead",
       status: "Active",
       icon: Code2,
@@ -22,7 +22,7 @@ export default function PeoplePage() {
     {
       name: "Ephriam Pena",
       initials: "EP",
-      role: "Field Operator & Collector",
+      role: "Field Operator & Public Relations",
       type: "Operational Lead",
       status: "Active",
       icon: Compass,
@@ -31,7 +31,7 @@ export default function PeoplePage() {
     {
       name: "Stephen Huolngo",
       initials: "SH",
-      role: "Digitization Specialist",
+      role: "Digitization & Public Relations",
       type: "Operational Lead",
       status: "Active",
       icon: BookOpen,
