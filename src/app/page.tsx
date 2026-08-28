@@ -54,7 +54,7 @@ export default function HomePage() {
 
           <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-5 text-base font-sans">
             <p>
-              I started this project of collecting books and creating datasets for researchers, linguists, and community members back in 2024. I did this because I realized the Hmar community has almost zero digital footprint. Anything that exists is fragmented uploads by the occasional academic that you can only find buried in the Internet Archive or Wayback Machine, and most remaining material exists as raw deposits in separate repositories. Building this open foundation lets us connect these scattered resources into a structured community-owned dataset.
+              I started this project of collecting books and creating datasets, working on it on and off since 2024 because I realized the Hmar community has almost zero digital footprint. Anything that exists is fragmented uploads by the occasional academic that you can only find buried in the Internet Archive or Wayback Machine, and most remaining material exists as raw deposits in separate repositories. Building this open foundation lets us connect these scattered resources into a structured community owned dataset, while opening doors to partner with international institutions to access essential resources.
             </p>
 
             <p>
