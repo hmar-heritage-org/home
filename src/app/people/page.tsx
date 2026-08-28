@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { UserCheck, ArrowRight, Code2, Compass, BookOpen, UserPlus } from "lucide-react";
+import { UserCheck, ArrowRight, Code2, Compass, BookOpen, UserPlus, ExternalLink } from "lucide-react";
 
 export const metadata = {
   title: `People & Advisory Council | ${siteConfig.fullName}`,
@@ -16,6 +16,7 @@ export default function PeoplePage() {
       type: "Executive Lead",
       status: "Active",
       icon: Code2,
+      blogUrl: "https://thingpuisen.pages.dev",
       responsibilities: "Foundation administration, website infrastructure, dataset formatting in i18n JSON, PO, and XLIFF formats, and managing Hugging Face dataset mirrors.",
     },
     {
@@ -113,6 +114,21 @@ export default function PeoplePage() {
                   <p className="text-xs text-slate-700 leading-relaxed font-sans pt-1">
                     {member.responsibilities}
                   </p>
+
+                  {member.blogUrl && (
+                    <div className="pt-1 text-xs text-slate-600 font-sans flex items-center gap-1">
+                      <span>read founder's personal blog:</span>
+                      <a
+                        href={member.blogUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1 font-mono text-[11px]"
+                      >
+                        <span className="hover:underline">{member.blogUrl.replace("https://", "")}</span>
+                        <ExternalLink className="w-3.5 h-3.5 inline shrink-0" />
+                      </a>
+                    </div>
+                  )}
                 </div>
               </div>
             );

@@ -54,7 +54,7 @@ export default function HomePage() {
 
           <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-5 text-base font-sans">
             <p>
-              I started this project of collecting books and creating datasets for researchers, linguists, and community members back in 2024. I did this because I realized the Hmar community has almost zero digital footprint. Anything that exists is fragmented uploads by the occasional academic that you can only find buried in the Internet Archive or Wayback Machine.
+              I started this project of collecting books and creating datasets for researchers, linguists, and community members back in 2024. I did this because I realized the Hmar community has almost zero digital footprint. Anything that exists is fragmented uploads by the occasional academic that you can only find buried in the Internet Archive or Wayback Machine, and most remaining material exists as raw deposits in separate repositories. Building this open foundation lets us connect these scattered resources into a structured community-owned dataset.
             </p>
 
             <p>
@@ -108,7 +108,7 @@ export default function HomePage() {
           </div>
 
           <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 leading-tight">
-            Building Open Infrastructure for Minority Languages
+            Building Open Language Infrastructure
           </h2>
 
           <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-base font-sans">
@@ -122,6 +122,27 @@ export default function HomePage() {
 
             <p>
               By organizing as an open foundation in 2026, we lay down open contributor tools, software translation keys, and Hugging Face dataset mirrors so open-source maintainers, researchers, and developers can integrate Hmar for free on their own terms.
+            </p>
+          </div>
+        </section>
+
+        {/* Proactive Stewardship Section */}
+        <section className="space-y-5 border-b border-slate-200 pb-12">
+          <div className="text-xs font-mono tracking-widest text-[#9E1B24] uppercase font-bold">
+            Proactive Stewardship · Beyond Static Repositories
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 leading-tight">
+            Connecting Research & Community to Action
+          </h2>
+
+          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-base font-sans">
+            <p>
+              Traditional academic archiving preserves field recordings and manuscript deposits, which is essential for long-term preservation. However, that data often sits isolated inside institutional vaults because raw field deposits require significant restructuring. For a regional language without corporate funding, unstructured deposits risk remaining unused in the practical ways that researchers envision. This creates a reactive cycle where digital language presence deteriorates, making archival preservation even more urgent without ever empowering active daily use.
+            </p>
+
+            <p>
+              To break away from this cycle, our open foundation bridges the gap directly. By connecting researchers, native speakers, and developers, we transform raw academic research and community contributions into active open tools: powering open AI datasets, software locale keys, and encyclopedia articles so our language thrives in modern digital spaces.
             </p>
           </div>
         </section>
