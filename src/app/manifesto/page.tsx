@@ -14,11 +14,11 @@ export default function ManifestoPage() {
       <section className="space-y-6 border-b border-slate-200 pb-12">
         <div className="text-xs font-mono font-bold tracking-widest text-[#9E1B24] uppercase flex items-center gap-2">
           <FileText className="w-4 h-4 text-[#9E1B24]" />
-          <span>Statutory Charter & Constitution</span>
+          <span>Charter & Constitution</span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">
-          Charter & Constitution of the Hmar Heritage Foundation
+          Charter & Constitution
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans">

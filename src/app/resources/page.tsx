@@ -14,11 +14,11 @@ export default function ResourcesPage() {
       <section className="space-y-6 border-b border-slate-200 pb-12">
         <div className="text-xs font-mono font-bold tracking-widest text-[#9E1B24] uppercase flex items-center gap-2">
           <FolderGit2 className="w-4 h-4 text-[#9E1B24]" />
-          <span>Statutory Index & Resources</span>
+          <span>Resources Index</span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">
-          Resources & Auxiliary Index
+          Resources Index
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans">

@@ -18,7 +18,7 @@ export default function GetInvolvedPage() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">
-          Get Involved & Participation Guide
+          Get Involved
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans pt-1">

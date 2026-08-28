@@ -18,7 +18,7 @@ export default function JoinPage() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">
-          Join & Participate
+          Join the Foundation
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans">

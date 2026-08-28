@@ -14,11 +14,11 @@ export default function PhilosophyPage() {
       <section className="space-y-6 border-b border-slate-200 pb-12">
         <div className="text-xs font-mono font-bold tracking-widest text-[#9E1B24] uppercase flex items-center gap-2">
           <Compass className="w-4 h-4 text-[#9E1B24]" />
-          <span>Foundational Philosophy & Scope</span>
+          <span>Foundational Philosophy</span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">
-          On Realism, Unattributed Groundwork, and Generational Preservation
+          Foundational Philosophy
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans">

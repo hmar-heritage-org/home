@@ -14,11 +14,11 @@ export default function ProjectsPage() {
       <section className="space-y-6 border-b border-slate-200 pb-12">
         <div className="text-xs font-mono font-bold tracking-widest text-[#9E1B24] uppercase flex items-center gap-2">
           <Layers className="w-4 h-4 text-[#9E1B24]" />
-          <span>Statutory Infrastructure & Project Briefs</span>
+          <span>Projects & Initiatives</span>
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">
-          Project Initiatives & Digital Infrastructure
+          Projects & Initiatives
         </h1>
 
         <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-6 text-base font-sans">

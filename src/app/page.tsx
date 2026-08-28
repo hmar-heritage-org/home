@@ -21,11 +21,11 @@ export default function HomePage() {
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 relative z-20 space-y-4">
           <h1 className="text-3xl sm:text-5xl font-serif font-bold text-white leading-tight tracking-tight max-w-3xl">
-            Bridging the Hmar Language for Open Technology & Culture
+            Building for Builders. Preserving for Tomorrow.
           </h1>
 
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans max-w-2xl">
-            Providing open software locale keys, AI datasets, and raw PDF archives for open-source maintainers, international institutions, and community preservation.
+            Providing open software translation keys, AI datasets, and raw PDF archives so developers, researchers, and community stewards can build freely.
           </p>
 
           <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-semibold">
@@ -126,27 +126,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Proactive Stewardship Section */}
-        <section className="space-y-5 border-b border-slate-200 pb-12">
-          <div className="text-xs font-mono tracking-widest text-[#9E1B24] uppercase font-bold">
-            Proactive Stewardship · Beyond Static Repositories
-          </div>
-
-          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 leading-tight">
-            Connecting Research & Community to Action
-          </h2>
-
-          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-base font-sans">
-            <p>
-              Traditional academic archiving preserves field recordings and manuscript deposits, which is essential for long-term preservation. However, that data often sits isolated inside institutional vaults because raw field deposits require significant restructuring. For a regional language without corporate funding, unstructured deposits risk remaining unused in the practical ways that researchers envision. This creates a reactive cycle where digital language presence deteriorates, making archival preservation even more urgent without ever empowering active daily use.
-            </p>
-
-            <p>
-              To break away from this cycle, our open foundation bridges the gap directly. By connecting researchers, native speakers, and developers, we transform raw academic research and community contributions into active open tools: powering open AI datasets, software locale keys, and encyclopedia articles so our language thrives in modern digital spaces.
-            </p>
-          </div>
-        </section>
-
         {/* 4. Three Pragmatic Action Pillars (Horizontal Row Cards) */}
         <section className="space-y-6 border-b border-slate-200 pb-12">
           <div className="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">
@@ -201,6 +180,27 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* Proactive Stewardship Section */}
+        <section className="space-y-5 border-b border-slate-200 pb-12">
+          <div className="text-xs font-mono tracking-widest text-[#9E1B24] uppercase font-bold">
+            Proactive Stewardship · Beyond Static Repositories
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 leading-tight">
+            Connecting Research & Community to Action
+          </h2>
+
+          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-base font-sans">
+            <p>
+              Traditional academic archiving preserves field recordings and manuscript deposits, which is essential for long-term preservation. However, that data often sits isolated inside institutional vaults because raw field deposits require significant restructuring. For a regional language without corporate funding, unstructured deposits risk remaining unused in the practical ways that researchers envision. This creates a reactive cycle where digital language presence deteriorates, making archival preservation even more urgent without ever empowering active daily use.
+            </p>
+
+            <p>
+              To break away from this cycle, our open foundation bridges the gap directly. By connecting researchers, native speakers, and developers, we transform raw academic research and community contributions into active open tools: powering open AI datasets, software locale keys, and encyclopedia articles so our language thrives in modern digital spaces.
+            </p>
+          </div>
+        </section>
+
         {/* 5. Community Rationale */}
         <section className="bg-[#F6F4F0] p-8 sm:p-10 rounded-3xl border border-slate-200 space-y-4">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
@@ -230,6 +230,13 @@ export default function HomePage() {
               <span>Become a Contributor</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+
+          <div className="pt-6 max-w-4xl mx-auto border-t border-slate-200 mt-6 text-center">
+            <blockquote className="text-xs sm:text-base md:text-xl font-serif italic font-bold text-slate-900 tracking-tight sm:whitespace-nowrap">
+              <span>"Unless someone like you cares a whole awful lot, nothing is going to get better. It's not."</span>
+              <span className="not-italic ml-2 font-serif font-bold text-slate-900">- Lorax</span>
+            </blockquote>
           </div>
         </section>
       </div>
