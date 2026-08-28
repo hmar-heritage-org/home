@@ -16,7 +16,7 @@ export default function PeoplePage() {
       type: "Executive Lead",
       status: "Active",
       icon: Code2,
-      responsibilities: "Foundation administration, hmar.page web infrastructure, dataset formatting in i18n JSON, PO, and XLIFF formats, and managing Hugging Face dataset mirrors.",
+      responsibilities: "Foundation administration, website infrastructure, dataset formatting in i18n JSON, PO, and XLIFF formats, and managing Hugging Face dataset mirrors.",
     },
     {
       name: "Ephriam Pena",
@@ -34,7 +34,7 @@ export default function PeoplePage() {
       type: "Operational Lead",
       status: "Active",
       icon: BookOpen,
-      responsibilities: "Operating high-resolution overhead book scanners and archival cameras, processing page scans into clean PDFs for library.hmar.page.",
+      responsibilities: "Operating high-resolution overhead book scanners and archival cameras, processing page scans into clean PDFs for the digital library.",
     },
     {
       name: "Editorial & Quality Control Lead",
