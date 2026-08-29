@@ -46,7 +46,7 @@ export default function ProjectsPage() {
           <p>
             Another core initiative is creating standardized datasets for UI and UX software terminology, enabling technology interaction in Hmar. While we recognize this is an ambitious endeavor, not only because we do not influence the major institutions and corporations capable of integrating the language into their operating systems, but also because it requires meticulous terminology design so the language does not create culture shock for native speakers who have used these interfaces in English, Assamese, or Hindi for decades. It remains at the sole discretion of AOSP, the Linux Foundation, Meta, Google, Microsoft, and other technology entities to integrate these open datasets. This initiative is currently in planning, and you can read more about our approach under the{" "}
             <Link href="/projects/locale-standardization" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-              <span>hmar locale project</span>
+              <span>open locale project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>.
           </p>

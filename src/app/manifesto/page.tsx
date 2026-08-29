@@ -72,9 +72,9 @@ export default function ManifestoPage() {
             </p>
 
             <p>
-              <strong>Section 2.2 Hmar Locale Project:</strong> Establishes standardized Hmar technical UI and UX terminology, descriptive phrase guidelines, and multi-platform i18n translation key formats under the{" "}
+              <strong>Section 2.2 Open Locale Project:</strong> Establishes language-agnostic software internationalization schemas, Supabase staging workflows, and multi-platform i18n translation key formats under the{" "}
               <Link href="/projects/locale-standardization" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-                <span>hmar locale project brief</span>
+                <span>open locale project brief</span>
                 <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
               </Link>.
             </p>

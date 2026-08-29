@@ -138,7 +138,7 @@ export default function OpenLexiconBriefPage() {
             </Link>{" "}
             verify orthography against this lexicon, software maintainers on the{" "}
             <Link href="/projects/locale-standardization" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-              <span>hmar locale project</span>
+              <span>open locale project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>{" "}
             derive UI key terms from its technical termbank, and OCR pipelines on the{" "}

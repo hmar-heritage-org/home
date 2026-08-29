@@ -3,8 +3,8 @@ import { siteConfig } from "@/config/site";
 import { ArrowRight, CheckCircle2, Globe } from "lucide-react";
 
 export const metadata = {
-  title: `Hmar Locale Project Brief | ${siteConfig.fullName}`,
-  description: "Proposed architecture, UI/UX translation standards, web technology locales, and Unicode CLDR integration brief for the Hmar Locale Project.",
+  title: `Open Locale Project Brief | ${siteConfig.fullName}`,
+  description: "Proposed architecture, UI/UX translation standards, web technology locales, and Unicode CLDR integration brief for the Open Locale Project.",
 };
 
 export default function LocaleStandardizationBriefPage() {

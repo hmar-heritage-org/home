@@ -102,7 +102,7 @@ export default function DigitalLibraryBriefPage() {
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>, and ready-to-use software translation key bundles from the{" "}
             <Link href="/projects/locale-standardization" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-              <span>hmar locale project</span>
+              <span>open locale project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>.
           </p>

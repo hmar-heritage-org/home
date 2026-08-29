@@ -127,7 +127,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/projects/locale-standardization" className="hover:text-white transition-colors">
-                  Hmar Locale Project
+                  Open Locale Project
                 </Link>
               </li>
               <li>
