@@ -120,6 +120,19 @@ export default function RawDatasetsBriefPage() {
           </p>
         </section>
 
+        {/* Active Sprint Targets */}
+        <section className="space-y-3">
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Active Operational Sprint Targets
+          </h2>
+          <p>
+            During our current active operational sprint, the primary focus of the Hmar Heritage Foundation is advancing the Hmar Corpus Archival Project. Our active target is physical literature acquisition and high-resolution PDF scanning of 100 out-of-print books, bootstrapped locally through internal resources.
+          </p>
+          <p>
+            In addition to physical text scanning, the project aims to build rich oral history audio and video corpora. While text digitization is already underway through internal resources, expanding field audio and video recording across regional villages is explicitly dependent on securing grant funding for dedicated field audio recorders, archival cameras, and storage hardware.
+          </p>
+        </section>
+
         {/* Section 2 */}
         <section className="space-y-3">
           <h2 className="text-2xl font-serif font-bold text-slate-900">

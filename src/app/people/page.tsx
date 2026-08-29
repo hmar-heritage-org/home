@@ -26,7 +26,7 @@ export default function PeoplePage() {
       type: "Operational Lead",
       status: "Active",
       icon: Compass,
-      responsibilities: "Collecting physical books, rare manuscripts, folk songbooks, and oral history recordings from villages, elders, and personal libraries.",
+      responsibilities: "Collecting physical books, out-of-print literature, folk songbooks, and oral history recordings from villages, elders, and personal libraries.",
     },
     {
       name: "Stephen Huolngo",

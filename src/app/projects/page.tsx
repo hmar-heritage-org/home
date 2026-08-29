@@ -23,11 +23,15 @@ export default function ProjectsPage() {
 
         <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-6 text-base font-sans">
           <p>
-            The Hmar Heritage Foundation stewards five specialized project briefs to lay the open digital infrastructure, data schemas, and technical groundwork for the Hmar language. The Foundation's statutory role is opening the door for community participation, public archiving, and open research rather than guaranteeing third-party commercial integration or predicting community output.
+            The Hmar Heritage Foundation stewards five specialized project briefs to lay the open digital infrastructure, data schemas, and technical groundwork for the Hmar language. The Foundation's statutory role is opening the door for community participation, public archiving, and open research rather than guaranteeing third-party commercial integration or predicting community output. For a deeper look into our stewardship principles, realistic timelines, and sustainable project sprint cadence, read our{" "}
+            <Link href="/philosophy" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+              <span>foundational philosophy essay</span>
+              <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
+            </Link>.
           </p>
 
           <p>
-            The primary focus is the collection and digitization of texts and literature. Currently, this is focused on books, articles, and written content in the public domain, as well as collecting physical books until formal copyright permissions are secured before proceeding to scanning, ensuring all published data is free of copyright encumbrance. You can read more about this archival initiative under the{" "}
+            Our initial operational focus is the collection and digitization of text literature because written data is the simplest and cleanest form of information to collect, structure, and programmatically process into open datasets. However, we recognize that audio and video recordings best capture the natural rhythm, oral traditions, and living expression of our cultural history. Our work prioritizes public-domain books and physical literature while building the groundwork for multimodal audio and video corpora. You can read more about these archival initiatives under the{" "}
             <Link href="/projects/literature-library" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>hmar digital library</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />

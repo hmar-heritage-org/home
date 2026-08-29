@@ -90,10 +90,31 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        {/* Section 4: Planting Trees for Future Generations */}
+        {/* Section IV: Project-Driven Operational Cadence */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
-            Section IV
+            Section IV · Operational Cadence
+          </div>
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Sustainable Project Sprints & Burnout Prevention
+          </h2>
+          <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
+            <p>
+              Many community initiatives fail not from a lack of passion, but from attempting an unrealistic 365-day operational crunch. To ensure multi-year sustainability, the Foundation operates on a flexible, project-driven sprint cadence.
+            </p>
+            <p>
+              Rather than forcing artificial year-round daily output, our internal operations cycle between high-intensity active data sprints focusing on physical book scanning, field collection, and dataset cleanups, strategic planning phases for scoping upcoming goals and budget needs, and sustained grant-securing and public outreach windows.
+            </p>
+            <p>
+              This seasonal cadence protects our core team from burnout during these foundational early years, while ensuring that public contribution portals, GitHub repositories, and support channels remain open 365 days a year.
+            </p>
+          </div>
+        </section>
+
+        {/* Section V: Planting Trees for Future Generations */}
+        <section className="space-y-4 border-b border-slate-200 pb-10">
+          <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
+            Section V
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             Planting Trees Whose Shade We May Never Sit Under

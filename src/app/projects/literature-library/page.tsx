@@ -96,7 +96,7 @@ export default function DigitalLibraryBriefPage() {
             Intended One-Stop Storefront Vision for All Open Data
           </h2>
           <p>
-            The intended design vision for the Hmar Digital Library is to serve as a one-stop public storefront for downloading all Hmar open data. Rather than scattering digitizations across isolated drives or requiring developers to navigate complex code repositories, the portal aims to provide 1-click downloads for PDF books, rare 20th-century manuscripts, folk songbooks Hla-thlang, audio recordings, compiled dictionary term exports from the{" "}
+            The intended design vision for the Hmar Digital Library is to serve as a one-stop public storefront for downloading all Hmar open data. Rather than scattering digitizations across isolated drives or requiring developers to navigate complex code repositories, the portal aims to provide 1-click downloads for PDF books, folk songbooks Hla-thlang, audio recordings, compiled dictionary term exports from the{" "}
             <Link href="/projects/termbank" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>hmar open lexicon</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
@@ -105,6 +105,16 @@ export default function DigitalLibraryBriefPage() {
               <span>hmar locale project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>.
+          </p>
+        </section>
+
+        {/* Inaugural Operational Sprint Targets */}
+        <section className="space-y-3">
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Inaugural Operational Sprint Targets
+          </h2>
+          <p>
+            Subject to securing initial grant funding and equipment resources, our inaugural active sprint targets the physical acquisition, high-resolution scanning, and PDF digital archiving of 100 out-of-print books alongside high-fidelity audio and video recordings of oral cultural literature.
           </p>
         </section>
 

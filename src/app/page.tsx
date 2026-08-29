@@ -58,11 +58,11 @@ export default function HomePage() {
             </p>
 
             <p>
-              Language is not just a tool for communication, it is also how we preserve our history, traditions, and culture. As we transitioned to preserving our cultural knowledge with books, the world moved on to the digital realm and transformed how information is distributed. The sudden rise of artificial intelligence over the past five years has once again transformed how we consume information and interact with screens. But this initiative is not just about AI and technology. It is about active participation so we do not get left behind and are ready to change on our own terms, rather than surrendering control to governments and corporations who control these systems.
+              Language is not just a tool for communication, it is also how we preserve our history, traditions, and culture. As we transitioned to preserving our cultural knowledge with books, the world moved on to the digital realm and transformed how information is distributed, and so did the need and the form and formats of data. The sudden rise of artificial intelligence over the past five years has undoubtedly transformed how we consume information and interact with screens. Whether one is pro-AI or anti-AI, this technology is unlikely to disappear, and will only become more integral to daily life. But this initiative is not just about AI and technology. It is about active participation so we do not get left behind and are ready to change on our own terms, rather than surrendering control to governments and corporations who control these systems.
             </p>
 
             <p>
-              This foundation is not about grand claims or controlling external platforms, but about self-determination: providing open tools, primary PDF archives, and software datasets so our community can write its own history and shape its digital presence. What began as a solo effort is now an open door for anyone who wants to help.
+              This foundation is not about grand claims or controlling external platforms, but about self-determination: providing open tools, cultural archives, and language resources so our community can write its own history and shape its digital presence. What began as a solo effort is now an open door for anyone who wants to help.
             </p>
           </div>
         </section>
@@ -117,7 +117,7 @@ export default function HomePage() {
             </p>
 
             <p>
-              Attempting this through an open foundation and volunteer community is indeed a hopeful, monumental undertaking. But history has shown through projects like Wikipedia, Linux, and Mozilla Common Voice that when an open community lays down the open data schemas, primary archives, and translation keys, it opens the door to achievements that corporate budgets refused to fund.
+              Attempting this through an open foundation is a hopeful, monumental undertaking, but sustaining this work beyond individual volunteer capacity requires dedicated funding and resources. History has shown through Indian open-knowledge initiatives like the Bhasha Research Centre, Servants of Knowledge, and regional Wikimedia language groups that when a dedicated community lays down the open data schemas, primary archives, and translation keys, it opens the door to achievements that commercial budgets refused to fund.
             </p>
 
             <p>

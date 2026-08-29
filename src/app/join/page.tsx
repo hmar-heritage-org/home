@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { siteConfig } from "@/config/site";
-import { Users, Mail, ArrowRight } from "lucide-react";
+import { Users, Mail, ArrowRight, Heart } from "lucide-react";
 
 export const metadata = {
   title: `Join & Participate | ${siteConfig.fullName}`,
@@ -55,6 +55,28 @@ export default function JoinPage() {
           </div>
         </section>
 
+        {/* 3. Financial Support & Grants Section */}
+        <section className="space-y-5 border-t border-slate-200 pt-8">
+          <div className="text-xs font-mono font-bold tracking-widest text-[#9E1B24] uppercase flex items-center gap-2">
+            <Heart className="w-4 h-4 text-[#9E1B24]" />
+            <span>Financial Contributions & Grants</span>
+          </div>
+
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Financial Support & Grants
+          </h2>
+
+          <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base leading-relaxed">
+            <p>
+              While our long-term roadmap relies on institutional grants and research partnerships, individual donations and equipment contributions directly power our local field operations.
+            </p>
+
+            <p>
+              Financial support helps us purchase out-of-print books, folk songbooks, maintain scanner hardware, acquire field audio recorders, and host local community editathons. If you or your organization would like to support the foundation through a financial contribution, equipment donation, or grant partnership, please contact our team directly via email.
+            </p>
+          </div>
+        </section>
+
         {/* Direct Email Desk Section */}
         <section className="space-y-4 bg-[#FAF9F6] p-8 rounded-2xl border border-slate-200 shadow-xs">
           <div className="text-xs font-mono font-bold uppercase tracking-wider text-[#9E1B24] flex items-center gap-2">
@@ -67,7 +89,7 @@ export default function JoinPage() {
           </h3>
 
           <p className="text-xs text-slate-700 leading-relaxed">
-            To get involved, suggest a physical book for scanning, or join as an operational volunteer, send a direct email to our team:
+            To get involved, suggest a physical book for scanning, discuss financial contributions or grants, or join as an operational volunteer, send a direct email to our team:
           </p>
 
           <div className="pt-2 space-y-2 font-mono text-xs">
