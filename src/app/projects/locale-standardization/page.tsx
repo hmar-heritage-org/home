@@ -24,11 +24,11 @@ export default function LocaleStandardizationBriefPage() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">
-          Hmar Locale Project
+          Open Locale Project
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans pt-1">
-          The Hmar Locale Project is a software localization initiative currently in planning. Below is an outline of the proposed translation philosophy, initial roadmap focus points, accountless training ground model, and intended Unicode CLDR integration strategy for when active development begins.
+          The Open Locale Project is an open, language-agnostic software internationalization framework stewarded by the Hmar Heritage Foundation. Designed to provide machine-readable UI translation schemas, Supabase staging workflows, and multi-platform exporters for Northeast Indian regional and minority languages, its inaugural reference implementation is the Hmar (<code className="font-mono text-xs bg-slate-100 px-1 py-0.5 rounded">hmr-IN</code>) software locale.
         </p>
       </section>
 
@@ -49,19 +49,19 @@ export default function LocaleStandardizationBriefPage() {
             <tbody className="divide-y divide-slate-300 text-slate-800 font-mono">
               <tr className="hover:bg-white/60 transition-colors">
                 <td className="py-3 pr-4 font-bold text-slate-900 font-sans">
-                  Locale Portal
+                  Flagship Locale
                 </td>
                 <td className="py-3 pl-4 text-slate-700 font-sans font-semibold">
-                  Project Not Initialized
+                  Hmar (hmr-IN) · Open to All Regional Languages
                 </td>
               </tr>
 
               <tr className="hover:bg-white/60 transition-colors">
                 <td className="py-3 pr-4 font-bold text-slate-900 font-sans">
-                  Source Code Repository
+                  Staging Engine
                 </td>
                 <td className="py-3 pl-4 text-slate-700 font-sans font-semibold">
-                  Project Not Initialized
+                  Supabase Realtime Database · Status: Unverified → Verified
                 </td>
               </tr>
 
@@ -70,16 +70,16 @@ export default function LocaleStandardizationBriefPage() {
                   Phase 1 Focus Points
                 </td>
                 <td className="py-3 pl-4 text-slate-700 font-sans">
-                  Popups · Confirmation Modals · System Alerts · Action Buttons
+                  Confirmation Modals · System Alerts · Error Dialogs · Action Buttons
                 </td>
               </tr>
 
               <tr className="hover:bg-white/60 transition-colors">
                 <td className="py-3 pr-4 font-bold text-slate-900 font-sans">
-                  Translation Philosophy
+                  Moderation Pipeline
                 </td>
                 <td className="py-3 pl-4 text-slate-700 font-sans">
-                  Gradual One Word at a Time Adaptation · Descriptive Short Phrases
+                  Designated Language Verifiers · Zero Git Experience Required
                 </td>
               </tr>
             </tbody>
@@ -93,50 +93,40 @@ export default function LocaleStandardizationBriefPage() {
         {/* Section 1 */}
         <section className="space-y-3">
           <h2 className="text-2xl font-serif font-bold text-slate-900">
-            Multi-Platform Software Terminology Standardization
+            Open Regional Software Terminology Standardization
           </h2>
           <p>
-            The intended design vision for the Hmar Locale Project is to establish standardized translation keys for web browsers, web application frameworks, desktop operating systems, and mobile platforms. Providing open, machine-readable locale files enables software developers, browser extension creators, and open-source maintainers to add native Hmar language support across any digital interface.
+            The intended design vision for the Open Locale Project is establishing standardized translation keys for web browsers, web application frameworks, desktop operating systems, and mobile platforms across regional languages of Northeast India that lack native locale support. Providing open, machine-readable locale files enables software developers, browser extension creators, and open-source maintainers to add native language support across any digital interface.
           </p>
         </section>
 
-        {/* Section 2: Slow, Gradual, One Word at a Time & Short Phrases */}
+        {/* Section 2: Two-Tier Staging & Language Verifier Pipeline */}
+        <section className="space-y-3">
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Supabase Staging & Language Verifier Pipeline
+          </h2>
+          <p>
+            The platform architecture features a clean, two-tier moderation workflow. Live web edits and community contributions land in a Supabase staging database marked as unverified. Designated Language Verifiers (community scholars, educators, and language stewards) review and approve translations on a simplified web interface without ever needing Git or terminal experience. Once approved, background GitHub Actions automatically compile and push verified master releases to GitHub repositories and Hugging Face mirrors for 1-click platform exports.
+          </p>
+        </section>
+
+        {/* Section 3: Gradual Roadmap & Focus Points */}
         <section className="space-y-3">
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             Gradual Translation Roadmap & Descriptive Short Phrases
           </h2>
           <p>
-            Language evolution cannot be forced overnight by decree. The project establishes a slow, gradual translation roadmap that introduces technical vocabulary one word at a time. Initial dataset roadmaps focus purely on transient user interface elements: popups, modal headers, confirmation notices, system alerts, and primary action buttons. Because popups are brief and temporary, they provide a gentle introduction for users. Furthermore, expressing actions through natural, descriptive short phrases is vastly more clear in Hmar than forcing artificial single-word neologisms. Established technical English loanwords remain untranslated whenever a newly coined term does not convey the intended action with 100% certainty, ensuring native speakers adopt terms naturally without software culture shock.
+            Language evolution cannot be forced overnight by decree. The project establishes a gradual translation roadmap focusing initially on critical, transient user interface elements: deletion confirmation modals, network error dialogs, system alerts, and primary action buttons. Expressing actions through natural, descriptive short phrases is vastly more clear than forcing artificial single-word neologisms, ensuring native speakers adopt terms naturally without software culture shock.
           </p>
         </section>
 
-        {/* Section 3: Accountless Training Ground & External Community Groups */}
-        <section className="space-y-3">
-          <h2 className="text-2xl font-serif font-bold text-slate-900">
-            Accountless Training Ground & External Community Groups
-          </h2>
-          <p>
-            Rather than building heavy institutional forums or complex user portals, the dedicated locale portal is planned as a lightweight, accountless training ground. The website instructs new contributors on localization structures, translation key formats, and repository tools. Active terminology discussions and community feedback take place directly within accessible channels like WhatsApp and Discord groups, keeping the website friction-free while meeting volunteers where they already communicate.
-          </p>
-        </section>
-
-        {/* Section 4: Avoiding Interface Culture Shock across Devices */}
-        <section className="space-y-3">
-          <h2 className="text-2xl font-serif font-bold text-slate-900">
-            Avoiding Interface Culture Shock
-          </h2>
-          <p>
-            A core design challenge in software localization is creating terminology that feels natural to native speakers across all digital devices. Because community members have interacted with web browsers, operating systems, and computer software in English, Assamese, or Hindi for decades, forcing unnatural translations can create culture shock. The proposed terminology design balances modern technical clarity with authentic linguistic roots, ensuring browser menus, web UI components, and desktop elements remain intuitive.
-          </p>
-        </section>
-
-        {/* Section 5: Unicode CLDR & Web Standards */}
+        {/* Section 4: Unicode CLDR Integration */}
         <section className="space-y-3">
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             Unicode CLDR & Web Standards Integration
           </h2>
           <p>
-            Long-term preservation requires incorporating verified locale specifications into international web and software standards. The project aims to prepare core locale data for submission to the Unicode Common Locale Data Repository. While integration into major commercial operating systems, web browsers, and platforms remains at the sole discretion of entities like Google, Apple, Mozilla, Microsoft, and the Linux Foundation, establishing open locale data serves as the mandatory technical prerequisite.
+            Long-term preservation requires incorporating verified locale specifications into international web and software standards. The project aims to prepare core locale data for submission to the Unicode Common Locale Data Repository. Establishing open, verified locale data serves as the mandatory technical prerequisite for future adoption by major technology entities.
           </p>
         </section>
 
@@ -148,23 +138,19 @@ export default function LocaleStandardizationBriefPage() {
           <ul className="space-y-2 text-sm text-slate-700 font-sans">
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#9E1B24] shrink-0 mt-0.5" />
-              <span>Slow, gradual translation roadmap focused on transient popups, confirmation modals, and system alerts</span>
+              <span>Language-agnostic locale platform stewarded by the Hmar Heritage Foundation</span>
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#9E1B24] shrink-0 mt-0.5" />
-              <span>Descriptive short phrase guidelines over forced single-word neologisms</span>
+              <span>Hmar (<code className="font-mono text-xs bg-slate-100 px-1 py-0.5 rounded">hmr-IN</code>) as the flagship reference implementation</span>
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#9E1B24] shrink-0 mt-0.5" />
-              <span>Accountless educational training ground for new contributors and translators</span>
+              <span>Supabase real-time database staging with designated non-technical Language Verifier roles</span>
             </li>
             <li className="flex items-start gap-2">
               <CheckCircle2 className="w-4 h-4 text-[#9E1B24] shrink-0 mt-0.5" />
-              <span>Direct download links for compiled translation bundles and repository access</span>
-            </li>
-            <li className="flex items-start gap-2">
-              <CheckCircle2 className="w-4 h-4 text-[#9E1B24] shrink-0 mt-0.5" />
-              <span>Standardized Hmar translation keys for web browsers, web frameworks, mobile apps, and desktop environments</span>
+              <span>Automated 1-click exporters for Android (<code className="font-mono text-xs bg-slate-100 px-1 py-0.5 rounded">strings.xml</code>), Web (<code className="font-mono text-xs bg-slate-100 px-1 py-0.5 rounded">JSON</code>), iOS (<code className="font-mono text-xs bg-slate-100 px-1 py-0.5 rounded">strings</code>), and Linux (<code className="font-mono text-xs bg-slate-100 px-1 py-0.5 rounded">.po</code>)</span>
             </li>
           </ul>
         </section>
