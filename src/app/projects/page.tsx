@@ -38,7 +38,7 @@ export default function ProjectsPage() {
             </Link>{" "}
             and{" "}
             <Link href="/projects/raw-datasets" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-              <span>hmar corpus archival project</span>
+              <span>hmar heritage archival project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>.
           </p>

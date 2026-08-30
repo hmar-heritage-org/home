@@ -55,7 +55,7 @@ export default function DatasetsPage() {
             Official Dataset Repositories & Hub Handles
           </h2>
           <p className="text-base text-slate-700">
-            You can inspect or download raw text corpora directly via Python using the Hugging Face datasets library via <code className="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">load_dataset(&quot;hmar-heritage&quot;)</code> or by accessing our official repositories below:
+            You can inspect or download raw text corpora directly via Python using the Hugging Face datasets library via <code className="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">load_dataset(&quot;hmar-heritage-org&quot;)</code> or by accessing our official repositories below:
           </p>
 
           <div className="bg-[#F4F1EA] p-4 sm:p-6 rounded-2xl border border-slate-300 shadow-xs overflow-x-auto">
@@ -128,7 +128,7 @@ export default function DatasetsPage() {
           <p className="text-xs text-slate-500 font-mono pt-1">
             Read more about this archival initiative under our{" "}
             <Link href="/projects/raw-datasets" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-              <span>hmar corpus archival project brief</span>
+              <span>hmar heritage archival project brief</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>.
           </p>

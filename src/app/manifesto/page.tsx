@@ -96,9 +96,9 @@ export default function ManifestoPage() {
             </p>
 
             <p>
-              <strong>Section 2.5 Hmar Corpus Archival Project:</strong> Operates the backend data ingestion engine, low-friction anonymous upload interface, GitHub staging pipeline, and Hugging Face dataset hub mirroring under the{" "}
+              <strong>Section 2.5 Hmar Heritage Archival Project:</strong> Operates the backend data ingestion engine, low-friction anonymous upload interface, GitHub staging pipeline, and Hugging Face dataset hub mirroring under the{" "}
               <Link href="/projects/raw-datasets" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-                <span>hmar corpus archival project brief</span>
+                <span>hmar heritage archival project brief</span>
                 <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
               </Link>.
             </p>

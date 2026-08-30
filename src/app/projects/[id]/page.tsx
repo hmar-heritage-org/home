@@ -146,7 +146,7 @@ export default async function ProjectDetailPage({ params }: ProjectDetailPagePro
             Official Dataset Repositories & Hub Handles
           </h2>
           <p className="text-sm text-slate-700">
-            Access raw corpora, PDF image archives, and dataset mirrors via direct links or Python (<code className="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">load_dataset(&quot;hmar-heritage&quot;)</code>):
+            Access raw corpora, PDF image archives, and dataset mirrors via direct links or Python (<code className="font-mono text-xs bg-slate-100 px-1.5 py-0.5 rounded">load_dataset(&quot;hmar-heritage-org&quot;)</code>):
           </p>
 
           <div className="bg-[#F4F1EA] p-4 sm:p-6 rounded-2xl border border-slate-300 shadow-xs overflow-x-auto">

@@ -23,8 +23,8 @@ The Foundation builds open software translation keys, bulk AI text/speech datase
 
 ## Official Portals & Handles
 
-- **GitHub Organization**: [github.com/hmar-heritage](https://github.com/hmar-heritage)
-- **Hugging Face Hub**: [huggingface.co/hmar-heritage](https://huggingface.co/hmar-heritage)
+- **GitHub Organization**: [github.com/hmar-heritage-org](https://github.com/hmar-heritage-org)
+- **Hugging Face Hub**: [huggingface.co/hmar-heritage-org](https://huggingface.co/hmar-heritage-org)
 - **Wikimedia Incubator**: [incubator.wikimedia.org/wiki/Wp/hmr](https://incubator.wikimedia.org/wiki/Wp/hmr)
 
 ---
@@ -52,7 +52,7 @@ Clone the repository and install dependencies:
 
 ```bash
 # Clone the repository
-git clone https://github.com/hmar-heritage/website.git
+git clone https://github.com/hmar-heritage-org/website.git
 cd website
 
 # Install dependencies

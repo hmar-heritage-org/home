@@ -143,7 +143,7 @@ export default function OpenLexiconBriefPage() {
             </Link>{" "}
             derive UI key terms from its technical termbank, and OCR pipelines on the{" "}
             <Link href="/projects/raw-datasets" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-              <span>hmar corpus archival project</span>
+              <span>hmar heritage archival project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>{" "}
             use its vocabulary lists for text recognition validation.

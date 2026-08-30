@@ -122,7 +122,7 @@ export function Footer() {
               </li>
               <li>
                 <Link href="/projects/raw-datasets" className="hover:text-white transition-colors">
-                  Hmar Corpus Archival Project
+                  Hmar Heritage Archival Project
                 </Link>
               </li>
               <li>

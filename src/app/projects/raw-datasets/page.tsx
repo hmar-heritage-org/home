@@ -3,8 +3,8 @@ import { siteConfig } from "@/config/site";
 import { ArrowRight, CheckCircle2, Database, ExternalLink } from "lucide-react";
 
 export const metadata = {
-  title: `Hmar Corpus Archival Project Brief | ${siteConfig.fullName}`,
-  description: "Proposed architecture, backend ingestion pipeline, progressive contributor onboarding, and dataset specifications for the Hmar Corpus Archival Project.",
+  title: `Hmar Heritage Archival Project Brief | ${siteConfig.fullName}`,
+  description: "Proposed architecture, backend ingestion pipeline, progressive contributor onboarding, and dataset specifications for the Hmar Heritage Archival Project.",
 };
 
 export default function RawDatasetsBriefPage() {
@@ -24,11 +24,11 @@ export default function RawDatasetsBriefPage() {
         </div>
 
         <h1 className="text-4xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight tracking-tight">
-          Hmar Corpus Archival Project
+          Hmar Heritage Archival Project
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans pt-1">
-          The Hmar Corpus Archival Project is the primary backend data engine of the Foundation. It operates as the raw ingestion pipeline, dataset schema authority, and educational training ground for text corpora, speech audio archives, and OCR scanned page datasets mirrored on Hugging Face.
+          The Hmar Heritage Archival Project is the primary backend data engine of the Foundation. It operates as the raw ingestion pipeline, dataset schema authority, and educational training ground for text corpora, speech audio archives, and OCR scanned page datasets mirrored on Hugging Face.
         </p>
       </section>
 
@@ -116,7 +116,7 @@ export default function RawDatasetsBriefPage() {
             <Link href="/projects/literature-library" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>hmar digital library</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
-            </Link>, the Hmar Corpus Archival Project functions as the backend data management hub. It provides the core data ingestion, storage, and processing pipelines required to handle raw text dumps, high-resolution document scans, and uncurated speech audio recordings.
+            </Link>, the Hmar Heritage Archival Project functions as the backend data management hub. It provides the core data ingestion, storage, and processing pipelines required to handle raw text dumps, high-resolution document scans, and uncurated speech audio recordings.
           </p>
         </section>
 
@@ -126,7 +126,7 @@ export default function RawDatasetsBriefPage() {
             Active Operational Sprint Targets
           </h2>
           <p>
-            During our current active operational sprint, the primary focus of the Hmar Heritage Foundation is advancing the Hmar Corpus Archival Project. Our active target is physical literature acquisition and high-resolution PDF scanning of 100 out-of-print books, bootstrapped locally through internal resources.
+            During our current active operational sprint, the primary focus of the Hmar Heritage Foundation is advancing the Hmar Heritage Archival Project. Our active target is physical literature acquisition and high-resolution PDF scanning of 100 out-of-print books, bootstrapped locally through internal resources.
           </p>
           <p>
             In addition to physical text scanning, the project aims to build rich oral history audio and video corpora. While text digitization is already underway through internal resources, expanding field audio and video recording across regional villages is explicitly dependent on securing grant funding for dedicated field audio recorders, archival cameras, and storage hardware.

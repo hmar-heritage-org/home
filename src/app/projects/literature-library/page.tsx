@@ -136,7 +136,7 @@ export default function DigitalLibraryBriefPage() {
           <p>
             All data curation, pull request reviews, moderation, and asset ingestion management will reside purely within their respective projects, primarily inside the repositories and dataset pipelines of the{" "}
             <Link href="/projects/raw-datasets" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
-              <span>hmar corpus archival project</span>
+              <span>hmar heritage archival project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>. While dedicated project portals cater to active contributors and translators, this storefront acts strictly as the visual reading and downloading layer. When volunteers submit new texts or transcriptions to the underlying repositories, an automated staging build renders their pending submissions live under an in-review status. This separation ensures contributors receive instant visual feedback while keeping the storefront 100% static and secure without backend management complexity.
           </p>

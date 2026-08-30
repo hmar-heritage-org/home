@@ -26,8 +26,8 @@ export const siteConfig = {
   domain: "hmar.page",
   contactEmail: "daiopch54@gmail.com",
   secondaryEmail: "donalmuoloi@gmail.com",
-  githubUrl: "https://github.com/hmar-heritage",
-  huggingFaceUrl: "https://huggingface.co/hmar-heritage",
+  githubUrl: "https://github.com/hmar-heritage-org",
+  huggingFaceUrl: "https://huggingface.co/hmar-heritage-org",
   meta: {
     title: "Hmar Heritage Foundation | Digital Preservation & Cultural Stewardship",
     description:
@@ -76,7 +76,7 @@ export const siteConfig = {
       iconName: "BookOpen",
       category: "Digital Archive",
       targetUrl: "#",
-      githubUrl: "https://github.com/hmar-heritage",
+      githubUrl: "https://github.com/hmar-heritage-org",
       notes: "Hosted on Firebase Storage & Static Hosting. Collects public domain texts and works with author permissions.",
       grantScope: "Endangered Literature & Archival Grants (ELDP Legacy Material Grant, British Library EAP, Ministry of Culture)",
       deliverables: [
@@ -88,7 +88,7 @@ export const siteConfig = {
     {
       id: "raw-datasets",
       projectCode: "CORPUS-03",
-      title: "Hmar Corpus Archival Project",
+      title: "Hmar Heritage Archival Project",
       shortDescription:
         "Bulk raw text corpora, speech audio recordings, and OCR scanned page datasets on Hugging Face.",
       fullDescription:
@@ -96,14 +96,14 @@ export const siteConfig = {
       status: "Active",
       iconName: "Database",
       category: "Raw AI Datasets",
-      targetUrl: "https://huggingface.co/hmar-heritage",
-      githubUrl: "https://github.com/hmar-heritage",
+      targetUrl: "https://huggingface.co/hmar-heritage-org",
+      githubUrl: "https://github.com/hmar-heritage-org",
       notes: "Mirrored on Hugging Face Datasets hub for 1-click load_dataset integration.",
       grantScope: "Computational Linguistics & AI Research Grants (Hugging Face, AI4Bharat, DST)",
       deliverables: [
         "1-click bulk ZIP and Tarball downloads of raw scans and text corpora",
         "Speech audio archives and transcribed text datasets",
-        "Hugging Face integration via load_dataset hmar-heritage",
+        "Hugging Face integration via load_dataset hmar-heritage-org",
         "Raw OCR page image sets for computer vision models",
       ],
     },
@@ -119,7 +119,7 @@ export const siteConfig = {
       iconName: "Globe",
       category: "Software Locale",
       targetUrl: "#",
-      githubUrl: "https://github.com/hmar-heritage",
+      githubUrl: "https://github.com/hmar-heritage-org",
       notes: "Language-agnostic platform featuring Hmar (hmr-IN) as its inaugural reference dataset.",
       grantScope: "Open Source Software & Technical i18n Grants (Mozilla, Linux Foundation, Google CLDR)",
       deliverables: [
@@ -141,7 +141,7 @@ export const siteConfig = {
       iconName: "Globe",
       category: "Community Knowledge",
       targetUrl: "https://incubator.wikimedia.org/wiki/Wp/hmr",
-      githubUrl: "https://github.com/hmar-heritage",
+      githubUrl: "https://github.com/hmar-heritage-org",
       notes: "Official institutional workspace on Wikimedia Incubator Wp/hmr under Hmar Heritage Foundation stewardship.",
       grantScope: "Wikimedia Community & Knowledge Equity Grants (Wikimedia Foundation Implementation Grants)",
       deliverables: [
@@ -163,7 +163,7 @@ export const siteConfig = {
       iconName: "BookOpen",
       category: "Lexicography",
       targetUrl: "#",
-      githubUrl: "https://github.com/hmar-heritage",
+      githubUrl: "https://github.com/hmar-heritage-org",
       notes: "Dual web application interfaces for dictionary and technical term lookup.",
       grantScope: "Dictionary & Lexicography Grants (Central Institute of Indian Languages CIIL, Sahitya Akademi)",
       deliverables: [

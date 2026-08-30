@@ -55,7 +55,7 @@ export default function GetInvolvedPage() {
             And If You Don&apos;t Speak Hmar
           </h2>
           <p className="text-base text-slate-700">
-            You can still contribute to language preservation. Open-source developers, software maintainers, and data scientists can contribute directly by building open web micro-apps, improving PDF rendering tools for digitized books, or building open REST APIs for dictionary lookup. You can also help test our Hugging Face dataset mirrors via load_dataset hmar-heritage, format raw text corpora for machine learning pipelines, or audit software localization files in standard i18n JSON, PO, and XLIFF formats for mobile and desktop applications.
+            You can still contribute to language preservation. Open-source developers, software maintainers, and data scientists can contribute directly by building open web micro-apps, improving PDF rendering tools for digitized books, or building open REST APIs for dictionary lookup. You can also help test our Hugging Face dataset mirrors via load_dataset hmar-heritage-org, format raw text corpora for machine learning pipelines, or audit software localization files in standard i18n JSON, PO, and XLIFF formats for mobile and desktop applications.
           </p>
         </section>
 
