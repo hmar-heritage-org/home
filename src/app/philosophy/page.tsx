@@ -56,7 +56,7 @@ export default function PhilosophyPage() {
             Section II
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
-            Unattributed Groundwork & The Absence of Credit
+            Unattributed Groundwork &amp; The Absence of Credit
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <p>
@@ -71,11 +71,71 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        {/* Section 3: Setting Realistic Community Expectations */}
+        {/* Section III: Language Evolution & Modern Mediums */}
+        <section className="space-y-4 border-b border-slate-200 pb-10">
+          <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
+            Section III · Language Evolution
+          </div>
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Language Evolution &amp; Cultural Survival
+          </h2>
+          <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
+            <p>
+              Languages do not get left behind simply because there were not enough native speakers or because nobody researched them. Languages fade when they fail to adapt and evolve into the dominant mediums of their era.
+            </p>
+            <p>
+              In past generations, evolution meant transitioning from oral traditions into written corpora. In the modern digital age, evolution means bridging the gap between static research papers and functional software tools, which, in simple words, means <strong>data</strong>.
+            </p>
+            <p>
+              The reason Hebrew, Aramaic, and Ancient Greek are still spoken or studied today is because they were meticulously documented. Languages evolve regardless of how a community feels about linguistic purity. English has transformed continuously across centuries, from the history of Oxford University to modern internet culture absorbing Gen Z slang and AAVE, and it became the dominant global language specifically because it adapted to every new era. The language changed, but the culture survived. No Englishman denies the history of their heritage simply because they cannot fluently read 10th-century Old English. Adaptation is not the destruction of culture, it is the only mechanism that allows culture to survive.
+            </p>
+            <p>
+              Debates over diacritics and orthographic purity come from a deep, genuine love for our language. But we must acknowledge historical reality: expressing Hmar in Latin script was already an act of adaptation. Arguing for rigid purity contradicts its own roots. The only purity to argue for is adaptation. The shoe is not the foot, it can never be the foot.
+            </p>
+            <p>
+              The argument that diacritics are strictly necessary to identify how words sound is fundamentally flawed. English does not lack diacritics because it doesn&apos;t technically need them, but because we&apos;ve come to agree on how a word should sound based on the context. For instance: <em>&quot;I live in the city&quot;</em> versus <em>&quot;The event is broadcast live.&quot;</em> Why don&apos;t we need diacritics here? Because context naturally carries the sound. If a reader cannot identify how a word is pronounced from its surrounding sentence, it simply indicates a lack of familiarity with the living language.
+            </p>
+            <p>
+              Grammar books exist to describe the grammar rules of a language, not to dictate the grammar rules of a language. Just because a textbook uses diacritics to express a sound or pronunciation, it does not become a rule.
+            </p>
+            <p>
+              Language is a tool; it is not us. We are the history, the memory, and the living culture. A tool exists to serve its people, and when the era changes, the tool must adapt so the culture survives.
+            </p>
+          </div>
+        </section>
+
+        {/* Section IV: Bridging Academic Research and Community Realities */}
+        <section className="space-y-4 border-b border-slate-200 pb-10">
+          <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
+            Section IV · The Practical Bridge
+          </div>
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Bridging Academic Research and Community Realities
+          </h2>
+          <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
+            <p>
+              We want to be completely transparent about who we are: <strong>we do not conduct original academic research, we do not publish scholarly papers, and none of us are formal university linguists. We are also not training complex AI models ourselves.</strong>
+            </p>
+            <p>
+              Our role is much simpler and far more practical: <strong>we synthesize information, generate structured open datasets, and build low-barrier platforms that enable non-technical community members to create data.</strong>
+            </p>
+            <p>
+              Right now, a major bottleneck in language preservation is that academic research sits idle. Brilliant papers written by university scholars and native linguists exist in isolated PDFs, university repositories, and obscure websites. But beyond corporate motives, there is no practical medium for that research to be used. The theoretical foundation to build voice synthesis, dictionaries, or translation tools exists, but because there are no open, structured datasets, there is no probability for the open-source community to take notice, and as we&apos;ve all come to realize, modern technology and the internet at large rest on the shoulders of this open-source community.
+            </p>
+            <p>
+              Furthermore, academic papers alone cannot build working language tools, much like you can&apos;t cook a meal with just a recipe book. It is straightforward to generate audio programmatically even without artificial intelligence, but without an open, standardized map of how written words actually sound out loud, making a computer pronounce a language correctly is essentially trying to paint in the dark. To build functional software, voice assistants, or translation tools, you need the actual ingredients: standardized phonetic sound maps, real-world language usage data, authentic speech audio, raw document scans, and clean transcriptions. Collecting and packaging these real-world ingredients at scale is something even well-funded academic institutions struggle to do alone without open, community-driven platforms. We exist to bridge that exact gap.
+            </p>
+            <p>
+              While the core task itself is simple, <em>create datasets</em>, it still requires thoughtful engineering to structure data so it is clean, usable, and standardized. It does not require a PhD in computer science, but it does require a basic understanding of modern data structures and experience in data manipulation. If you are a developer, data wrangler, or hobbyist with free time and want to help, do not hesitate to reach out and join us.
+            </p>
+          </div>
+        </section>
+
+        {/* Section V: Setting Realistic Community Expectations */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider flex items-center gap-2">
             <ShieldAlert className="w-4 h-4 text-[#9E1B24]" />
-            <span>Section III · Setting Community Expectations</span>
+            <span>Section V · Setting Community Expectations</span>
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             A Note to Volunteers, Contributors, and Elders
@@ -90,31 +150,55 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        {/* Section IV: Project-Driven Operational Cadence */}
+        {/* Section VI: Operational Cadence & Burnout Prevention */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
-            Section IV · Operational Cadence
+            Section VI · Sustainable Pace
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
-            Sustainable Project Sprints & Burnout Prevention
+            Preventing Burnout &amp; Working in Focused Sprints
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <p>
-              Many community initiatives fail not from a lack of passion, but from attempting an unrealistic 365-day operational crunch. To ensure multi-year sustainability, the Foundation operates on a flexible, project-driven sprint cadence.
+              While it would technically be ideal for the foundation to run non-stop 365 days a year, it is completely unrealistic to expect volunteers, contributors, or anybody, really, not to get burnt out.
             </p>
             <p>
-              Rather than forcing artificial year-round daily output, our internal operations cycle between high-intensity active data sprints focusing on physical book scanning, field collection, and dataset cleanups, strategic planning phases for scoping upcoming goals and budget needs, and sustained grant-securing and public outreach windows.
+              Instead of forcing artificial year-round daily output, we operate in focused, seasonal project sprints. When we have the time, energy, and resources, we run active data sprints for physical book scanning, dictionary extraction, and dataset cleanups. When we need to recharge, plan, or focus on our personal lives, we step back.
             </p>
             <p>
-              This seasonal cadence protects our core team from burnout during these foundational early years, while ensuring that public contribution portals, GitHub repositories, and support channels remain open 365 days a year.
+              This approach prevents burnout and keeps our work sustainable for the long haul, while keeping our open repositories, GitHub, and contribution portals accessible to everyone 365 days a year.
             </p>
           </div>
         </section>
 
-        {/* Section V: Planting Trees for Future Generations */}
+        {/* Section VII: Financial Transparency, Grants, and Independence */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
-            Section V
+            Section VII · Funding &amp; Independence
+          </div>
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Financial Transparency, Grants, and Self-Reliance
+          </h2>
+          <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
+            <p>
+              For any foundation to exist meaningfully, it must remain independent, transparent, and grounded in self-reliance. This initiative is bootstrapped using personal resources, volunteer time, and internal passion rather than corporate sponsorships or institutional payrolls.
+            </p>
+            <p>
+              This financial independence ensures that our priorities are dictated solely by cultural stewardship and community need, free from commercial motives or external agendas.
+            </p>
+            <p>
+              As our work scales, acquiring out-of-print books, purchasing high-resolution scanning hardware, hosting large audio archives, and funding field collection, we will seek non-encumbering academic research grants, cultural preservation grants, and community support.
+            </p>
+            <p>
+              Our financial policy is simple and unyielding: <strong>we will never paywall, sell, or commercialize raw datasets or cultural scans.</strong> Every grant, donation, or resource received goes directly into acquiring physical archival materials, maintaining infrastructure, and building open tools for future generations.
+            </p>
+          </div>
+        </section>
+
+        {/* Section VIII: Planting Trees for Future Generations */}
+        <section className="space-y-4 border-b border-slate-200 pb-10">
+          <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
+            Section VIII
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             Planting Trees Whose Shade We May Never Sit Under
