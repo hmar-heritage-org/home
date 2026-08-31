@@ -87,7 +87,7 @@ export default function PhilosophyPage() {
               In past generations, evolution meant transitioning from oral traditions into written corpora. In the modern digital age, evolution means bridging the gap between static research papers and functional software tools, which, in simple words, means <strong>data</strong>.
             </p>
             <p>
-              The reason Hebrew, Aramaic, and Ancient Greek are still spoken or studied today is because they were meticulously documented. Languages evolve regardless of how a community feels about linguistic purity. English has transformed continuously across centuries, from the history of Oxford University to modern internet culture absorbing Gen Z slang and AAVE, and it became the dominant global language specifically because it adapted to every new era. The language changed, but the culture survived. No Englishman denies the history of their heritage simply because they cannot fluently read 10th-century Old English. Adaptation is not the destruction of culture, it is the only mechanism that allows culture to survive.
+              The reason Hebrew, Aramaic, and Ancient Greek are still spoken or studied today is because they were meticulously documented. And while documentation alone does not guarantee that a language will remain widely spoken, it ensures that its linguistic and cultural record remains available to future generations. Languages evolve regardless of how a community feels about linguistic purity. English has transformed continuously across centuries, from the history of Oxford University to modern internet culture absorbing Gen Z slang and AAVE, and it became the dominant global language specifically because it adapted to every new era. The language changed, but the culture survived. No Englishman denies the history of their heritage simply because they cannot fluently read 10th-century Old English. Adaptation is not the destruction of culture, it is the only mechanism that allows culture to survive.
             </p>
             <p>
               Debates over diacritics and orthographic purity come from a deep, genuine love for our language. But we must acknowledge historical reality: expressing Hmar in Latin script was already an act of adaptation. Arguing for rigid purity contradicts its own roots. The only purity to argue for is adaptation. The shoe is not the foot, it can never be the foot.
@@ -101,13 +101,72 @@ export default function PhilosophyPage() {
             <p>
               Language is a tool; it is not us. We are the history, the memory, and the living culture. A tool exists to serve its people, and when the era changes, the tool must adapt so the culture survives.
             </p>
+            <p>
+              The foundation does not advocate for the removal of diacritics, but recognizes the absurdity of linguistic purity. The foundation maintains that how language evolves is not up to any institution, foundation, or philosophical framework, but the people themselves.
+            </p>
           </div>
         </section>
 
-        {/* Section IV: Bridging Academic Research and Community Realities */}
+        {/* Section IV: Global Standards for Latin Scripts */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
-            Section IV · The Practical Bridge
+            Section IV · Global Standards
+          </div>
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Global Standards for Latin Scripts
+          </h2>
+          <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
+            <p>
+              This debate over diacritics speaks directly to the operational utility of the data we collect and archive. Some argue that using <em>&quot;tr&quot;</em> over <em>&quot;ṭ&quot;</em> or <em>&quot;t&quot;</em> invalidates dataset quality. This represents a narrow, academic view of linguistics that ignores how software actually works, as these incorrect usages can simply be regarded &quot;alternative spellings&quot;. Furthermore, it assumes every written content is grammatically correct or should be.
+            </p>
+            <p>
+              Diacritics are not just visual marks; they are technical dependencies. For a diacritic-heavy language to function digitally, it requires a complete, unbroken ecosystem:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-slate-700">
+              <li>The Operating System must natively support the locale.</li>
+              <li>The System Fonts must render the glyphs without breaking into blank boxes.</li>
+              <li>The Virtual Keyboards must feature dedicated, easily accessible layouts so users don&apos;t have to hunt through long-press menus just to type a single word.</li>
+            </ul>
+            <p>
+              Major global languages like French, German, and Spanish do not use diacritics in their ISO software locale identifiers, yet can afford to support diacritics in localized user interfaces because they control this entire vertical stack. They have the corporate backing and institutional scale to ensure every single operating system integrates their language natively. Hmar does not have a public roadmap from Apple or Google. If Mozilla adopts a diacritic-heavy locale but AOSP does not, or if a website requires dotted characters but the user is forced to type on a standard English mobile keyboard, the system breaks.
+            </p>
+            <p>
+              This creates an asymmetric search problem. Under the hood, computers perform exact binary matches. If our database rigidly stores data with diacritics (like <em>&quot;ṭang&quot;</em>) and a user searches using a standard keyboard (<em>&quot;tang&quot;</em>), the computer sees a total mismatch and returns zero results. Major languages bypass this by deploying massive, expensive runtime search analyzers to strip and map characters on the fly. A grassroots, open-source project does not have the luxury of building custom linguistic software layers for every local app or database.
+            </p>
+            <p>
+              Furthermore, if the speech community ever develops a native writing system or decides to adopt a non-Latin script, the foundation would fully support linguistic purity and build the necessary digital tools, font encodings, and keyboard layouts to help that script thrive. But as long as we rely on an adapted Latin alphabet without systemic OS integration, dropping diacritics in software locales is the only sensible option for universal compatibility, or at least until Hmar becomes a first-class language in the digital ecosystem.
+            </p>
+          </div>
+        </section>
+
+        {/* Section V: Using "Incorrect" Grammar is OK */}
+        <section className="space-y-4 border-b border-slate-200 pb-10">
+          <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
+            Section V · Linguistic Inclusivity
+          </div>
+          <h2 className="text-2xl font-serif font-bold text-slate-900">
+            Using &quot;Incorrect&quot; Grammar is OK
+          </h2>
+          <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
+            <p>
+              One of the greatest barriers to community-driven archiving is the fear of making grammatical mistakes. Many native speakers hesitate to submit stories, record audio, or write text because they worry their grammar isn&apos;t &quot;pure&quot; or formal enough for an official foundation.
+            </p>
+            <p>
+              We want to state unequivocally: <strong>in our archives, using non-standard or &quot;incorrect&quot; grammar is completely okay.</strong> Linguistics is descriptive, not prescriptive. Our mission is to capture how Hmar is actually spoken and written by real people today, not to enforce a rigid textbook ideal. Informal letters, oral folklore, youth slang, internet shorthand, and dialectal variations are precious records of a living culture.
+            </p>
+            <p>
+              If we reject real-world communication because it fails a formal grammar test, we throw away half of our living history. An open archive must belong to every speaker, not just grammarians.
+            </p>
+            <p>
+              From a technical standpoint, this is also critical for software engineering. If AI translation models, speech recognition tools, and search indexes are trained exclusively on artificially flawless grammar, they become brittle. This is precisely why modern AI assistants can understand messy user prompts filled with typos and broken syntax that would confuse a human proofreader. Including natural, un-sanitized human communication in our open datasets ensures that the digital tools we build are resilient, fault-tolerant, and capable of understanding how people actually communicate in daily life.
+            </p>
+          </div>
+        </section>
+
+        {/* Section VI: Bridging Academic Research and Community Realities */}
+        <section className="space-y-4 border-b border-slate-200 pb-10">
+          <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
+            Section VI · The Practical Bridge
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             Bridging Academic Research and Community Realities
@@ -131,11 +190,11 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        {/* Section V: Setting Realistic Community Expectations */}
+        {/* Section VII: Setting Realistic Community Expectations */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider flex items-center gap-2">
             <ShieldAlert className="w-4 h-4 text-[#9E1B24]" />
-            <span>Section V · Setting Community Expectations</span>
+            <span>Section VII · Setting Community Expectations</span>
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             A Note to Volunteers, Contributors, and Elders
@@ -150,10 +209,10 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        {/* Section VI: Operational Cadence & Burnout Prevention */}
+        {/* Section VIII: Operational Cadence & Burnout Prevention */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
-            Section VI · Sustainable Pace
+            Section VIII · Sustainable Pace
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             Preventing Burnout &amp; Working in Focused Sprints
