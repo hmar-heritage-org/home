@@ -178,6 +178,7 @@ export const siteConfig = {
     { name: "Home", href: "/" },
     { name: "Mission", href: "/manifesto" },
     { name: "Philosophy", href: "/philosophy" },
+    { name: "Standards", href: "/standards" },
     { name: "Projects", href: "/projects" },
     { name: "Resources", href: "/resources" },
     { name: "People", href: "/people" },
