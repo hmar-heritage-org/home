@@ -42,12 +42,12 @@ export default function ProjectsPage() {
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>, or you may visit our digital archive at huggingface :{" "}
             <a
-              href="https://huggingface.co/hmar-lang-org"
+              href="https://huggingface.co/hmar-heritage-org"
               target="_blank"
               rel="noopener noreferrer"
               className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1"
             >
-              <span>hmar-lang-org</span>
+              <span>hmar-heritage-org</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </a>.
           </p>
