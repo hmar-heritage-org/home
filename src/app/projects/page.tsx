@@ -70,15 +70,29 @@ export default function ProjectsPage() {
       </section>
 
       {/* Clean Bottom Resource Pointer */}
-      <div className="pt-2 text-sm font-sans text-slate-700">
-        <span>To see an index and list of the projects and related resources visit : </span>
-        <Link
-          href="/resources"
-          className="font-bold text-slate-900 hover:text-blue-700 underline transition-colors inline-flex items-center gap-1"
-        >
-          <span>resources</span>
-          <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
-        </Link>
+      <div className="pt-2 text-sm font-sans text-slate-700 space-y-2">
+        <div>
+          <span>To see an index and list of the projects and related resources visit : </span>
+          <Link
+            href="/resources"
+            className="font-bold text-slate-900 hover:text-blue-700 underline transition-colors inline-flex items-center gap-1"
+          >
+            <span>resources</span>
+            <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
+          </Link>
+        </div>
+        <div>
+          <span>or you may visit our digital archive at huggingface : </span>
+          <a
+            href="https://huggingface.co/hmar-lang-org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-slate-900 hover:text-blue-700 underline transition-colors inline-flex items-center gap-1"
+          >
+            <span>hmar-lang-org</span>
+            <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
+          </a>
+        </div>
       </div>
     </div>
   );
