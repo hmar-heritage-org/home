@@ -1,7 +1,7 @@
 # Hmar Heritage Foundation
 
 > **Digital Preservation & Cultural Stewardship**  
-> *A non-profit foundation dedicated to language standardization, open AI datasets, software locales, and raw PDF archives for the Hmar language.*
+> *An independent foundation dedicated to language standardization, open AI datasets, software locales, and digital literature archives for the Hmar language.*
 
 ---
 
@@ -9,15 +9,15 @@
 
 The **Hmar Heritage Foundation** is an open digital stewardship organization established in 2024. Major technology corporations allocate commercial translation budgets primarily to dominant global languages. Because tech giants operate strictly on commercial return on investment, dedicated corporate localization budgets for regional minority languages like Hmar do not exist.
 
-The Foundation builds open software translation keys, bulk AI text/speech datasets, and primary PDF archives so open-source maintainers, computational linguists, researchers, and developers can integrate Hmar for free on their own terms.
+The Foundation builds open software translation keys, bulk AI text/speech datasets, and digital literature archives so open-source maintainers, computational linguists, researchers, and developers can integrate Hmar for free on their own terms.
 
 ---
 
-## Core Action Pillars
+## Core Foundational Principles
 
-1. **Low-Friction Raw Archival**: Prioritizing high-resolution raw PDF scans of classic literature, historical manuscripts, and folk songbooks (*Hla-thlang*) to create immediate digital backups without volunteer burnout.
-2. **Targeted UI/UX Locales**: Creating standardized Hmar software translation keys (i18n JSON, PO, XLIFF) focused on system notices, security alerts, and confirmation modals to prevent digital culture shock across smartphone and desktop applications.
-3. **Open AI Datasets & Corpora**: Providing bulk text corpora, speech audio recordings, and OCR page image archives on Hugging Face for computational language model training.
+1. **Self-Reliance & Ownership**: Taking responsibility for our own heritage and building our own open tools without waiting for outside permission.
+2. **Contributing Beyond Ourselves**: Empowering our people to share their knowledge in global research, literature, and technology, actively contributing to the wider world.
+3. **Working Together Across Generations**: Bringing elders, students, writers, researchers, and developers together into one united effort.
 
 ---
 
