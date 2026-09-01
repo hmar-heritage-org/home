@@ -22,7 +22,7 @@ export default function ManifestoPage() {
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans">
-          The official governing charter, articles of operation, and statutory principles establishing the Foundation as a registered non-profit literary, linguistic, and digital stewardship society.
+          The official charter and operating principles of the Hmar Heritage Foundation, an independent non-profit dedicated to language, literature, and digital preservation.
         </p>
       </section>
 
@@ -39,10 +39,10 @@ export default function ManifestoPage() {
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <p>
-              <strong>Section 1.1 Name & Organization:</strong> The society is promulgated officially as the <strong>Hmar Heritage Foundation</strong>, operating as a non-profit, non-sectarian, and non-political literary and digital preservation society.
+              <strong>Section 1.1 Name & Organization:</strong> The organization is established as the <strong>Hmar Heritage Foundation</strong>, operating as an independent, non-political non-profit dedicated to language and digital preservation.
             </p>
             <p>
-              <strong>Section 1.2 Timeline & Evolutionary Mandate:</strong> Originating as a personal digital stewardship initiative in 2024, the society is formally constituted in 2026 as an open foundation framework to provide contributor tools, public open schemas, and project briefs. The Foundation's statutory duty is laying open infrastructure and data standards, establishing the open groundwork for future generations without guaranteeing third-party commercial integration outcomes.
+              <strong>Section 1.2 Origins & Mandate:</strong> Started in 2024 as a digital preservation initiative and formally constituted in 2026, the Foundation provides contributor tools, open schemas, and project datasets. Its focus is building public digital standards for future generations.
             </p>
             <p>
               <strong>Section 1.3 Public Benefit Mandate:</strong> The Foundation is established strictly for community welfare, language preservation, education, and cultural upliftment.
@@ -115,10 +115,10 @@ export default function ManifestoPage() {
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <p>
-              <strong>Section 3.1 Self-Designation under Zo Family:</strong> The Foundation formally promulgates Hmar as an independent first-class language entity belonging to the <strong>Zo</strong> language family.
+              <strong>Section 3.1 Language Classification:</strong> The Foundation recognizes Hmar as an independent language within the <strong>Zo</strong> language family.
             </p>
             <p>
-              <strong>Section 3.2 Clarification of Academic Exonyms:</strong> The Foundation clarifies that external institutional designations, including Kuki-Chin-Naga, Kuki-Chin, Chin-Kuki, and their historical academic variants, represent external academic exonyms for the Zo language family.
+              <strong>Section 3.2 Academic Exonyms:</strong> Terms such as Kuki-Chin, Chin-Kuki, or Kuki-Chin-Naga are external academic labels used by researchers to classify the Zo language family.
             </p>
             <p>
               <strong>Section 3.3 Metadata Rights & Self-Determination:</strong> The Foundation asserts sole community authority over orthography, glossaries, and digital metadata representation across global software registries, ISO 639-3 standards, and Unicode CLDR.
@@ -175,7 +175,7 @@ export default function ManifestoPage() {
               <strong>Section 6.1 Generational Timeline:</strong> The society acknowledges that language preservation and digital infrastructure are open, continuous, and generational endeavors. The Foundation does not condition its operations upon immediate commercial adoption or short-term results.
             </p>
             <p>
-              <strong>Section 6.2 Acceptance of Unattributed Groundwork:</strong> The Foundation operates on the statutory principle of quiet groundwork. All open datasets, locale keys, and digital archives are released under open licenses so third parties can build upon them without requiring personal attribution to individual contributors or the society.
+              <strong>Section 6.2 Open Contribution:</strong> The Foundation focuses on quiet, practical groundwork. All open datasets, locale keys, and digital archives are released under open licenses so third parties can build upon them without requiring personal attribution to individual contributors or the society.
             </p>
             <p>
               <strong>Section 6.3 Dedicated Philosophical Reference:</strong> For a comprehensive exploration of institutional scope, volunteer expectations, and generational preservation, refer to the{" "}

@@ -22,7 +22,7 @@ export default function PhilosophyPage() {
         </h1>
 
         <p className="text-base text-slate-700 leading-relaxed font-sans">
-          An honest reflection on the true nature of open digital stewardship: why we lay down infrastructure without expecting immediate commercial results, guaranteed corporate adoption, or personal credit.
+          On scope, realism, quiet groundwork, and the generational nature of open language preservation.
         </p>
       </section>
 
@@ -45,7 +45,7 @@ export default function PhilosophyPage() {
               We must be completely honest with ourselves and our community: <strong>this is not how open language infrastructure works.</strong>
             </p>
             <p>
-              Building digital tools for a regional minority language is not a 6-month product launch. It is a slow, methodical, and continuous endeavor. We may digitize hundreds of physical manuscripts, compile thousands of terminology keys, and host open datasets for years without seeing immediate visible adoption by commercial entities. Recognizing this reality is not pessimism; it is the vital foundation of institutional maturity.
+              Building digital tools for a regional language is not a 6-month product launch. It is a slow and steady process. We may digitize hundreds of physical manuscripts, compile thousands of terminology keys, and host open datasets for years before tech companies take notice. Recognizing this reality is not pessimism. It is the practical foundation for long-term work.
             </p>
           </div>
         </section>
@@ -60,13 +60,13 @@ export default function PhilosophyPage() {
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <p>
-              True digital infrastructure is quiet, invisible, and often thankless. When a developer five years from now uses our open Hugging Face dataset to train a translation model, or when an open-source project imports our locale JSON keys to add Hmar support to a web application, they may never know our names or cite this foundation.
+              Building infrastructure is often invisible and thankless. When a developer five years from now uses our datasets on Hugging Face or imports our translation keys to add Hmar support to an app, they probably won't even know our names and definitely won't cite this foundation.
             </p>
             <p>
-              <strong>That is not a failure. That is the exact purpose of open stewardship.</strong>
+              <strong>That is not a failure. That is the point of open stewardship.</strong>
             </p>
             <p>
-              If we undertake this work seeking personal credit, commercial payouts, or institutional recognition, we will inevitably become discouraged. We lay down open data schemas, primary PDF archives, and standardized glossaries so that anyone can build upon them freely, without asking for permission or owing us attribution.
+              If we do this work seeking personal credit or commercial payouts, we will quickly get discouraged. We create open schemas, digital archives, and glossaries so anyone can build upon them freely, without asking for permission.
             </p>
           </div>
         </section>
@@ -84,16 +84,16 @@ export default function PhilosophyPage() {
               Languages do not get left behind simply because there were not enough native speakers or because nobody researched them. Languages fade when they fail to adapt and evolve into the dominant mediums of their era.
             </p>
             <p>
-              In past generations, evolution meant transitioning from oral traditions into written corpora. In the modern digital age, evolution means bridging the gap between static research papers and functional software tools, which, in simple words, means <strong>data</strong>.
+              In the past, evolution meant transitioning from oral traditions into written corpora. Today, evolution just means bridging the gap between static research papers and functional software tools, which, in simple words, means <strong>data</strong>.
             </p>
             <p>
-              The reason Hebrew, Aramaic, and Ancient Greek are still spoken or studied today is because they were meticulously documented. And while documentation alone does not guarantee that a language will remain widely spoken, it ensures that its linguistic and cultural record remains available to future generations. Languages evolve regardless of how a community feels about linguistic purity. English has transformed continuously across centuries, from the history of Oxford University to modern internet culture absorbing Gen Z slang and AAVE, and it became the dominant global language specifically because it adapted to every new era. The language changed, but the culture survived. No Englishman denies the history of their heritage simply because they cannot fluently read 10th-century Old English. Adaptation is not the destruction of culture, it is the only mechanism that allows culture to survive.
+              The reason Hebrew, Aramaic, and Ancient Greek are still spoken or studied today is because they were meticulously documented. And while documentation alone doesn&apos;t actually guarantee a language will remain relevant, it ensures that it remains available for future generations. Languages evolve regardless of how a community feels about linguistic purity. English transformed continuously across centuries, from medieval dialects to modern digital slang. It became a global language specifically because it adapted to every new era. The language changed, but the culture survived. No native speaker denies their heritage simply because they cannot read 10th-century Old English. Adaptation does not destroy culture, it is how culture survives.
             </p>
             <p>
               Debates over diacritics and orthographic purity come from a deep, genuine love for our language. But we must acknowledge historical reality: expressing Hmar in Latin script was already an act of adaptation. Arguing for rigid purity contradicts its own roots. The only purity to argue for is adaptation. The shoe is not the foot, it can never be the foot.
             </p>
             <p>
-              The argument that diacritics are strictly necessary to identify how words sound is fundamentally flawed. English does not lack diacritics because it doesn&apos;t technically need them, but because we&apos;ve come to agree on how a word should sound based on the context. For instance: <em>&quot;I live in the city&quot;</em> versus <em>&quot;The event is broadcast live.&quot;</em> Why don&apos;t we need diacritics here? Because context naturally carries the sound. If a reader cannot identify how a word is pronounced from its surrounding sentence, it simply indicates a lack of familiarity with the living language.
+              The argument that diacritics are strictly necessary to identify how words sound is fundamentally flawed. English does not lack diacritics because it doesn&apos;t technically need them, but because we&apos;ve come to agree on how a word should sound based on the context. For instance, readers distinguish between <em>&quot;I live in the city&quot;</em> and <em>&quot;The event is broadcast live&quot;</em> based on surrounding context. If a reader cannot identify how a word is pronounced from its sentence, it simply shows a lack of familiarity with the living language.
             </p>
             <p>
               Grammar books exist to describe the grammar rules of a language, not to dictate the grammar rules of a language. Just because a textbook uses diacritics to express a sound or pronunciation, it does not become a rule.
@@ -102,7 +102,7 @@ export default function PhilosophyPage() {
               Language is a tool; it is not us. We are the history, the memory, and the living culture. A tool exists to serve its people, and when the era changes, the tool must adapt so the culture survives.
             </p>
             <p>
-              The foundation does not advocate for the removal of diacritics, but recognizes the absurdity of linguistic purity. The foundation maintains that how language evolves is not up to any institution, foundation, or philosophical framework, but the people themselves.
+              However, this foundation does not advocate for the removal of diacritics, but it does recognize the absurdity of linguistic purity. We maintain that how language evolves is not up to any institution, foundation, or philosophical framework, but the people themselves.
             </p>
           </div>
         </section>
@@ -117,7 +117,7 @@ export default function PhilosophyPage() {
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <p>
-              This debate over diacritics speaks directly to the operational utility of the data we collect and archive. Some argue that using <em>&quot;tr&quot;</em> over <em>&quot;ṭ&quot;</em> or <em>&quot;t&quot;</em> invalidates dataset quality. This represents a narrow, academic view of linguistics that ignores how software actually works, as these incorrect usages can simply be regarded &quot;alternative spellings&quot;. Furthermore, it assumes every written content is grammatically correct or should be.
+              The debate over diacritics directly affects how we collect data. Some argue that typing <em>&quot;tr&quot;</em> or <em>&quot;t&quot;</em> instead of <em>&quot;ṭ&quot;</em> invalidates dataset quality, but this represents a narrow academic view of linguistics that ignores how software actually works, and these incorrect usages can simply be regarded &quot;alternative spellings&quot;. Furthermore, it assumes every written content is grammatically correct or should be.
             </p>
             <p>
               Diacritics are not just visual marks; they are technical dependencies. For a diacritic-heavy language to function digitally, it requires a complete, unbroken ecosystem:
@@ -128,13 +128,13 @@ export default function PhilosophyPage() {
               <li>The Virtual Keyboards must feature dedicated, easily accessible layouts so users don&apos;t have to hunt through long-press menus just to type a single word.</li>
             </ul>
             <p>
-              Major global languages like French, German, and Spanish do not use diacritics in their ISO software locale identifiers, yet can afford to support diacritics in localized user interfaces because they control this entire vertical stack. They have the corporate backing and institutional scale to ensure every single operating system integrates their language natively. Hmar does not have a public roadmap from Apple or Google. If Mozilla adopts a diacritic-heavy locale but AOSP does not, or if a website requires dotted characters but the user is forced to type on a standard English mobile keyboard, the system breaks.
+              Major global languages with over ten centuries of traceable linguistic history, like French, German, and Spanish, do not use diacritics in their ISO software tags because plain ASCII is the universal software standard. And these languages can support diacritics in app menus because they have corporate backing and massive open-source communities maintaining their software stacks. Hmar does not yet have native OS integration or an army of open-source maintainers. If Mozilla adopts a diacritic-heavy locale but Android, Apple, or Microsoft does not, or if a website requires dotted characters while users are forced to type on a standard English mobile keyboard, the system breaks. And we will be the ones abandoning our own language then.
             </p>
             <p>
-              This creates an asymmetric search problem. Under the hood, computers perform exact binary matches. If our database rigidly stores data with diacritics (like <em>&quot;ṭang&quot;</em>) and a user searches using a standard keyboard (<em>&quot;tang&quot;</em>), the computer sees a total mismatch and returns zero results. Major languages bypass this by deploying massive, expensive runtime search analyzers to strip and map characters on the fly. A grassroots, open-source project does not have the luxury of building custom linguistic software layers for every local app or database.
+              Forcing diacritics creates an asymmetric search problem. Under the hood, computers perform exact binary matches. If our database rigidly stores data with diacritics (like <em>&quot;ṭang&quot;</em>) and a user searches using a standard keyboard (<em>&quot;tang&quot;</em>), the computer sees a total mismatch and returns zero results. Major languages bypass this by deploying massive, expensive runtime search analyzers to strip and map characters on the fly. A grassroots, open-source project does not have the luxury of building custom linguistic software layers for every local app or database.
             </p>
             <p>
-              Furthermore, if the speech community ever develops a native writing system or decides to adopt a non-Latin script, the foundation would fully support linguistic purity and build the necessary digital tools, font encodings, and keyboard layouts to help that script thrive. But as long as we rely on an adapted Latin alphabet without systemic OS integration, dropping diacritics in software locales is the only sensible option for universal compatibility, or at least until Hmar becomes a first-class language in the digital ecosystem.
+              Furthermore, if the speech community ever develops a native writing system or decides to adopt a non-Latin script, linguistic purity is justifiable. But as long as we rely on an adapted Latin alphabet without systemic OS integration, dropping diacritics in software locales is the only sensible option for universal compatibility, or at least until Hmar becomes a first-class language in the digital ecosystem, like Assamese or Bengali.
             </p>
           </div>
         </section>
@@ -149,16 +149,16 @@ export default function PhilosophyPage() {
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <p>
-              One of the greatest barriers to community-driven archiving is the fear of making grammatical mistakes. Many native speakers hesitate to submit stories, record audio, or write text because they worry their grammar isn&apos;t &quot;pure&quot; or formal enough for an official foundation.
+              One of the biggest reasons people hesitate to contribute to archives is the fear of making grammatical mistakes. Many native speakers hesitate to submit stories, record audio, or write text because they worry their grammar isn&apos;t &quot;pure&quot; or formal enough.
             </p>
             <p>
-              We want to state unequivocally: <strong>in our archives, using non-standard or &quot;incorrect&quot; grammar is completely okay.</strong> Linguistics is descriptive, not prescriptive. Our mission is to capture how Hmar is actually spoken and written by real people today, not to enforce a rigid textbook ideal. Informal letters, oral folklore, youth slang, internet shorthand, and dialectal variations are precious records of a living culture.
+              We want to state that <strong>using non-standard or &quot;incorrect&quot; grammar is completely okay.</strong> Linguistics is descriptive, not prescriptive. Our mission is to capture how Hmar is actually spoken and written by real people today, not to enforce a rigid textbook ideal. Informal letters, oral folklore, youth slang, internet shorthand, and dialectal variations are precious records of a living culture.
             </p>
             <p>
               If we reject real-world communication because it fails a formal grammar test, we throw away half of our living history. An open archive must belong to every speaker, not just grammarians.
             </p>
             <p>
-              From a technical standpoint, this is also critical for software engineering. If AI translation models, speech recognition tools, and search indexes are trained exclusively on artificially flawless grammar, they become brittle. This is precisely why modern AI assistants can understand messy user prompts filled with typos and broken syntax that would confuse a human proofreader. Including natural, un-sanitized human communication in our open datasets ensures that the digital tools we build are resilient, fault-tolerant, and capable of understanding how people actually communicate in daily life.
+              From a software perspective, this is equally critical. If AI translation models, speech recognition tools, and search indexes are trained exclusively on artificially flawless grammar, they become brittle. Including natural, un-sanitized human communication in our open datasets ensures that the digital tools we build are resilient, fault-tolerant, and capable of understanding how people actually communicate in daily life. This is also why modern AI assistants can understand messy user prompts filled with typos and broken syntax that would confuse a human proofreader.
             </p>
           </div>
         </section>
@@ -173,10 +173,10 @@ export default function PhilosophyPage() {
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <p>
-              We want to be completely transparent about who we are: <strong>we do not conduct original academic research, we do not publish scholarly papers, and none of us are formal university linguists. We are also not training complex AI models ourselves.</strong>
+              To be clear about who we are: <strong>we do not conduct original academic research, we do not publish scholarly papers, and none of us are formal university linguists. We are also not training complex AI models ourselves.</strong>
             </p>
             <p>
-              Our role is much simpler and far more practical: <strong>we synthesize information, generate structured open datasets, and build low-barrier platforms that enable non-technical community members to create data.</strong>
+              Our role is much simpler and practical: <strong>we synthesize information, generate structured open datasets, and build low-barrier platforms that enable non-technical community members to create data.</strong>
             </p>
             <p>
               Right now, a major bottleneck in language preservation is that academic research sits idle. Brilliant papers written by university scholars and native linguists exist in isolated PDFs, university repositories, and obscure websites. But beyond corporate motives, there is no practical medium for that research to be used. The theoretical foundation to build voice synthesis, dictionaries, or translation tools exists, but because there are no open, structured datasets, there is no probability for the open-source community to take notice, and as we&apos;ve all come to realize, modern technology and the internet at large rest on the shoulders of this open-source community.
@@ -185,7 +185,7 @@ export default function PhilosophyPage() {
               Furthermore, academic papers alone cannot build working language tools, much like you can&apos;t cook a meal with just a recipe book. It is straightforward to generate audio programmatically even without artificial intelligence, but without an open, standardized map of how written words actually sound out loud, making a computer pronounce a language correctly is essentially trying to paint in the dark. To build functional software, voice assistants, or translation tools, you need the actual ingredients: standardized phonetic sound maps, real-world language usage data, authentic speech audio, raw document scans, and clean transcriptions. Collecting and packaging these real-world ingredients at scale is something even well-funded academic institutions struggle to do alone without open, community-driven platforms. We exist to bridge that exact gap.
             </p>
             <p>
-              While the core task itself is simple, <em>create datasets</em>, it still requires thoughtful engineering to structure data so it is clean, usable, and standardized. It does not require a PhD in computer science, but it does require a basic understanding of modern data structures and experience in data manipulation. If you are a developer, data wrangler, or hobbyist with free time and want to help, do not hesitate to reach out and join us.
+              While the core task itself is simple, <em>create datasets</em>, it still requires thoughtful engineering to structure data so it is clean, usable, and standardized. It does not require a PhD in computer science, but it does require a basic understanding of modern data structures and experience in data manipulation, which is something we definitely need help with. So if you are a developer, data wrangler, or hobbyist with free time and want to help, do not hesitate to reach out and join us.
             </p>
           </div>
         </section>
@@ -230,10 +230,10 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        {/* Section VII: Financial Transparency, Grants, and Independence */}
+        {/* Section IX: Financial Transparency, Grants, and Independence */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
-            Section VII · Funding &amp; Independence
+            Section IX · Funding &amp; Independence
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             Financial Transparency, Grants, and Self-Reliance
@@ -254,17 +254,17 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        {/* Section VIII: Planting Trees for Future Generations */}
+        {/* Section X: Planting Trees for Future Generations */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
-            Section VIII
+            Section X
           </div>
           <h2 className="text-2xl font-serif font-bold text-slate-900">
             Planting Trees Whose Shade We May Never Sit Under
           </h2>
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base">
             <blockquote className="italic border-l-2 border-[#9E1B24] pl-4 my-2 text-slate-800 font-serif">
-              "A society grows great when old men plant trees in whose shade they shall never sit."
+              &quot;A society grows great when old men plant trees in whose shade they shall never sit.&quot;
               <span className="block text-xs font-mono not-italic text-slate-500 mt-1 font-normal">Ancient Proverb</span>
             </blockquote>
             <p>

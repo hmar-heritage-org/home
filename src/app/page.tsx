@@ -25,7 +25,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans max-w-2xl">
-            Providing open software translation keys, AI datasets, and raw PDF archives so developers, researchers, and community stewards can build freely.
+            Providing open software translation keys, AI datasets, and digital literature archives so developers, researchers, and community stewards can build freely.
           </p>
 
           <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-semibold">
@@ -126,56 +126,50 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* 4. Three Pragmatic Action Pillars (Horizontal Row Cards) */}
+        {/* 4. Three Foundational Principles */}
         <section className="space-y-6 border-b border-slate-200 pb-12">
           <div className="text-xs font-mono tracking-widest text-slate-500 uppercase font-bold">
-            Our Three Open Action Pillars
+            Our Three Foundational Principles
           </div>
 
           <div className="space-y-4">
             {/* Pillar 1 */}
-            <div className="bg-[#FAF9F6] p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-slate-300 transition-colors">
-              <div className="space-y-1 max-w-xl">
-                <h3 className="text-lg font-serif font-bold text-slate-900">
-                  Low-Friction Raw Archival
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Prioritizing raw PDF scans of original literature and songbooks to create immediate digital backups without volunteer burnout or manual retyping.
-                </p>
+            <div className="bg-[#FAF9F6] p-6 rounded-2xl border border-slate-200 shadow-xs space-y-2 hover:border-slate-300 transition-colors">
+              <div className="font-mono text-2xs font-bold text-[#9E1B24] uppercase tracking-wider">
+                01 · Self-Reliance
               </div>
-              <Link href="/projects/literature-library" className="text-xs font-bold text-[#9E1B24] hover:underline font-mono inline-flex items-center gap-1 shrink-0">
-                <span>explore library brief →</span>
-              </Link>
+              <h3 className="text-xl font-serif font-bold text-slate-900">
+                Self-Reliance &amp; Ownership
+              </h3>
+              <p className="text-sm text-slate-700 leading-relaxed font-sans">
+                We don&apos;t wait for commercial corporations or outside agencies to preserve our language. We take responsibility for our own heritage and build our own tools.
+              </p>
             </div>
 
             {/* Pillar 2 */}
-            <div className="bg-[#FAF9F6] p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-slate-300 transition-colors">
-              <div className="space-y-1 max-w-xl">
-                <h3 className="text-lg font-serif font-bold text-slate-900">
-                  Targeted UI/UX Locales
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Creating standardized Hmar translation keys focused on critical system notices, security alerts, and confirmation modals, preventing UI culture shock.
-                </p>
+            <div className="bg-[#FAF9F6] p-6 rounded-2xl border border-slate-200 shadow-xs space-y-2 hover:border-slate-300 transition-colors">
+              <div className="font-mono text-2xs font-bold text-[#9E1B24] uppercase tracking-wider">
+                02 · Contribution
               </div>
-              <Link href="/projects/locale-standardization" className="text-xs font-bold text-[#9E1B24] hover:underline font-mono inline-flex items-center gap-1 shrink-0">
-                <span>explore locale brief →</span>
-              </Link>
+              <h3 className="text-xl font-serif font-bold text-slate-900">
+                Contributing Beyond Ourselves
+              </h3>
+              <p className="text-sm text-slate-700 leading-relaxed font-sans">
+                Empowering our people to share their knowledge in global research, literature, and technology, so our community is actively contributing to the wider world.
+              </p>
             </div>
 
             {/* Pillar 3 */}
-            <div className="bg-[#FAF9F6] p-6 rounded-2xl border border-slate-200 shadow-xs flex flex-col md:flex-row items-start md:items-center justify-between gap-4 hover:border-slate-300 transition-colors">
-              <div className="space-y-1 max-w-xl">
-                <h3 className="text-lg font-serif font-bold text-slate-900">
-                  Open AI Datasets
-                </h3>
-                <p className="text-xs text-slate-600 leading-relaxed">
-                  Providing open-access dictionary term banks and bulk raw datasets on Hugging Face so Hmar is represented in modern computational language models.
-                </p>
+            <div className="bg-[#FAF9F6] p-6 rounded-2xl border border-slate-200 shadow-xs space-y-2 hover:border-slate-300 transition-colors">
+              <div className="font-mono text-2xs font-bold text-[#9E1B24] uppercase tracking-wider">
+                03 · Unity
               </div>
-              <Link href="/projects/raw-datasets" className="text-xs font-bold text-[#9E1B24] hover:underline font-mono inline-flex items-center gap-1 shrink-0">
-                <span>explore datasets hub →</span>
-              </Link>
+              <h3 className="text-xl font-serif font-bold text-slate-900">
+                Working Together Across Generations
+              </h3>
+              <p className="text-sm text-slate-700 leading-relaxed font-sans">
+                Bringing elders, students, writers, and developers together into one effort, making sure our traditional knowledge and modern skills combine smoothly.
+              </p>
             </div>
           </div>
         </section>
@@ -210,7 +204,7 @@ export default function HomePage() {
             Why This Matters to Every Hmar Speaker
           </h2>
           <p className="text-sm text-slate-700 leading-relaxed">
-            By scanning classic literature to PDF and creating open software translation tools today, we ensure our rare books are never lost to physical decay, our elders can comfortably understand critical phone alerts in their mother tongue, and open-source developers worldwide have the resources to support Hmar.
+            By preserving our cultural heritage and creating open digital resources today, we ensure our history is never lost to time, our community has the tools to participate in the modern world, and future generations inherit a living, thriving culture.
           </p>
         </section>
 
@@ -220,7 +214,7 @@ export default function HomePage() {
             Help Build the Foundation
           </h2>
           <p className="text-sm text-slate-600 leading-relaxed max-w-xl mx-auto">
-            Whether you are a writer, student, developer, or community elder, join us in building the open tools for Hmar digital preservation.
+            Whether you are a writer, student, researcher, developer, or elder, join us in building the open resources that support our culture and community.
           </p>
           <div>
             <Link
