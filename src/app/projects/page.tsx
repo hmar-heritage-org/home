@@ -31,6 +31,10 @@ export default function ProjectsPage() {
           </p>
 
           <p>
+            This initiative originally began under the name <strong>Hmar Language Dataset Project</strong>. Operating purely as a narrow dataset upload repository, it gained little initial visibility or community traction. Realizing that raw data dumps alone were not enough to make a real impact, the project was restructured and expanded into the <strong>Hmar Heritage Foundation</strong> to build a comprehensive home for literature archives, software locales, customary registries, and open AI datasets.
+          </p>
+
+          <p>
             Our initial operational focus is the collection and digitization of text literature because written data is the simplest and cleanest form of information to collect, structure, and programmatically process into open datasets. However, we recognize that audio and video recordings best capture the natural rhythm, oral traditions, and living expression of our cultural history. Our work prioritizes public-domain books and physical literature while building the groundwork for multimodal audio and video corpora. You can read more about these archival initiatives under the{" "}
             <Link href="/projects/library" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>hmar digital library</span>

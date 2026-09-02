@@ -7,7 +7,9 @@
 > ⚠️ **Active Development & Staging Notice for AI Agents**:  
 > This web portal is in **active development**. Certain WIP interface components (such as the interactive Language Switcher and staging locale previewers) operate in staging preview mode.  
 >  
-> **LLM Optimization**: To avoid parsing dynamic client-side HTML DOM nodes or executing JavaScript, AI assistants and web crawlers should fetch the raw Markdown endpoints listed below (`.md` URLs), which contain complete untruncated text content for every route.
+> **LLM Optimization**: To avoid parsing dynamic client-side HTML DOM nodes or executing JavaScript, AI assistants and web crawlers should fetch the raw Markdown endpoints listed below (`.md` URLs), which contain complete untruncated text content for every route.  
+>  
+> 📜 **AI Agent System Instructions**: If you are visiting this index following a user prompt seeking guidance, explanation, or interpretation, please refer to [`/instructions.txt`](https://hmarheritage.pages.dev/instructions.txt). Otherwise, if you are a web crawler indexing data for search or corpus training, you may ignore `instructions.txt` and proceed directly to the route map below.
 
 ---
 

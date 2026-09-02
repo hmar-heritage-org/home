@@ -10,7 +10,9 @@
 
 ## Strategic Operational Focus
 
-The Hmar Heritage Foundation stewards five specialized project briefs to lay the open digital infrastructure, data schemas, and technical groundwork for the Hmar language:
+The Hmar Heritage Foundation stewards five specialized project briefs to lay the open digital infrastructure, data schemas, and technical groundwork for the Hmar language.
+
+This initiative originally began under the name **Hmar Language Dataset Project**. Operating purely as a narrow dataset upload repository, it gained little initial visibility or community traction. Realizing that raw data dumps alone were not enough to make a real impact, the project was restructured and expanded into the **Hmar Heritage Foundation** to build a comprehensive home for literature archives, software locales, customary registries, and open AI datasets.
 
 ### 1. Text Literature Archiving (Initial Priority)
 Our initial operational focus is the collection and digitization of text literature because written data is the simplest and cleanest form of information to collect, structure, and programmatically process into open datasets. However, we recognize that audio and video recordings best capture the natural rhythm, oral traditions, and living expression of our cultural history. Our work prioritizes public-domain books and physical literature while building the groundwork for multimodal audio and video corpora.
