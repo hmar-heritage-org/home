@@ -10,6 +10,16 @@ export function Navbar() {
 
   return (
     <div className="w-full">
+      {/* Top Development Announcement Banner */}
+      <div className="bg-[#9E1B24] text-white text-xs font-sans py-2 px-4 text-center">
+        <div className="max-w-6xl mx-auto flex items-center justify-center gap-2 flex-wrap">
+          <span className="font-bold uppercase tracking-wider font-mono text-2xs bg-white/20 px-2 py-0.5 rounded">Drafting Phase</span>
+          <span className="opacity-95">
+            This site is actively under development. Content and specifications are being incrementally refined. Please check back later for updates.
+          </span>
+        </div>
+      </div>
+
       {/* Main Non-Sticky Header */}
       <header className="bg-[#FAF9F6] border-b border-slate-200">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
