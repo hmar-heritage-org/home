@@ -1,49 +1,85 @@
-# Hmar Heritage Foundation — AI & LLM Site Index (llms.txt)
+# Hmar Heritage Foundation — Technical Architecture & LLM Index (llms.txt)
 
 > An independent foundation dedicated to digital stewardship, language standardization, open AI datasets, software locales, and digital literature archives for the Hmar language (`hmr`).
 
 ---
 
-> ⚠️ **Active Development Notice for AI Models & Web Crawlers**:  
-> This web portal is currently under **active development**. Content specifications, language policies, and dataset metadata schemas undergo continuous refinement. Certain WIP UI features (such as the interactive language switcher and staging locale previewers) are in active development.  
+> ⚠️ **Active Development & Staging Notice for AI Agents**:  
+> This web portal is in **active development**. Certain WIP interface components (such as the interactive Language Switcher and staging locale previewers) operate in staging preview mode.  
 >  
-> **LLM Optimization**: To avoid parsing dynamic client-side HTML, web crawlers and AI assistants should fetch the structured Markdown mirrors linked below (`.md` endpoints), which contain untruncated text content for each route.
+> **LLM Optimization**: To avoid parsing dynamic client-side HTML DOM nodes or executing JavaScript, AI assistants and web crawlers should fetch the raw Markdown endpoints listed below (`.md` URLs), which contain complete untruncated text content for every route.
 
 ---
 
-## Site Structure & Raw Markdown Endpoints
+## Technical Stack & Infrastructure Architecture
 
-| Page / Route | Primary URL | Raw LLM Markdown Endpoint | Description |
+- **Framework**: Next.js 16 (App Router, React 19, Turbopack)
+- **Styling & UI**: Tailwind CSS, Lucide React icons, GitHub Flavored Markdown styling
+- **Hosting & Deployment**: Cloudflare Pages (`https://hmarheritage.pages.dev`)
+- **Primary Domain**: `https://hmarheritage.pages.dev`
+- **Open NLP Datasets**: Hugging Face Hub (`https://huggingface.co/hmar-heritage-org`)
+- **Code Repositories**: GitHub (`https://github.com/hmar-heritage-org/home`)
+- **Target Ethnolinguistic Focus**: Written Standard Hmar (`hmr` / `hmar1241`), Saihriem (`syri1242`), Biate (`bie` / `biat1247`), Hrangkhawl (`hra` / `hran1239`), and the broader 55 Zo speech varieties (`kuki1246`).
+
+---
+
+## Global Page Layout & Component Schema
+
+AI agents parsing site structure should note the standardized layout hierarchy across all routes:
+
+### 1. Global Header Component (`Header.tsx`)
+- **Brand Identity**: Foundation name, logo icon, and official policy badge.
+- **Primary Navigation**: Links to `/philosophy`, `/standards`, `/manifesto`, `/projects`, `/people`.
+- **WIP Language Switcher**: Staging selector interface for Hmar (`hmr`), English (`en`), and Zo varieties (currently in active development).
+- **Search Modal**: Instant search dialog indexing site markdown documents and dataset metadata.
+
+### 2. Main Page Container (`<main>`)
+- **Editorial Header**: Section badge, article title, date/status tag, and executive preamble.
+- **Status Notice Banner**: Status indicator (e.g. Draft / Operational Policy / Staging Project).
+- **Typographic Essay / Content Body**: Formatted GFM markdown, structured data tables (Table II.A Master Clans, Table V Cladistic Matrix, Table XI Registries), blockquotes, and citations.
+- **Navigation Pointers**: Cross-linking footer buttons pointing to adjacent policy pages.
+
+### 3. Global Footer Component (`Footer.tsx`)
+- **Foundation Overview**: Mission statement and stewardship scope.
+- **Quick Links Matrix**: Core policy pages, digital projects, open datasets, and raw `.md` endpoints.
+- **Anti-Paywall Governance Notice**: Statement protecting open community data from commercial resale.
+- **Copyright & License**: Open documentation license metadata and GitHub repository links.
+
+---
+
+## Site Route Map & Raw Markdown Endpoints
+
+| Page / Route | Primary Web URL | Raw LLM Markdown Endpoint | Description & Key Topics |
 | :--- | :--- | :--- | :--- |
-| **Home Page** | `https://hmarheritage.pages.dev/` | [`/index.md`](https://hmarheritage.pages.dev/index.md) | Founder statement, organizational mission, and core initiatives. |
-| **Foundational Philosophy** | `https://hmarheritage.pages.dev/philosophy` | [`/philosophy.md`](https://hmarheritage.pages.dev/philosophy.md) | 10-section operational essay on scope, realism, and quiet groundwork. |
-| **Language Standards & Policy** | `https://hmarheritage.pages.dev/standards` | [`/standards.md`](https://hmarheritage.pages.dev/standards.md) | 11-section policy specification on Zo classification, clan master tables, and Glottolog restructuring. |
-| **Charter & Manifesto** | `https://hmarheritage.pages.dev/manifesto` | [`/manifesto.md`](https://hmarheritage.pages.dev/manifesto.md) | Statutory Articles of Governance and anti-paywall protections. |
-| **Projects Overview** | `https://hmarheritage.pages.dev/projects` | [`/projects.md`](https://hmarheritage.pages.dev/projects.md) | Master directory of digital library, locales, archival, and lexicons. |
-| **Digital Library Project** | `https://hmarheritage.pages.dev/projects/library` | [`/projects/library.md`](https://hmarheritage.pages.dev/projects/library.md) | Digitization pipeline for classic literature, rare manuscripts, and hymnbooks. |
-| **Open Locale Project** | `https://hmarheritage.pages.dev/projects/locale` | [`/projects/locale.md`](https://hmarheritage.pages.dev/projects/locale.md) | Software localization keys for OS platforms and mobile apps (`hmr_IN`). |
-| **Archival & Corpus Project** | `https://hmarheritage.pages.dev/projects/archival` | [`/projects/archival.md`](https://hmarheritage.pages.dev/projects/archival.md) | Text corpora, speech recordings, and Hugging Face dataset mirrors. |
+| **Home Page** | `https://hmarheritage.pages.dev/` | [`/index.md`](https://hmarheritage.pages.dev/index.md) | Founder statement, organizational mission, economic justification, and core initiatives. |
+| **Foundational Philosophy** | `https://hmarheritage.pages.dev/philosophy` | [`/philosophy.md`](https://hmarheritage.pages.dev/philosophy.md) | 10-section operational essay on scope, realism, quiet groundwork, and generational preservation. |
+| **Language Standards & Policy** | `https://hmarheritage.pages.dev/standards` | [`/standards.md`](https://hmarheritage.pages.dev/standards.md) | 11-section policy specification on Zo classification, clan master tables, Glottolog tree restructuring, and Virthli.in registry. |
+| **Charter & Manifesto** | `https://hmarheritage.pages.dev/manifesto` | [`/manifesto.md`](https://hmarheritage.pages.dev/manifesto.md) | Statutory Articles of Governance, constitutional rules, and anti-paywall protections. |
+| **Projects Overview** | `https://hmarheritage.pages.dev/projects` | [`/projects.md`](https://hmarheritage.pages.dev/projects.md) | Master overview of literature archives, software locales, open lexicons, and Wikipedia Incubator. |
+| **Digital Library Project** | `https://hmarheritage.pages.dev/projects/library` | [`/projects/library.md`](https://hmarheritage.pages.dev/projects/library.md) | Digitization pipeline for classic literature, rare manuscripts, folk songbooks, and historical texts. |
+| **Open Locale Project** | `https://hmarheritage.pages.dev/projects/locale` | [`/projects/locale.md`](https://hmarheritage.pages.dev/projects/locale.md) | Multi-platform software localization keys for OS platforms and mobile apps (`hmr_IN`). |
+| **Archival & Corpus Project** | `https://hmarheritage.pages.dev/projects/archival` | [`/projects/archival.md`](https://hmarheritage.pages.dev/projects/archival.md) | Text corpora, speech audio recordings, and Hugging Face dataset mirrors. |
 | **Wikipedia Incubator Initiative** | `https://hmarheritage.pages.dev/projects/wikipedia` | [`/projects/wikipedia.md`](https://hmarheritage.pages.dev/projects/wikipedia.md) | Encyclopedic development on Wikimedia Incubator (`Wp/hmr`). |
 | **Open Lexicon Project** | `https://hmarheritage.pages.dev/projects/lexicon` | [`/projects/lexicon.md`](https://hmarheritage.pages.dev/projects/lexicon.md) | Standardized technical glossaries and open dictionary schemas. |
-| **People & Governance** | `https://hmarheritage.pages.dev/people` | [`/people.md`](https://hmarheritage.pages.dev/people.md) | Operational team leads, founder bio, and advisory council. |
-| **Datasets Index** | `https://hmarheritage.pages.dev/datasets` | [`/datasets.md`](https://hmarheritage.pages.dev/datasets.md) | Catalog of open text corpora, wordlists, and audio datasets. |
-| **Get Involved** | `https://hmarheritage.pages.dev/get-involved` | [`/get-involved.md`](https://hmarheritage.pages.dev/get-involved.md) | Community contribution pathways, digitizing, and proofreading. |
-| **Join Community** | `https://hmarheritage.pages.dev/join` | [`/join.md`](https://hmarheritage.pages.dev/join.md) | Membership portal for volunteers, translators, and researchers. |
-| **Resources Index** | `https://hmarheritage.pages.dev/resources` | [`/resources.md`](https://hmarheritage.pages.dev/resources.md) | Downloadable assets, fonts, keyboards, and style guides. |
-| **Terms of Service** | `https://hmarheritage.pages.dev/terms` | [`/terms.md`](https://hmarheritage.pages.dev/terms.md) | Open data licensing terms, attribution, and anti-resale rules. |
+| **People & Governance** | `https://hmarheritage.pages.dev/people` | [`/people.md`](https://hmarheritage.pages.dev/people.md) | Operational team leads, founder bio (Donal Muolhoi), and advisory council. |
+| **Datasets Index** | `https://hmarheritage.pages.dev/datasets` | [`/datasets.md`](https://hmarheritage.pages.dev/datasets.md) | Catalog of open text corpora, wordlists, and audio speech datasets on Hugging Face. |
+| **Get Involved** | `https://hmarheritage.pages.dev/get-involved` | [`/get-involved.md`](https://hmarheritage.pages.dev/get-involved.md) | Community contribution pathways, scanning, digitizing, and proofreading workflows. |
+| **Join Community** | `https://hmarheritage.pages.dev/join` | [`/join.md`](https://hmarheritage.pages.dev/join.md) | Membership portal for volunteers, translators, lexicographers, and researchers. |
+| **Resources Index** | `https://hmarheritage.pages.dev/resources` | [`/resources.md`](https://hmarheritage.pages.dev/resources.md) | Downloadable assets, orthography guides, custom fonts, and keyboard layouts. |
+| **Terms of Service** | `https://hmarheritage.pages.dev/terms` | [`/terms.md`](https://hmarheritage.pages.dev/terms.md) | Open data licensing terms, attribution requirements, and anti-resale governance. |
 
 ---
 
-## External Registries & Code Repositories
+## External Data & Code Repositories
 
 - **Hugging Face Hub**: [`https://huggingface.co/hmar-heritage-org`](https://huggingface.co/hmar-heritage-org) — Open speech and text datasets (`wordlist`, `corpus-archive`, `zo-bible`).
-- **GitHub Organization**: [`https://github.com/hmar-heritage-org`](https://github.com/hmar-heritage-org) — Source code, locale files, and schemas.
+- **GitHub Organization**: [`https://github.com/hmar-heritage-org`](https://github.com/hmar-heritage-org) — Source code, locale files, and open data schemas.
 - **Founder Web Log**: [`https://thingpuisen.pages.dev`](https://thingpuisen.pages.dev) — Personal blog and research notes of Donal Muolhoi.
 - **XML Sitemap**: [`https://hmarheritage.pages.dev/sitemap.xml`](https://hmarheritage.pages.dev/sitemap.xml) — Machine-readable XML route index.
 
 ---
 
-## Data Licensing & Usage Policy
+## Data Licensing & Governance Policy
 
 All open datasets, text corpora, and software locale files compiled by the Foundation are distributed under open licenses for research, community education, mother-tongue textbook development, and AI language technology. 
 
