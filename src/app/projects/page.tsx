@@ -32,12 +32,12 @@ export default function ProjectsPage() {
 
           <p>
             Our initial operational focus is the collection and digitization of text literature because written data is the simplest and cleanest form of information to collect, structure, and programmatically process into open datasets. However, we recognize that audio and video recordings best capture the natural rhythm, oral traditions, and living expression of our cultural history. Our work prioritizes public-domain books and physical literature while building the groundwork for multimodal audio and video corpora. You can read more about these archival initiatives under the{" "}
-            <Link href="/projects/literature-library" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+            <Link href="/projects/library" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>hmar digital library</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>{" "}
             and{" "}
-            <Link href="/projects/raw-datasets" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+            <Link href="/projects/archival" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>hmar heritage archival project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>, or you may visit our digital archive at huggingface :{" "}
@@ -54,7 +54,7 @@ export default function ProjectsPage() {
 
           <p>
             Another core initiative is creating standardized datasets for UI and UX software terminology, enabling technology interaction in Hmar. While we recognize this is an ambitious endeavor, not only because we do not influence the major institutions and corporations capable of integrating the language into their operating systems, but also because it requires meticulous terminology design so the language does not create culture shock for native speakers who have used these interfaces in English, Assamese, or Hindi for decades. It remains at the sole discretion of AOSP, the Linux Foundation, Meta, Google, Microsoft, and other technology entities to integrate these open datasets. This initiative is currently in planning, and you can read more about our approach under the{" "}
-            <Link href="/projects/locale-standardization" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+            <Link href="/projects/locale" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>open locale project</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>.
@@ -62,7 +62,7 @@ export default function ProjectsPage() {
 
           <p>
             While we hope the Hmar Heritage Foundation can inspire natives to write more content in Hmar, be it a simple social media post, an entry in a personal blog, or a news article, we have no way of ensuring this happens. The only way we can guarantee a digital footprint is through the{" "}
-            <Link href="/projects/wikipedia-incubator" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+            <Link href="/projects/wikipedia" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>hmar wikipedia incubator initiative</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>. This benefits the community in multiple ways and we hope it could become the cornerstone for an active digital Hmar community. It makes knowledge more accessible and relatable, gives students and learners a space to practice their writing and comprehension of the language, and at the same time creates valuable text datasets for machine learning models.
@@ -70,7 +70,7 @@ export default function ProjectsPage() {
 
           <p>
             When translating technical, scientific, and modern concepts, writers and translators often encounter missing words or phrases that are nearly impossible to translate directly. Expressing these ideas frequently requires using unusual words, adapting terminology, or rewriting entire sections. This highlights the vital need for the{" "}
-            <Link href="/projects/termbank" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+            <Link href="/projects/lexicon" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
               <span>hmar open lexicon</span>
               <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
             </Link>. While we hope established institutions like the Hmar Literature Society will guide formal standards, language is ever-evolving and no single entity can permanently enforce vocabulary by decree. Standards can only ever serve as living recommendations. The Hmar Open Lexicon aims to be the open platform that provides standardization resources, term lookup databases, and a collaborative space where the community can build consensus on the evolution and use of words.

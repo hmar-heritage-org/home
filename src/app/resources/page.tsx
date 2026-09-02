@@ -92,7 +92,7 @@ export default function ResourcesPage() {
               </thead>
               <tbody className="divide-y divide-slate-300 text-slate-800 font-mono font-bold">
                 {siteConfig.projects.map((proj, idx) => {
-                  const isLivePortal = (proj.id === "wikipedia-incubator" || proj.id === "raw-datasets") && proj.targetUrl !== "#";
+                  const isLivePortal = (proj.id === "wikipedia" || proj.id === "archival") && proj.targetUrl !== "#";
 
                   return (
                     <tr key={proj.id} className="hover:bg-white/60 transition-colors">

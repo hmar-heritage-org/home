@@ -65,7 +65,7 @@ export const siteConfig = {
   },
   projects: [
     {
-      id: "literature-library",
+      id: "library",
       projectCode: "VAULT-02",
       title: "Hmar Digital Library",
       shortDescription:
@@ -86,7 +86,7 @@ export const siteConfig = {
       ],
     },
     {
-      id: "raw-datasets",
+      id: "archival",
       projectCode: "CORPUS-03",
       title: "Hmar Heritage Archival Project",
       shortDescription:
@@ -108,7 +108,7 @@ export const siteConfig = {
       ],
     },
     {
-      id: "locale-standardization",
+      id: "locale",
       projectCode: "LOCALE-01",
       title: "Open Locale Project",
       shortDescription:
@@ -130,7 +130,7 @@ export const siteConfig = {
       ],
     },
     {
-      id: "wikipedia-incubator",
+      id: "wikipedia",
       projectCode: "WIKI-05",
       title: "Hmar Wikipedia Incubator Initiative",
       shortDescription:
@@ -152,7 +152,7 @@ export const siteConfig = {
       ],
     },
     {
-      id: "termbank",
+      id: "lexicon",
       projectCode: "LEXICON-04",
       title: "Hmar Open Lexicon",
       shortDescription:

@@ -17,11 +17,11 @@ The Hmar Heritage Foundation is an open digital stewardship organization dedicat
 
 ## Key Projects
 
-- [Hmar Digital Library](https://hmarheritage.pages.dev/projects/literature-library) ([Markdown](https://hmarheritage.pages.dev/projects/literature-library.md)): Digital archive for classic literature, rare manuscripts, and folk songbooks.
-- [Open Locale Project](https://hmarheritage.pages.dev/projects/locale-standardization) ([Markdown](https://hmarheritage.pages.dev/projects/locale-standardization.md)): Multi-platform software localization keys and staging workflows.
-- [Hmar Heritage Archival Project](https://hmarheritage.pages.dev/projects/raw-datasets) ([Markdown](https://hmarheritage.pages.dev/projects/raw-datasets.md)): Bulk text corpora, speech audio, and dataset mirrors on Hugging Face.
-- [Hmar Wikipedia Incubator Initiative](https://incubator.wikimedia.org/wiki/Wp/hmr) ([Markdown](https://hmarheritage.pages.dev/projects/wikipedia-incubator.md)): Encyclopedic development on Wikimedia Incubator (Wp/hmr).
-- [Hmar Open Lexicon](https://hmarheritage.pages.dev/projects/termbank) ([Markdown](https://hmarheritage.pages.dev/projects/termbank.md)): Standardized technical glossaries and open lexical databases.
+- [Hmar Digital Library](https://hmarheritage.pages.dev/projects/library) ([Markdown](https://hmarheritage.pages.dev/projects/library.md)): Digital archive for classic literature, rare manuscripts, and folk songbooks.
+- [Open Locale Project](https://hmarheritage.pages.dev/projects/locale) ([Markdown](https://hmarheritage.pages.dev/projects/locale.md)): Multi-platform software localization keys and staging workflows.
+- [Hmar Heritage Archival Project](https://hmarheritage.pages.dev/projects/archival) ([Markdown](https://hmarheritage.pages.dev/projects/archival.md)): Bulk text corpora, speech audio, and dataset mirrors on Hugging Face.
+- [Hmar Wikipedia Incubator Initiative](https://incubator.wikimedia.org/wiki/Wp/hmr) ([Markdown](https://hmarheritage.pages.dev/projects/wikipedia.md)): Encyclopedic development on Wikimedia Incubator (Wp/hmr).
+- [Hmar Open Lexicon](https://hmarheritage.pages.dev/projects/lexicon) ([Markdown](https://hmarheritage.pages.dev/projects/lexicon.md)): Standardized technical glossaries and open lexical databases.
 
 ## External Resources
 
