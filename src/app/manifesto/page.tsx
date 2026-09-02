@@ -65,7 +65,7 @@ export default function ManifestoPage() {
 
             <p>
               <strong>Section 2.1 Hmar Digital Library:</strong> Outlines the planned 1-stop public download storefront for classic literature, rare manuscripts, folk songbooks, and compiled software locale bundles under the{" "}
-              <Link href="/projects/literature-library" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+              <Link href="/projects/library" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
                 <span>hmar digital library brief</span>
                 <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
               </Link>.
@@ -73,7 +73,7 @@ export default function ManifestoPage() {
 
             <p>
               <strong>Section 2.2 Open Locale Project:</strong> Establishes language-agnostic software internationalization schemas, Supabase staging workflows, and multi-platform i18n translation key formats under the{" "}
-              <Link href="/projects/locale-standardization" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+              <Link href="/projects/locale" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
                 <span>open locale project brief</span>
                 <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
               </Link>.
@@ -81,7 +81,7 @@ export default function ManifestoPage() {
 
             <p>
               <strong>Section 2.3 Hmar Open Lexicon:</strong> Develops open Hmar-English and Hmar-Mizo lexical databases, definitions, etymology, and open lookup APIs across dual web applications under the{" "}
-              <Link href="/projects/termbank" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+              <Link href="/projects/lexicon" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
                 <span>hmar open lexicon brief</span>
                 <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
               </Link>.
@@ -89,7 +89,7 @@ export default function ManifestoPage() {
 
             <p>
               <strong>Section 2.4 Hmar Wikipedia Incubator Initiative:</strong> Organizes institutional stewardship, article drafting (10 lead-section articles weekly), and encyclopedic development on Wikimedia Incubator Wp/hmr under the{" "}
-              <Link href="/projects/wikipedia-incubator" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+              <Link href="/projects/wikipedia" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
                 <span>hmar wikipedia incubator brief</span>
                 <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
               </Link>.
@@ -97,7 +97,7 @@ export default function ManifestoPage() {
 
             <p>
               <strong>Section 2.5 Hmar Heritage Archival Project:</strong> Operates the backend data ingestion engine, low-friction anonymous upload interface, GitHub staging pipeline, and Hugging Face dataset hub mirroring under the{" "}
-              <Link href="/projects/raw-datasets" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
+              <Link href="/projects/archival" className="font-bold text-slate-900 hover:text-blue-700 transition-colors inline-flex items-center gap-1">
                 <span>hmar heritage archival project brief</span>
                 <ArrowRight className="w-3.5 h-3.5 inline shrink-0" />
               </Link>.
