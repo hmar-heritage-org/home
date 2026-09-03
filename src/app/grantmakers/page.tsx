@@ -87,7 +87,7 @@ export default function GrantmakersPage() {
             </p>
 
             <p>
-              <strong>Zote</strong>, however, is far more obscure and might even be extinct. (To prevent registry confusion, Zote is a distinct Hmar clan variety and is not to be confused with <strong>Zo</strong>, often spelled <em>Zou</em> or <em>Zomi</em>, which represents a separate recognized tribe in Manipur under ISO 639-3: <code className="text-xs bg-slate-200 px-1 py-0.5 rounded font-mono">zom</code>). There is virtually no trace of Zote in living digital usage or modern language databases, persisting only in century-old ethnographic surveys. Immediate field investigation is necessary to ascertain whether active speakers still exist or if the variety has been entirely subsumed.
+              <strong>Zote</strong>, however, is far more obscure and might even be extinct. (To prevent registry confusion, Zote is a distinct Hmar clan variety and is not to be confused with <strong>Zo</strong> [<code className="text-xs bg-slate-200 px-1 py-0.5 rounded font-mono">zo1240</code> proposed], <strong>Mizo</strong> [<code className="text-xs bg-slate-200 px-1 py-0.5 rounded font-mono">mizo1249</code>], or <strong>Zou</strong> [<code className="text-xs bg-slate-200 px-1 py-0.5 rounded font-mono">zou1235</code>], which all share a common Zo ancestor). There is virtually no trace of Zote in living digital usage or modern language databases, persisting only in century-old ethnographic surveys. Immediate field investigation is necessary to ascertain whether active speakers still exist or if the variety has been entirely subsumed.
             </p>
 
             <p>
