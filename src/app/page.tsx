@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { ArrowRight, Quote } from "lucide-react";
+import { ArrowRight, Quote, AlertCircle, FileText } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -63,6 +63,72 @@ export default function HomePage() {
 
             <p>
               This foundation is not about grand claims or controlling external platforms, but about self-determination: providing open tools, cultural archives, and language resources so our community can write its own history and shape its digital presence. What began as a solo effort is now an open door for anyone who wants to help.
+            </p>
+          </div>
+        </section>
+
+        {/* Organizational Reality: What This Foundation Is Not */}
+        <section className="space-y-4 border-b border-slate-200 py-12">
+          <div className="text-xs font-mono tracking-widest text-[#9E1B24] uppercase font-bold flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 text-[#9E1B24]" />
+            <span>Organizational Reality</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 leading-tight">
+            What This Foundation Is & Is Not
+          </h2>
+
+          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-base font-sans bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8">
+            <p>
+              As grand as our open data schemas, comparative linguistic matrices, and standards documentation may appear, it is essential to be explicit about our operational scale:
+            </p>
+
+            <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700">
+              <li><strong>Not an Academic Institution:</strong> We are not an academic body, university department, or government linguistic board, and we hold no formal university affiliations.</li>
+              <li><strong>Zero Paid Staff or Grants:</strong> We have no paid employees, no government grant funding, and no formal volunteer network as it currently stands.</li>
+              <li><strong>A Grassroots 3-Person Effort:</strong> The Foundation is simply three individuals devoting their personal time, tools, and effort to create open digital infrastructure for the Hmar language (<code className="text-xs bg-slate-200 px-1.5 py-0.5 rounded font-mono">hmr</code>) because nobody else is doing it.</li>
+            </ul>
+
+            <p className="text-xs text-slate-600 italic pt-2">
+              Our documentation is ambitious because language preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing.
+            </p>
+          </div>
+        </section>
+
+        {/* Another Long Section You Can Skip */}
+        <section className="space-y-4 border-b border-slate-200 py-12">
+          <div className="text-xs font-mono tracking-widest text-[#9E1B24] uppercase font-bold flex items-center gap-2">
+            <FileText className="w-4 h-4 text-[#9E1B24]" />
+            <span>Repeat of Previous Section (Long-Form Format)</span>
+          </div>
+
+          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 leading-tight">
+            Another Long Section You Can Skip
+          </h2>
+
+          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-base font-sans">
+            <p>
+              When I initially created a repository on Hugging Face two years ago, I had to give it a name; I called it the <em>Hmar Language Dataset Project</em>. While there is nothing worth calling a dataset even today, I think the underlying issues we are trying to address are entirely real (feel free to correct me if I'm wrong).
+            </p>
+
+            <p>
+              Moving on, the project gained no initial traction and no visibility, so I eventually renamed it to the <em>Hmar Heritage Foundation</em>. I feel this better expresses the scope of the issues I am trying to address.
+            </p>
+
+            <p>
+              Nothing much has changed since then; it's still mostly just me. Although I believe the work is a bit more visible today because a few community members have shown interest, so it would be wrong to take all the credit.
+            </p>
+
+            <p>
+              Regardless, I should clarify that this is not something we are merely <em>trying</em> to do, nor is it something we are hopeful we can do. We are doing it. And while the vision is grand, the operational reality is modest, almost embarrassing at times.
+            </p>
+
+            <p>
+              Especially when you consider there are so many scholars and academics within the community far better fitted for this. Maybe they know something I don't, and these issues are things they are working on in secret, in which case, this would be really embarrassing for me. But I think that is unlikely, and I can explain why in detail, but it'll just take up space here so maybe I'll address that in my blog some other time.
+            </p>
+
+            <p className="font-bold text-slate-900 border-l-2 border-[#9E1B24] pl-3 py-0.5">
+              Basically TLDR: This foundation isn't as grand as it pretends to be.
             </p>
           </div>
         </section>

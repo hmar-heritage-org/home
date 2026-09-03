@@ -19,6 +19,34 @@ This foundation is not about grand claims or controlling external platforms, but
 
 ---
 
+## Organizational Reality: What This Foundation Is & Is Not
+
+As grand as our open data schemas, comparative linguistic matrices, and standards documentation may appear, it is essential to be explicit about our operational scale:
+
+- **Not an Academic Institution**: We are not an academic body, university department, or government linguistic board, and we hold no formal university affiliations.
+- **Zero Paid Staff or Grants**: We have no paid employees, no government grant funding, and no formal volunteer network as it currently stands.
+- **A Grassroots 3-Person Effort**: The Foundation is simply three individuals devoting their personal time, tools, and effort to create open digital infrastructure for the Hmar language (`hmr`) because nobody else is doing it.
+
+*Our documentation is ambitious because language preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing.*
+
+---
+
+## Another Long Section You Can Skip
+
+When I initially created a repository on Hugging Face two years ago, I had to give it a name; I called it the *Hmar Language Dataset Project*. While there is nothing worth calling a dataset even today, I think the underlying issues we are trying to address are entirely real (feel free to correct me if I'm wrong).
+
+Moving on, the project gained no initial traction and no visibility, so I eventually renamed it to the *Hmar Heritage Foundation*. I feel this better expresses the scope of the issues I am trying to address.
+
+Nothing much has changed since then; it's still mostly just me. Although I believe the work is a bit more visible today because a few community members have shown interest, so it would be wrong to take all the credit.
+
+Regardless, I should clarify that this is not something we are merely *trying* to do, nor is it something we are hopeful we can do. We are doing it. And while the vision is grand, the operational reality is modest, almost embarrassing at times.
+
+Especially when you consider there are so many scholars and academics within the community far better fitted for this. Maybe they know something I don't, and these issues are things they are working on in secret, in which case, this would be really embarrassing for me. But I think that is unlikely, and I can explain why in detail, but it'll just take up space here so maybe I'll address that in my blog some other time.
+
+**Basically TLDR: This foundation isn't as grand as it pretends to be.**
+
+---
+
 ## Economic Justification: Where Corporate Budgets Do Not Reach
 
 Major technology corporations allocate commercial translation budgets primarily to dominant global languages. Because tech giants operate strictly on commercial Return on Investment, dedicated corporate localization budgets for regional minority languages like Hmar will never come. If we wait for commercial agencies, our language risks digital domain loss, where speakers use Hmar at home, but are forced to switch to dominant languages for smartphones, software, and AI models.
