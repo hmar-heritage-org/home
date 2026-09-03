@@ -68,6 +68,14 @@ export function Footer() {
             <ul className="space-y-2.5 text-xs font-sans">
               <li>
                 <Link
+                  href="/grantmakers"
+                  className="hover:text-white text-slate-100 font-semibold transition-colors"
+                >
+                  For Grant Officers &amp; Evaluators
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/philosophy"
                   className="hover:text-white text-slate-300 font-semibold transition-colors"
                 >

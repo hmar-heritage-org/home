@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { ArrowRight, Quote, AlertCircle, FileText } from "lucide-react";
+import { ArrowRight, Quote, AlertCircle, FileText, ShieldCheck } from "lucide-react";
 
 export default function HomePage() {
   return (
@@ -30,8 +30,16 @@ export default function HomePage() {
 
           <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-semibold">
             <Link
-              href="/join"
+              href="/grantmakers"
               className="inline-flex items-center gap-1.5 px-6 py-3 rounded-md bg-[#9E1B24] text-white font-bold hover:bg-[#781219] transition-colors shadow-md"
+            >
+              <ShieldCheck className="w-4 h-4 text-white" />
+              <span>For Grant Officers</span>
+            </Link>
+
+            <Link
+              href="/join"
+              className="inline-flex items-center gap-1.5 px-5 py-3 rounded-md bg-slate-900/80 hover:bg-slate-900 text-slate-200 border border-slate-700 font-medium transition-colors"
             >
               <span>Support the Foundation</span>
               <ArrowRight className="w-3.5 h-3.5" />
