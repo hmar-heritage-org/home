@@ -408,7 +408,7 @@ export default function StandardsPage() {
                     <td className="px-4 py-3"><strong>55 Speech Varieties</strong> sharing Proto-Zo phonology.</td>
                   </tr>
                   <tr className="hover:bg-slate-50">
-                    <td className="px-4 py-3 font-mono text-slate-500 pl-8">├── cent2005</td>
+                    <td className="px-4 py-3 font-mono text-slate-500 pl-8">├── cent2330</td>
                     <td className="px-4 py-3 text-slate-600">Core Central Kuki-Chin</td>
                     <td className="px-4 py-3 font-semibold text-slate-900">Central Zo (17 varieties)</td>
                     <td className="px-4 py-3">Hmar, Mizo (Lushai), Lai/Hakha, Maraic, Pangkhua.</td>

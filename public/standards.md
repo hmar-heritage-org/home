@@ -108,7 +108,7 @@ Once these 39 non-Zo speech varieties are established as independent Sino-Tibeta
 | `sino1245` | Sino-Tibetan | Sino-Tibetan / Trans-Himalayan | Top-level family root. |
 | `kuki1245` | ~~Kuki-Chin-Naga (Legacy)~~ | **[NODE DISSOLUTION]** | Dissolve non-monophyletic geographical macro-node (94 varieties). |
 | `kuki1246` | Kuki-Chin | **Zo Languages / South-Central** | **55 Speech Varieties** sharing Proto-Zo phonology. |
-| `cent2005` | Core Central Kuki-Chin | Central Zo (17 varieties) | Hmar, Mizo (Lushai), Lai/Hakha, Maraic, Pangkhua. |
+| `cent2330` | Core Central Kuki-Chin | Central Zo (17 varieties) | Hmar, Mizo (Lushai), Lai/Hakha, Maraic, Pangkhua. |
 | `oldk1252` | Northwestern Kuki-Chin | Northwestern Zo (16 varieties) | Anal, Monsang, Moyon, Purum, Aimol, Lamkang, Tarao. |
 | `peri1260` | Peripheral Kuki-Chin | Peripheral Zo (22 varieties) | Tedim, Paite, Thadou, Vaiphei, Simte, Khomic, Ashö. |
 | `anga1312` | Angami-Ao | Angami-Ao Branch (Independent) | Independent node (18 varieties). |
