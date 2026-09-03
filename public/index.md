@@ -19,7 +19,7 @@ This foundation is not about grand claims or controlling external platforms, but
 
 ---
 
-## Organizational Reality: What This Foundation Is & Is Not
+## Organizational Reality: What This Foundation Is Not
 
 As grand as our open data schemas, comparative linguistic matrices, and standards documentation may appear, it is essential to be explicit about our operational scale:
 
@@ -27,7 +27,7 @@ As grand as our open data schemas, comparative linguistic matrices, and standard
 - **Zero Paid Staff or Grants**: We have no paid employees, no government grant funding, and no formal volunteer network as it currently stands.
 - **A Grassroots 3-Person Effort**: The Foundation is simply three individuals devoting their personal time, tools, and effort to create open digital infrastructure for the Hmar language (`hmr`) because nobody else is doing it.
 
-*Our documentation is ambitious because language preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing.*
+*Our documentation is ambitious because language preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing. And this section is presented in dark to maintain visual balance between the sections, not because we're so embarrassed that we had to give it a special highlight.*
 
 ---
 

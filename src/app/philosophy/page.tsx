@@ -254,7 +254,7 @@ export default function PhilosophyPage() {
           </div>
         </section>
 
-        {/* Section X: Planting Trees for Future Generations */}
+        {/* Section X: Planting Trees Whose Shade We May Never Sit Under */}
         <section className="space-y-4 border-b border-slate-200 pb-10">
           <div className="text-xs font-mono font-bold text-[#9E1B24] uppercase tracking-wider">
             Section X

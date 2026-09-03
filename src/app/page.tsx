@@ -66,34 +66,41 @@ export default function HomePage() {
             </p>
           </div>
         </section>
+      </div>
 
-        {/* Organizational Reality: What This Foundation Is Not */}
-        <section className="space-y-4 border-b border-slate-200 py-12">
-          <div className="text-xs font-mono tracking-widest text-[#9E1B24] uppercase font-bold flex items-center gap-2">
-            <AlertCircle className="w-4 h-4 text-[#9E1B24]" />
+      {/* Organizational Reality: What This Foundation Is Not (Full-Width Dark Section) */}
+      <section className="w-full bg-slate-950 text-white border-y border-slate-800 py-12 sm:py-16">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
+          <div className="text-xs font-mono tracking-widest text-red-400 uppercase font-bold flex items-center gap-2">
+            <AlertCircle className="w-4 h-4 text-red-400" />
             <span>Organizational Reality</span>
           </div>
 
-          <h2 className="text-2xl sm:text-3xl font-serif font-bold text-slate-900 leading-tight">
-            What This Foundation Is & Is Not
+          <h2 className="text-2xl sm:text-4xl font-serif font-bold text-white leading-tight">
+            What This Foundation Is Not
           </h2>
 
-          <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4 text-base font-sans bg-slate-50 border border-slate-200 rounded-xl p-6 sm:p-8">
-            <p>
+          <div className="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4 text-base font-sans">
+            <p className="text-slate-200">
               As grand as our open data schemas, comparative linguistic matrices, and standards documentation may appear, it is essential to be explicit about our operational scale:
             </p>
 
-            <ul className="list-disc pl-5 space-y-2 text-sm text-slate-700">
-              <li><strong>Not an Academic Institution:</strong> We are not an academic body, university department, or government linguistic board, and we hold no formal university affiliations.</li>
-              <li><strong>Zero Paid Staff or Grants:</strong> We have no paid employees, no government grant funding, and no formal volunteer network as it currently stands.</li>
-              <li><strong>A Grassroots 3-Person Effort:</strong> The Foundation is simply three individuals devoting their personal time, tools, and effort to create open digital infrastructure for the Hmar language (<code className="text-xs bg-slate-200 px-1.5 py-0.5 rounded font-mono">hmr</code>) because nobody else is doing it.</li>
+            <ul className="list-disc pl-5 space-y-2 text-sm text-slate-300">
+              <li><strong className="text-white">Not an Academic Institution:</strong> We are not an academic body, university department, or government linguistic board, and we hold no formal university affiliations.</li>
+              <li><strong className="text-white">Zero Paid Staff or Grants:</strong> We have no paid employees, no government grant funding, and no formal volunteer network as it currently stands.</li>
+              <li><strong className="text-white">A Grassroots 3-Person Effort:</strong> The Foundation is simply three individuals devoting their personal time, tools, and effort to create open digital infrastructure for the Hmar language (<code className="text-xs bg-slate-900 text-red-300 border border-slate-800 px-1.5 py-0.5 rounded font-mono">hmr</code>) because nobody else is doing it.</li>
             </ul>
 
-            <p className="text-xs text-slate-600 italic pt-2">
-              Our documentation is ambitious because language preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing.
+            <p className="text-xs text-slate-400 italic pt-4 border-t border-slate-800/80">
+              Our documentation is ambitious because language preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing. And this section is presented in dark to maintain visual balance between the sections, not because we're so embarrassed that we had to give it a special highlight.
             </p>
           </div>
-        </section>
+        </div>
+      </section>
+
+      {/* Container Part 2: Another Long Section You Can Skip */}
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Another Long Section You Can Skip */}
 
         {/* Another Long Section You Can Skip */}
         <section className="space-y-4 border-b border-slate-200 py-12">
@@ -150,8 +157,8 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <blockquote className="italic border-l-2 border-[#9E1B24] pl-4 text-slate-200 font-serif text-sm sm:text-base leading-snug">
-              "A society grows great when old men plant trees in whose shade they shall never sit."
-              <span className="block text-[11px] font-mono not-italic text-slate-400 mt-1 font-normal">— Ancient Proverb</span>
+              "Planting trees whose shade we may never frolic under."
+              <span className="block text-[11px] font-mono not-italic text-slate-400 mt-1 font-normal">— Foundational Maxim</span>
             </blockquote>
 
             <Link
