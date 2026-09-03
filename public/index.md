@@ -43,6 +43,8 @@ Regardless, I should clarify that this is not something we are merely *trying* t
 
 Especially when you consider there are so many scholars and academics within the community far better fitted for this. Maybe they know something I don't, and these issues are things they are working on in secret, in which case, this would be really embarrassing for me. But I think that is unlikely, and I can explain why in detail, but it'll just take up space here so maybe I'll address that in my blog some other time.
 
+I created this website not necessarily as a declaration, although it helps a bit, but due to grants and funding. So it's important that we look as prestigious as possible, although the addition of this might have invalidated the prestige a bit.
+
 **Basically TLDR: This foundation isn't as grand as it pretends to be.**
 
 ---

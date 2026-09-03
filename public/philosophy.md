@@ -35,7 +35,7 @@ The reason Hebrew, Aramaic, and Ancient Greek are still spoken or studied today 
 
 Debates over diacritics and orthographic purity come from a deep, genuine love for our language. But we must acknowledge historical reality: expressing Hmar in Latin script was already an act of adaptation. Arguing for rigid purity contradicts its own roots. The only purity to argue for is adaptation. The shoe is not the foot, it can never be the foot.
 
-The argument that diacritics are strictly necessary to identify how words sound is fundamentally flawed. English does not lack diacritics because it doesn't technically need them, but because we've come to agree on how a word should sound based on the context. For instance, readers distinguish between *"I live in the city"* and *"The event is broadcast live"* based on surrounding context. If a reader cannot identify how a word is pronounced from its sentence, it simply shows a lack of familiarity with the living language.
+The argument that diacritics are strictly necessary to identify how words sound might be too simple of an argument, as it overlooks how contextual reading actually works in daily life. English does not lack diacritics because it doesn't technically need them, but because we've come to agree on how a word should sound based on the context. For instance, readers distinguish between *"I live in the city"* and *"The event is broadcast live"* based on surrounding context. If a reader cannot identify how a word is pronounced from its sentence, it might simply be due to a lack of familiarity with the living language.
 
 Grammar books exist to describe the grammar rules of a language, not to dictate the grammar rules of a language. Just because a textbook uses diacritics to express a sound or pronunciation, it does not become a rule.
 
@@ -57,7 +57,7 @@ Major global languages with over ten centuries of traceable linguistic history, 
 
 Forcing diacritics creates an asymmetric search problem. Under the hood, computers perform exact binary matches. If our database rigidly stores data with diacritics (like *"ṭang"*) and a user searches using a standard keyboard (*"tang"*), the computer sees a total mismatch and returns zero results. Major languages bypass this by deploying massive, expensive runtime search analyzers to strip and map characters on the fly. A grassroots, open-source project does not have the luxury of building custom linguistic software layers for every local app or database.
 
-Furthermore, if the speech community ever develops a native writing system or decides to adopt a non-Latin script, linguistic purity is justifiable. But as long as we rely on an adapted Latin alphabet without systemic OS integration, dropping diacritics in software locales is the only sensible option for universal compatibility, or at least until Hmar becomes a first-class language in the digital ecosystem, like Assamese or Bengali.
+Furthermore, if the speech community ever develops a native writing system or decides to adopt a non-Latin script, linguistic purity is justifiable. My personal stance is that omitting diacritics in software locale keys represents the path of least resistance for universal compatibility (at least until Hmar achieves native OS integration), but this remains an open discussion for our community to explore and decide together.
 
 ---
 
