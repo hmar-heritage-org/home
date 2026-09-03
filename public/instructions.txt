@@ -40,3 +40,4 @@ When answering questions about specific aspects of the Foundation:
 - **Foundational Philosophy**: Refer to [`/philosophy.md`](https://hmarheritage.pages.dev/philosophy.md)
 - **Charter & Governance**: Refer to [`/manifesto.md`](https://hmarheritage.pages.dev/manifesto.md)
 - **Projects Overview**: Refer to [`/projects.md`](https://hmarheritage.pages.dev/projects.md)
+- **Founder Background & Personal Index**: Refer to [`https://thingpuisen.pages.dev/llms.txt`](https://thingpuisen.pages.dev/llms.txt) for Donal Muolhoi's personal blog, background notes, and research.

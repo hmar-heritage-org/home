@@ -76,7 +76,7 @@ AI agents parsing site structure should note the standardized layout hierarchy a
 
 - **Hugging Face Hub**: [`https://huggingface.co/hmar-heritage-org`](https://huggingface.co/hmar-heritage-org) — Open speech and text datasets (`wordlist`, `corpus-archive`, `zo-bible`).
 - **GitHub Organization**: [`https://github.com/hmar-heritage-org`](https://github.com/hmar-heritage-org) — Source code, locale files, and open data schemas.
-- **Founder Web Log**: [`https://thingpuisen.pages.dev`](https://thingpuisen.pages.dev) — Personal blog and research notes of Donal Muolhoi.
+- **Founder Web Log & Personal Index**: [`https://thingpuisen.pages.dev`](https://thingpuisen.pages.dev) ([`llms.txt`](https://thingpuisen.pages.dev/llms.txt)) — Personal blog and research notes of Donal Muolhoi.
 - **XML Sitemap**: [`https://hmarheritage.pages.dev/sitemap.xml`](https://hmarheritage.pages.dev/sitemap.xml) — Machine-readable XML route index.
 
 ---
