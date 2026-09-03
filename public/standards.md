@@ -16,7 +16,7 @@ This page is an operational policy statement of the Hmar Heritage Foundation rat
 
 The Foundation does not claim scientific authority over global language registries or neighboring speech communities. Our purpose is to establish clear, transparent standards for our own open datasets, software metadata, and community digital archives, while petitioning upstream maintainers for long-overdue metadata corrections.
 
-While the language used on this page may sound definitive and at times confrontational, that is not our intention; there is simply no soft way to state that we reject these outdated classifications without making it sound like a declaration. We also understand that our stance is far more ambitious than it needs to be, but there can be no middle ground when we can literally observe structural flaws that directly undermine our languages and, by proxy, the living identity of our culture.
+While the language used on this page may sound definitive and at times confrontational, that is not our intention; there is simply no soft way to state that we reject these classifications without making it sound like a declaration. We also understand that our stance is far more ambitious than it needs to be, but there can be no middle ground when we can literally observe structural flaws that directly undermine our languages and, by proxy, the living identity of our culture.
 
 ---
 
