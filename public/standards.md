@@ -95,11 +95,11 @@ To replace colonial administrative shortcuts with scientific accuracy, the Found
 For database maintainers and registry maintainers, re-assigning non-Zo branches into their own independent Sino-Tibetan nodes is significantly simpler than building an isolated tree from scratch, as the 55 Zo speech varieties form the vast majority of the existing clade and share proven Proto-Zo phonological innovations.
 
 We explicitly petition for the separation of the following five non-Zo branches into independent nodes:
-- **Angami-Ao Branch** (Glottocode: `anga1312`, 18 speech varieties)
-- **Karbic Branch** (Glottocode: `karb1240`, 2 speech varieties)
-- **Manipuri / Meitei Branch** (Glottocode: `mani1292`, Independent node)
-- **Tangkhul-Maring Branch** (Glottocode: `tang1335`, 11 speech varieties)
-- **Zemeic Branch** (Glottocode: `zeme1241`, 7 speech varieties)
+- **Angami-Ao Branch** (`anga1312`, 18 speech varieties)
+- **Karbic Branch** (`karb1240`, 2 speech varieties)
+- **Manipuri / Meitei Branch** (`mani1292`, Independent node)
+- **Tangkhul-Maring Branch** (`tang1335`, 11 speech varieties)
+- **Zemeic Branch** (`zeme1241`, 7 speech varieties)
 
 Once these 39 non-Zo speech varieties are established as independent Sino-Tibetan branches, the primary parent node (`kuki1246`) seamlessly becomes the dedicated **Zo** language clade.
 

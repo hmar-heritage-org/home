@@ -367,11 +367,11 @@ export default function StandardsPage() {
               We explicitly petition for the separation of the following five non-Zo branches into independent nodes:
             </p>
             <ul className="list-disc pl-5 space-y-1.5 text-sm sm:text-base font-semibold text-slate-800">
-              <li>Angami-Ao Branch (Glottocode: <code>anga1312</code>, 18 speech varieties)</li>
-              <li>Karbic Branch (Glottocode: <code>karb1240</code>, 2 speech varieties)</li>
-              <li>Manipuri / Meitei Branch (Glottocode: <code>mani1292</code>, Independent node)</li>
-              <li>Tangkhul-Maring Branch (Glottocode: <code>tang1335</code>, 11 speech varieties)</li>
-              <li>Zemeic Branch (Glottocode: <code>zeme1241</code>, 7 speech varieties)</li>
+              <li>Angami-Ao Branch (<code>anga1312</code>, 18 speech varieties)</li>
+              <li>Karbic Branch (<code>karb1240</code>, 2 speech varieties)</li>
+              <li>Manipuri / Meitei Branch (<code>mani1292</code>, Independent node)</li>
+              <li>Tangkhul-Maring Branch (<code>tang1335</code>, 11 speech varieties)</li>
+              <li>Zemeic Branch (<code>zeme1241</code>, 7 speech varieties)</li>
             </ul>
             <p>
               Once these 39 non-Zo speech varieties are established as independent Sino-Tibetan branches, the primary parent node (<code>kuki1246</code>) seamlessly becomes the dedicated <strong>Zo</strong> language clade.
