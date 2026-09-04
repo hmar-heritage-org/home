@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { ArrowRight, Quote, AlertCircle, FileText, ShieldCheck } from "lucide-react";
+import { ArrowRight, Quote, AlertCircle, FileText, ShieldCheck, Users } from "lucide-react";
+import { HeroGallery } from "@/components/HeroGallery";
 
 export default function HomePage() {
   return (
@@ -25,7 +26,7 @@ export default function HomePage() {
           </h1>
 
           <p className="text-sm sm:text-base text-slate-300 leading-relaxed font-sans max-w-2xl">
-            Providing open software translation keys, AI datasets, and digital literature archives so developers, researchers, and community stewards can build freely.
+            Preserving oral literature, ancestral clan heritage, and open digital resources so our community stewards, storytellers, and builders can thrive freely.
           </p>
 
           <div className="pt-2 flex flex-wrap items-center gap-3 text-xs font-semibold">
@@ -47,6 +48,9 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Edge-to-Edge Full-Width Interactive Cultural Carousel (Pure Visuals, Left/Right Buttons) */}
+      <HeroGallery />
 
       {/* Container Part 1: Founder Statement */}
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -90,17 +94,17 @@ export default function HomePage() {
 
           <div className="prose prose-invert max-w-none text-slate-300 leading-relaxed space-y-4 text-base font-sans">
             <p className="text-slate-200">
-              As grand as our open data schemas, comparative linguistic matrices, and standards documentation may appear, it is essential to be explicit about our operational scale:
+              To establish this initiative to have a meaningful impact, it cannot be a solo project. But it is also necessary to be explicit about our operational scale:
             </p>
 
             <ul className="list-disc pl-5 space-y-2 text-sm text-slate-300">
-              <li><strong className="text-white">Not an Academic Institution:</strong> We are not an academic body, university department, or government linguistic board, and we hold no formal university affiliations.</li>
-              <li><strong className="text-white">Zero Paid Staff or Grants:</strong> We have no paid employees, no government grant funding, and no formal volunteer network as it currently stands.</li>
-              <li><strong className="text-white">A Grassroots 3-Person Effort:</strong> The Foundation is simply three individuals devoting their personal time, tools, and effort to create open digital infrastructure for the Hmar language (<code className="text-xs bg-slate-900 text-red-300 border border-slate-800 px-1.5 py-0.5 rounded font-mono">hmr</code>) because nobody else is doing it.</li>
+              <li><strong className="text-white">Not an Institutional Body:</strong> We are not an academic university department, state-sponsored institute, or government board, and we hold no formal institutional affiliations or bureaucratic mandates.</li>
+              <li><strong className="text-white">Zero Paid Staff:</strong> We operate with zero paid employees, no administrative overhead, and no corporate backing, ensuring that all contributed time and resources go directly toward community preservation.</li>
+              <li><strong className="text-white">A Grassroots Community Effort:</strong> The Foundation is currently managed by three people, so we can be slow at times as we build out our volunteer portals, devoting our personal time, tools, and effort to preserve our heritage and build digital resources for our community because nobody else is doing it.</li>
             </ul>
 
             <p className="text-xs text-slate-400 italic pt-4 border-t border-slate-800/80">
-              Our documentation is ambitious because language preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing. And this section is presented in dark to maintain visual balance between the sections, not because we're so embarrassed that we had to give it a special highlight.
+              Our documentation is ambitious because community preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing. And this section is presented in dark to maintain visual balance between the sections, not because we're so embarrassed that we had to give it a special highlight.
             </p>
           </div>
         </div>

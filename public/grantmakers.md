@@ -11,7 +11,7 @@
 
 ## Section I · Purpose of Grant Proposals & Scope Clarification
 
-Our grant proposals are primarily focused on **language documentation, digital archival preservation, and open text corpora development**.
+Our grant proposals are primarily focused on **community heritage documentation, oral history preservation, and open digital archive development**.
 
 However, because global databases and institutional registries often convey the impression that Hmar is not an endangered language, there can easily be ambiguity between what we mean by "Hmar" and how institutional bodies classify Hmar.
 
@@ -57,4 +57,4 @@ We can provide an exact itemized budget and equipment bill as downloadable attac
 
 We do not present a manufactured, one-off project here. Our mission as a foundation is broad, and creating an artificial project simply to fit the format of a grant application when our operational priorities lie elsewhere is not honest.
 
-We are entirely open to negotiating mutually agreed deliverables with granting bodies, and we will do our best to prioritize those targets. But even as a small team of three, we refuse to paint a false picture or compromise on our operational transparency.
+We are entirely open to negotiating mutually agreed deliverables with granting bodies, and we will do our best to prioritize those targets. But even as a small grassroots team currently managed by three people, we refuse to paint a false picture or compromise on our operational transparency.

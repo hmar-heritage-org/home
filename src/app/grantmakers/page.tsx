@@ -41,12 +41,12 @@ export default function GrantmakersPage() {
           </div>
           
           <h2 className="text-2xl font-serif font-bold text-slate-900 leading-tight">
-            Language Documentation &amp; Group vs. Lingua Franca Distinctions
+            Community Documentation &amp; Group vs. Lingua Franca Distinctions
           </h2>
 
           <div className="prose prose-slate max-w-none text-slate-700 space-y-4 text-base font-sans leading-relaxed">
             <p>
-              Our grant proposals are primarily focused on <strong>language documentation, digital archival preservation, and open text corpora development</strong>.
+              Our grant proposals are primarily focused on <strong>community heritage documentation, oral history preservation, and open digital archive development</strong>.
             </p>
 
             <p>
@@ -151,7 +151,7 @@ export default function GrantmakersPage() {
             </p>
 
             <p>
-              We are entirely open to negotiating mutually agreed deliverables with granting bodies, and we will do our best to prioritize those targets. But even as a small team of three, we refuse to paint a false picture or compromise on our operational transparency.
+              We are entirely open to negotiating mutually agreed deliverables with granting bodies, and we will do our best to prioritize those targets. But even as a small grassroots team currently managed by three people, we refuse to paint a false picture or compromise on our operational transparency.
             </p>
           </div>
         </section>

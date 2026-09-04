@@ -5,7 +5,7 @@
 ---
 
 > Building for Builders. Preserving for Tomorrow.
-> Providing open software translation keys, AI datasets, and digital literature archives so developers, researchers, and community stewards can build freely.
+> Preserving oral literature, ancestral clan heritage, and open digital resources so our community stewards, storytellers, and builders can thrive freely.
 
 ---
 
@@ -21,13 +21,13 @@ This foundation is not about grand claims or controlling external platforms, but
 
 ## Organizational Reality: What This Foundation Is Not
 
-As grand as our open data schemas, comparative linguistic matrices, and standards documentation may appear, it is essential to be explicit about our operational scale:
+To establish this initiative to have a meaningful impact, it cannot be a solo project. But it is also necessary to be explicit about our operational scale:
 
-- **Not an Academic Institution**: We are not an academic body, university department, or government linguistic board, and we hold no formal university affiliations.
-- **Zero Paid Staff or Grants**: We have no paid employees, no government grant funding, and no formal volunteer network as it currently stands.
-- **A Grassroots 3-Person Effort**: The Foundation is simply three individuals devoting their personal time, tools, and effort to create open digital infrastructure for the Hmar language (`hmr`) because nobody else is doing it.
+- **Not an Institutional Body**: We are not an academic university department, state-sponsored institute, or government board, and we hold no formal institutional affiliations or bureaucratic mandates.
+- **Zero Paid Staff**: We operate with zero paid employees, no administrative overhead, and no corporate backing, ensuring that all contributed time and resources go directly toward community preservation.
+- **A Grassroots Community Effort**: The Foundation is currently managed by three people, so we can be slow at times as we build out our volunteer portals, devoting our personal time, tools, and effort to preserve our heritage and build digital resources for our community because nobody else is doing it.
 
-*Our documentation is ambitious because language preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing. And this section is presented in dark to maintain visual balance between the sections, not because we're so embarrassed that we had to give it a special highlight.*
+*Our documentation is ambitious because community preservation in the digital age requires rigorous standards, not because we claim institutional size or corporate backing. And this section is presented in dark to maintain visual balance between the sections, not because we're so embarrassed that we had to give it a special highlight.*
 
 ---
 
