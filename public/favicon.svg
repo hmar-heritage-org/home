@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#064e3b" />
+  <g fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <!-- Top H rotated 90 degrees -->
+    <path d="M 7 5 H 25 M 7 13 H 25 M 16 5 V 13" />
+    <!-- Bottom H rotated 90 degrees -->
+    <path d="M 7 19 H 25 M 7 27 H 25 M 16 19 V 27" />
+  </g>
+</svg>

@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="7" fill="#0B132B"/>
-  <g fill="#FFFFFF" font-family="sans-serif" font-weight="900" font-size="15" text-anchor="middle">
-    <!-- Top 90-degree flipped H -->
-    <text x="16" y="15" transform="rotate(90 16 10.5)">H</text>
-    <!-- Bottom 90-degree flipped H -->
-    <text x="16" y="26.5" transform="rotate(90 16 22)">H</text>
-  </g>
-</svg>

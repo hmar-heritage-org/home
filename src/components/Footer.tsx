@@ -1,235 +1,119 @@
-"use client";
+import { Link } from 'react-router-dom';
+import { Github, Mail, Heart } from 'lucide-react';
+import LogoIcon from './LogoIcon';
 
-import Link from "next/link";
-import { siteConfig } from "@/config/site";
-import { useLanguage } from "@/context/LanguageContext";
-import { Mail, Code2, ExternalLink } from "lucide-react";
+const footerLinks = {
+  Discover: [
+    { label: 'The Hmar', to: '/hmars' },
+    { label: 'Projects', to: '/projects' },
+  ],
+  Foundation: [
+    { label: 'Philosophy', to: '/philosophy' },
+    { label: 'Standards', to: '/standards' },
+    { label: 'Grantmakers', to: '/grantmakers' },
+    { label: 'People', to: '/people' },
+  ],
+  Contribute: [
+    { label: 'Join the Foundation', to: '/join' },
+    { label: 'Resources & Datasets', to: '/resources' },
+    { label: 'GitHub', to: 'https://github.com/hmar-heritage-org' },
+    { label: 'Hugging Face Org', to: 'https://huggingface.co/hmar-heritage-org' },
+  ],
+};
 
-export function Footer() {
-  const { lang, setLang } = useLanguage();
-
+export default function Footer() {
   return (
-    <footer className="bg-[#0B132B] text-slate-300 border-t border-slate-800 font-sans">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-8">
-          
-          {/* Column 1: Brand & Institutional Statement (Pure Typography, No Icon) */}
-          <div className="sm:col-span-2 md:col-span-1 space-y-4">
-            <div>
-              <span className="font-serif font-bold text-lg text-white tracking-tight leading-tight block">
-                {siteConfig.brandName}
-              </span>
-            </div>
-
-            <p className="text-xs text-slate-400 leading-relaxed">
-              Non-profit foundation for Hmar digital preservation, software locales, and open cultural archives.
+    <footer className="bg-stone-900 text-stone-300 mt-20">
+      <div className="container-page py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
+          <div>
+            <Link to="/" className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 rounded-lg bg-[#064e3b] flex items-center justify-center text-white">
+                <LogoIcon className="w-6 h-6 text-white" />
+              </div>
+              <div>
+                <div className="font-semibold text-white text-sm leading-tight">
+                  Hmar Heritage
+                </div>
+                <div className="text-xs text-stone-400 leading-tight">
+                  Foundation
+                </div>
+              </div>
+            </Link>
+            <p className="text-sm text-stone-400 leading-relaxed max-w-xs">
+              An open, community-driven foundation preserving Hmar heritage,
+              language, and cultural artifacts across North East India.
             </p>
-
-            <div className="pt-1 text-xs text-slate-400 space-y-1 font-mono">
-              <div className="flex items-center gap-1.5">
-                <Mail className="w-3.5 h-3.5 text-[#9E1B24]" />
-                <a href={`mailto:${siteConfig.contactEmail}`} className="hover:text-white transition-colors">
-                  {siteConfig.contactEmail}
-                </a>
-              </div>
-              <div className="flex items-center gap-1.5">
-                <Mail className="w-3.5 h-3.5 text-[#9E1B24]" />
-                <a href={`mailto:${siteConfig.secondaryEmail}`} className="hover:text-white transition-colors">
-                  {siteConfig.secondaryEmail}
-                </a>
-              </div>
+            <div className="flex gap-3 mt-4">
+              <a
+                href="https://github.com/hmar-heritage-org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-stone-800 flex items-center justify-center hover:bg-[#064e3b] transition-colors"
+                aria-label="GitHub"
+              >
+                <Github size={18} />
+              </a>
+              <a
+                href="https://huggingface.co/hmar-heritage-org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-lg bg-stone-800 flex items-center justify-center hover:bg-[#064e3b] transition-colors"
+                aria-label="Hugging Face"
+              >
+                <img src="/huggingface-logo.svg" alt="Hugging Face" className="w-4 h-4 object-contain brightness-0 invert opacity-80" />
+              </a>
+              <a
+                href="mailto:donalmuolhoi@gmail.com"
+                className="w-9 h-9 rounded-lg bg-stone-800 flex items-center justify-center hover:bg-[#064e3b] transition-colors"
+                aria-label="Email"
+              >
+                <Mail size={18} />
+              </a>
             </div>
           </div>
 
-          {/* Column 2: Core Directory */}
-          <div>
-            <h3 className="text-xs font-serif font-bold uppercase tracking-widest text-slate-100 mb-4 border-b border-slate-800 pb-2">
-              Main Directory
-            </h3>
-            <ul className="space-y-2.5 text-xs font-sans">
-              {siteConfig.navigation.map((item) => (
-                <li key={item.href}>
-                  <Link
-                    href={item.href}
-                    className="hover:text-white text-slate-300 transition-colors inline-block"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3: Auxiliary Guides & Legal */}
-          <div>
-            <h3 className="text-xs font-serif font-bold uppercase tracking-widest text-slate-100 mb-4 border-b border-slate-800 pb-2">
-              Resources & Legal
-            </h3>
-            <ul className="space-y-2.5 text-xs font-sans">
-              <li>
-                <Link
-                  href="/grantmakers"
-                  className="hover:text-white text-slate-100 font-semibold transition-colors"
-                >
-                  For Grant Officers &amp; Evaluators
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/philosophy"
-                  className="hover:text-white text-slate-300 font-semibold transition-colors"
-                >
-                  Foundational Philosophy
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/resources"
-                  className="hover:text-white text-slate-300 font-semibold transition-colors"
-                >
-                  Resources & Auxiliary Index
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/get-involved"
-                  className="hover:text-white text-slate-400 transition-colors"
-                >
-                  Get Involved & Contributor Guide
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/datasets"
-                  className="hover:text-white text-slate-400 transition-colors"
-                >
-                  Open AI Datasets & Corpora
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/terms"
-                  className="hover:text-white text-slate-400 transition-colors"
-                >
-                  Terms & Open Data License
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Internal Project Briefs */}
-          <div>
-            <h3 className="text-xs font-serif font-bold uppercase tracking-widest text-slate-100 mb-4 border-b border-slate-800 pb-2">
-              Project Briefs
-            </h3>
-            <ul className="space-y-2.5 text-xs font-sans text-slate-300">
-              <li>
-                <Link href="/projects/literature-library" className="hover:text-white transition-colors">
-                  Hmar Digital Library
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects/raw-datasets" className="hover:text-white transition-colors">
-                  Hmar Heritage Archival Project
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects/locale-standardization" className="hover:text-white transition-colors">
-                  Open Locale Project
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects/wikipedia-incubator" className="hover:text-white transition-colors">
-                  Hmar Wikipedia Incubator
-                </Link>
-              </li>
-              <li>
-                <Link href="/projects/termbank" className="hover:text-white transition-colors">
-                  Hmar Open Lexicon
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 5: Official External Hubs */}
-          <div className="space-y-4">
-            <h3 className="text-xs font-serif font-bold uppercase tracking-widest text-slate-100 border-b border-slate-800 pb-2">
-              Official Repos
-            </h3>
-            
-            <ul className="space-y-2.5 text-xs font-sans text-slate-400">
-              <li>
-                <a
-                  href={siteConfig.githubUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1.5"
-                >
-                  <Code2 className="w-3.5 h-3.5 text-slate-400" />
-                  <span>GitHub Organization</span>
-                  <ExternalLink className="w-3 h-3 text-slate-500" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href={siteConfig.huggingFaceUrl}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1.5"
-                >
-                  <Code2 className="w-3.5 h-3.5 text-slate-400" />
-                  <span>Hugging Face Hub</span>
-                  <ExternalLink className="w-3 h-3 text-slate-500" />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://incubator.wikimedia.org/wiki/Wp/hmr"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-white transition-colors inline-flex items-center gap-1.5"
-                >
-                  <Code2 className="w-3.5 h-3.5 text-slate-400" />
-                  <span>Wikimedia Wp/hmr</span>
-                  <ExternalLink className="w-3 h-3 text-slate-500" />
-                </a>
-              </li>
-            </ul>
-          </div>
+          {Object.entries(footerLinks).map(([section, links]) => (
+            <div key={section}>
+              <h3 className="text-xs font-mono uppercase tracking-widest text-stone-500 mb-4">
+                {section}
+              </h3>
+              <ul className="space-y-2">
+                {links.map((link) => (
+                  <li key={link.label}>
+                    {link.to.startsWith('http') ? (
+                      <a
+                        href={link.to}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-sm text-stone-400 hover:text-white transition-colors link-underline"
+                      >
+                        {link.label}
+                      </a>
+                    ) : (
+                      <Link
+                        to={link.to}
+                        className="text-sm text-stone-400 hover:text-white transition-colors link-underline"
+                      >
+                        {link.label}
+                      </Link>
+                    )}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom Bar with Integrated Disabled Language Switcher */}
-        <div className="mt-12 pt-8 border-t border-slate-800/80 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-500 gap-4 font-sans">
-          <div className="flex flex-wrap items-center gap-4">
-            <p>© {new Date().getFullYear()} {siteConfig.fullName}. All rights reserved.</p>
-            <Link href="/terms" className="hover:text-slate-300 transition-colors">
-              Terms & Open License
-            </Link>
-          </div>
-
-          {/* Lower Section Language Version Switcher (HMR Disabled) */}
-          <div className="flex items-center gap-3">
-            <span className="text-[10px] font-mono text-slate-400 uppercase tracking-wider">
-              Language Version:
-            </span>
-            <div className="inline-flex items-center rounded-full bg-slate-900 p-0.5 border border-slate-800 text-[10px] font-mono font-bold select-none">
-              <button
-                type="button"
-                onClick={() => setLang("en")}
-                className="px-3 py-1 rounded-full bg-white text-slate-900 shadow-xs cursor-pointer"
-              >
-                ENG
-              </button>
-              <button
-                type="button"
-                disabled
-                title="Hmar Translation in Progress"
-                className="px-3 py-1 rounded-full text-slate-600 cursor-not-allowed opacity-50 select-none"
-              >
-                HMR
-              </button>
-            </div>
-          </div>
+        <div className="mt-12 pt-8 border-t border-stone-800 flex flex-col sm:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-stone-500">
+            &copy; {new Date().getFullYear()} Hmar Heritage Foundation. Content
+            licensed under CC BY-SA 4.0 unless otherwise noted.
+          </p>
+          <p className="text-xs text-stone-500 flex items-center gap-1.5">
+            Built with <Heart size={12} className="text-amber-500" /> by
+            community volunteers
+          </p>
         </div>
       </div>
     </footer>

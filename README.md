@@ -1,90 +1,34 @@
-# Hmar Heritage Foundation
+# Hmar Heritage Foundation Platform
 
-> **Digital Preservation & Cultural Stewardship**  
-> *An independent foundation dedicated to language standardization, open AI datasets, software locales, and digital literature archives for the Hmar language.*
+An open, community-driven digital foundation dedicated to preserving Hmar heritage, language, lexicography, and cultural artifacts across North East India.
 
----
-
-## Overview
-
-The **Hmar Heritage Foundation** is an open digital stewardship organization established in 2024. Major technology corporations allocate commercial translation budgets primarily to dominant global languages. Because tech giants operate strictly on commercial return on investment, dedicated corporate localization budgets for regional minority languages like Hmar do not exist.
-
-The Foundation builds open software translation keys, bulk AI text/speech datasets, and digital literature archives so open-source maintainers, computational linguists, researchers, and developers can integrate Hmar for free on their own terms.
-
----
-
-## Core Foundational Principles
-
-1. **Self-Reliance & Ownership**: Taking responsibility for our own heritage and building our own open tools without waiting for outside permission.
-2. **Contributing Beyond Ourselves**: Empowering our people to share their knowledge in global research, literature, and technology, actively contributing to the wider world.
-3. **Working Together Across Generations**: Bringing elders, students, writers, researchers, and developers together into one united effort.
-
----
-
-## Official Portals & Handles
-
-- **GitHub Organization**: [github.com/hmar-heritage-org](https://github.com/hmar-heritage-org)
-- **Hugging Face Hub**: [huggingface.co/hmar-heritage-org](https://huggingface.co/hmar-heritage-org)
-- **Wikimedia Incubator**: [incubator.wikimedia.org/wiki/Wp/hmr](https://incubator.wikimedia.org/wiki/Wp/hmr)
-
----
-
-## Foundational Philosophy
-
-> *"A society grows great when old men plant trees in whose shade they shall never sit."* — Ancient Proverb
-
-Our work is unattributed groundwork: contributors might never see immediate visible commercial adoption in their lifetime and will likely not receive personal credit—and that is the exact purpose of open stewardship.
-
----
+## Features
+- **Open Archival Datasets**: Hosted on Hugging Face (`hmar-heritage-org`) under free, open licenses.
+- **Language Engineering**: Open locale schemas, CLDR standard support, and dictionary extraction tools.
+- **Cultural Stewardship**: Comprehensive documentation of customary clan structures, oral traditions, and handloom textiles (Puon).
+- **SEO & Metadata**: JSON-LD Schema.org structured data, custom SVG brand favicon, Open Graph, `robots.txt`, and `sitemap.xml`.
 
 ## Tech Stack
+- **Framework**: React 18 with TypeScript, Vite
+- **Styling**: Tailwind CSS
+- **Icons**: Lucide React
+- **Routing**: React Router v7
 
-- **Framework**: [Next.js 16](https://nextjs.org/) (App Router, Turbopack, Static Pre-rendering)
-- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
-- **Icons**: [Lucide React](https://lucide.dev/)
-- **Language**: [TypeScript](https://www.typescriptlang.org/)
-
----
-
-## Local Development
-
-Clone the repository and install dependencies:
+## Getting Started
 
 ```bash
-# Clone the repository
-git clone https://github.com/hmar-heritage-org/website.git
-cd website
-
 # Install dependencies
 npm install
 
 # Start local development server
 npm run dev
-```
 
-Open `http://localhost:3000` in your browser.
-
-### Verification & Production Build
-
-To verify static pre-rendering across all 19 static routes:
-
-```bash
+# Build for production
 npm run build
 ```
 
----
-
-## Open Data Usage License
-
-- **Permitted**: Using Foundation datasets and locale keys to build commercial applications, mobile apps, software, or AI models is 100% free.
-- **Permitted**: Licensing or selling refined derivative datasets where significant data cleaning, alignment, or annotation work has been added.
-- **Prohibited**: Selling, paywalling, or commercializing raw uncleaned PDF archival scans, dictionary term banks, or raw datasets directly as standalone paid products without adding value.
-
----
-
-## Contact & Inquiries
-
-For questions regarding data usage, permissions, or submitting physical books for scanning:
-
-- **Email**: `daiopch54@gmail.com`
-- **Join Desk**: Visit `/join` on the portal
+## Community & Contact
+- **Website**: [hmarheritage.org](https://hmarheritage.org)
+- **GitHub**: [github.com/hmar-heritage-org](https://github.com/hmar-heritage-org)
+- **Hugging Face**: [huggingface.co/hmar-heritage-org](https://huggingface.co/hmar-heritage-org)
+- **Contact**: `donalmuolhoi@gmail.com`
