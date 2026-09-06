@@ -82,6 +82,9 @@ export interface Resource {
   category: 'keyboard' | 'data' | 'guide' | 'font';
   url?: string;
   hfBadge?: string;
+  pypiUrl?: string;
+  githubUrl?: string;
+  badgeLabel?: string;
 }
 
 export const resources: Resource[] = [
@@ -128,6 +131,51 @@ export const resources: Resource[] = [
     category: 'data',
     hfBadge: 'hmar-heritage-org / corpus-archive',
     url: 'https://huggingface.co/datasets/hmar-heritage-org/corpus-archive',
+  },
+  {
+    title: 'Hmar Deduplicated Surface Unigrams (58.9k Words)',
+    description: 'Deduplicated surface vocabulary dataset of 58,983 Hmar words and active loanwords extracted from web archives and literature, featuring pure native literature filtering scripts.',
+    type: 'Dataset',
+    format: 'JSONL / Parquet / HF Dataset',
+    size: '58,983 Words (1.2 MB)',
+    license: 'CC BY 4.0',
+    category: 'data',
+    hfBadge: 'hmar-heritage-org / unigrams',
+    url: 'https://huggingface.co/datasets/hmar-heritage-org/unigrams',
+  },
+  {
+    title: 'Hmar Cultural Web Archive & Raw Dump Vault (culture-dump)',
+    description: 'Un-opinionated digital vault preserving 10,259 raw HTML web dumps, blog archives (Virthli, Inpui, Keivom, Hmarram, HSA), oral traditions, song lyrics, and community cultural assets.',
+    type: 'Digital Vault',
+    format: 'ZIP Archives + JSONL Manifest',
+    size: '10,259 Raw Dumps (262.6 MB)',
+    license: 'CC BY 4.0',
+    category: 'data',
+    hfBadge: 'hmar-heritage-org / culture-dump',
+    url: 'https://huggingface.co/datasets/hmar-heritage-org/culture-dump',
+  },
+  {
+    title: 'hmaraniam: Language Detection Engine (v0.1.7)',
+    description: 'Open-source Python language detection library backed by 37,104 verified pure native Hmar unigrams. Fast, offline-first, zero network latency, with sibling Zo language diagnostics.',
+    type: 'Software Library',
+    format: 'Python Package / PyPI / GitHub',
+    size: 'PyPI v0.1.7 (37k Vocabulary)',
+    license: 'MIT',
+    category: 'keyboard',
+    badgeLabel: 'pypi & github / hmaraniam',
+    pypiUrl: 'https://pypi.org/project/hmaraniam/',
+    githubUrl: 'https://github.com/hmar-heritage-org/hmaraniam',
+  },
+  {
+    title: 'Hmar Spelled-Out Numeral Words (1.0M Entries)',
+    description: 'Spelled-out Hmar number words mapped to numerical integer values (1 to 1,000,000) for mathematical NLP and number tokenization.',
+    type: 'Dataset',
+    format: 'JSONL / Parquet / HF Dataset',
+    size: '1.0M Records (32 MB)',
+    license: 'MIT',
+    category: 'data',
+    hfBadge: 'hmar-heritage-org / numeral-words',
+    url: 'https://huggingface.co/datasets/hmar-heritage-org/numeral-words',
   },
   {
     title: 'PMST-Hmar: Person Marking Database',

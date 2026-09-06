@@ -90,12 +90,18 @@ export default function Resources() {
               return (
                 <div key={resource.title} className="card card-hover p-6 flex flex-col justify-between">
                   <div>
-                    {resource.hfBadge && (
+                    {resource.badgeLabel ? (
+                      <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-950/10 border border-emerald-900/20 text-emerald-950 text-xs font-mono mb-3">
+                        <img src="/pypi-logo.svg" alt="PyPI" className="w-3.5 h-3.5 object-contain" />
+                        <img src="/github-logo.svg" alt="GitHub" className="w-3.5 h-3.5 object-contain text-stone-800" />
+                        <span>{resource.badgeLabel}</span>
+                      </div>
+                    ) : resource.hfBadge ? (
                       <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-900 text-xs font-mono mb-3">
                         <img src="/huggingface-logo.svg" alt="HF" className="w-4 h-4 object-contain" />
                         <span>{resource.hfBadge}</span>
                       </div>
-                    )}
+                    ) : null}
                     <div className="flex items-start gap-4 mb-3">
                       <div className="w-12 h-12 rounded-xl bg-emerald-950/5 border border-emerald-900/10 flex items-center justify-center flex-shrink-0">
                         <Icon className="text-emerald-900" size={24} />
@@ -122,7 +128,29 @@ export default function Resources() {
                     </div>
                   </div>
 
-                  <div className="flex items-center gap-3 pt-2">
+                  <div className="flex flex-wrap items-center gap-3 pt-2">
+                    {resource.pypiUrl && (
+                      <a
+                        href={resource.pypiUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-emerald-900 text-amber-100 hover:bg-emerald-800 transition-all shadow-sm"
+                      >
+                        <img src="/pypi-logo.svg" alt="PyPI" className="w-3.5 h-3.5 object-contain" />
+                        View on PyPI
+                      </a>
+                    )}
+                    {resource.githubUrl && (
+                      <a
+                        href={resource.githubUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-stone-800 text-stone-100 hover:bg-stone-700 transition-all shadow-sm"
+                      >
+                        <img src="/github-logo.svg" alt="GitHub" className="w-3.5 h-3.5 object-contain" />
+                        View on GitHub
+                      </a>
+                    )}
                     {resource.url && (
                       <a
                         href={resource.url}
@@ -138,7 +166,7 @@ export default function Resources() {
                         ) : (
                           <>
                             <ExternalLink size={14} />
-                            View Repository
+                            View Resource
                           </>
                         )}
                       </a>

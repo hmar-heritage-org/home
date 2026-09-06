@@ -59,9 +59,9 @@ export default function ProjectDetail() {
               <div>
                 <span
                   className={`inline-block text-xs font-mono px-2.5 py-1 rounded-full mb-2 ${
-                    project.status === 'active'
+                    (project.status as string) === 'active'
                       ? 'bg-green-500/20 text-green-300'
-                      : project.status === 'planning'
+                      : (project.status as string) === 'planning'
                         ? 'bg-amber-500/20 text-amber-300'
                         : 'bg-blue-500/20 text-blue-300'
                   }`}
