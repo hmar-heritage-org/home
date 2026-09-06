@@ -170,7 +170,7 @@ export default function Philosophy() {
               In the past, evolution meant transitioning from oral traditions into written corpora. Today, evolution just means bridging the gap between static research papers and functional software tools — which, in simple words, means <strong>data</strong>.
             </p>
             <p className="text-stone-700 leading-relaxed text-base">
-              The reason Hebrew, Aramaic, and Ancient Greek are still spoken or studied today is because they were meticulously documented. English transformed continuously across centuries, from medieval dialects to modern digital slang. It became a global language specifically because it adapted to every new era. The language changed, but the culture survived. Adaptation does not destroy culture; it is how culture survives.
+              The reason Hebrew, Aramaic, and Ancient Greek are still spoken or studied today is because they were meticulously documented, but even documentation alone does not guarantee survival. English transformed continuously across centuries, from medieval dialects to modern digital slang. It became a global language specifically because it adapted to every new era. The language changed, but the culture survived. Adaptation does not destroy culture; it is how culture survives.
             </p>
             <p className="text-stone-700 leading-relaxed text-base">
               Expressing Hmar in Latin script was already an act of historical adaptation. Arguing for rigid purity contradicts its own roots. Language is a tool; it is not us. We are the history, the memory, and the living culture. A tool exists to serve its people, and when the era changes, the tool must adapt so the culture survives.
