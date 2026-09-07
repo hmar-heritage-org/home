@@ -35,7 +35,7 @@ export const projects: Project[] = [
     longDescription: [
       'The Hmar Heritage Archival Project is the primary project of the Foundation. Our current operational focus is digitizing and structuring public domain data already available on the internet as the most immediate and accessible starting point.',
       'We are actively collecting physical books, but we strictly hold off on scanning or digitizing them until formal copyright waivers are secured. We plan to engage with the Hmar Literature Society (HLS) and the Hmar MIL Monitoring Committee to secure waivers for their publications, while holding ongoing discussions on how to obtain copyright waivers from individual community members.',
-      'All structured master data is hosted open-access on Hugging Face under the hmar-heritage-org organization. Current active repositories include hmar-names, wordlist, unigrams, culture-dump, zo-bible, corpus-archive, and numeral-words, alongside open software tools like hmaraniam. Once field equipment and grant funding are secured, we will pivot heavily to audio and video recording of oral heritage.',
+      'All structured master data is hosted open-access on Hugging Face under the hmar-heritage-org organization. Current active repositories include dolma-pretrain, wordlist, unigrams, hmingtluon, zo-bible, corpus-archive, numeral-words, and culture-dump, alongside open language models like Dolma v2 and software tools like hmaraniam. Once field equipment and grant funding are secured, we will pivot heavily to audio and video recording of oral heritage.',
     ],
     status: 'active',
     lead: 'Hmar Heritage Archival Team',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
       },
       {
         heading: 'Hugging Face Datasets Hub',
-        body: 'Our active datasets are hosted publicly on Hugging Face at hmar-heritage-org. Live datasets include hmar-names (10.2M+ records), wordlist (43.5k+ entries), unigrams (58.9k surface words), culture-dump (10.2k+ raw web dumps), numeral-words (1M+ entries), zo-bible, and corpus-archive.',
+        body: 'Our active datasets are hosted publicly on Hugging Face at hmar-heritage-org. Live datasets include dolma-pretrain (89.6k+ sentences, ~2.4M tokens), hmingtluon naming registry, wordlist (43.5k+ entries), unigrams (45k+ surface words), numeral-words (1M+ entries), zo-bible, corpus-archive, and culture-dump.',
       },
       {
         heading: 'Future Roadmap: Audio, Video & Funding',
@@ -61,15 +61,16 @@ export const projects: Project[] = [
     ],
     milestones: [
       { title: 'Hugging Face hmar-heritage-org org setup', date: '2024', done: true },
-      { title: 'Dataset releases: hmar-names, wordlist, numeral-words', date: '2024 - 2025', done: true },
+      { title: 'Dataset releases: hmingtluon, wordlist, numeral-words', date: '2024 - 2025', done: true },
       { title: 'Corpus & Bible datasets (zo-bible, corpus-archive)', date: '2025 Q1', done: true },
-      { title: 'Deduplicated Vocabulary & Web Vault (unigrams, culture-dump, hmaraniam)', date: '2026', done: true },
+      { title: 'Pretraining Corpus & Language Models (dolma-pretrain, Dolma v2, hmaraniam)', date: '2026', done: true },
       { title: 'Hmar Literature Society & MIL Committee waiver outreach', date: '2025 Q3', done: false },
       { title: 'Community copyright waiver framework', date: '2025 Q4', done: false },
       { title: 'Grant funding & Field audio/video recording hardware acquisition', date: '2026', done: false },
     ],
     resources: [
       { label: 'Hugging Face hmar-heritage-org Hub', href: 'https://huggingface.co/hmar-heritage-org' },
+      { label: 'Dolma v2 Model & Interactive Space', href: '/resources' },
       { label: 'Dataset Specification & Waiver Guidelines', href: '/resources' },
     ],
   },

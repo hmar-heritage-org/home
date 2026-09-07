@@ -8,18 +8,20 @@ import {
   ExternalLink,
   Filter,
   FolderOpen,
+  Cpu,
 } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import { resources } from '@/data/content';
 
 const categoryConfig = {
-  keyboard: { icon: Keyboard, label: 'Keyboards & Software' },
   data: { icon: Database, label: 'Datasets' },
+  model: { icon: Cpu, label: 'Models & Spaces' },
+  keyboard: { icon: Keyboard, label: 'Keyboards & Software' },
   guide: { icon: FileText, label: 'Guides & Documentation' },
   font: { icon: Type, label: 'Fonts' },
 };
 
-const categories = ['all', 'keyboard', 'data', 'guide', 'font'] as const;
+const categories = ['all', 'data', 'model', 'keyboard', 'guide', 'font'] as const;
 
 export default function Resources() {
   const [filter, setFilter] = useState<(typeof categories)[number]>('all');
@@ -83,94 +85,64 @@ export default function Resources() {
             </a>
           </div>
         ) : (
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {filtered.map((resource) => {
               const config = categoryConfig[resource.category];
               const Icon = config.icon;
               return (
-                <div key={resource.title} className="card card-hover p-6 flex flex-col justify-between">
+                <div
+                  key={resource.title}
+                  className="bg-white rounded-xl border border-stone-200 p-6 flex flex-col justify-between hover:border-stone-300 hover:shadow-sm transition-all"
+                >
                   <div>
-                    {resource.badgeLabel ? (
-                      <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-emerald-950/10 border border-emerald-900/20 text-emerald-950 text-xs font-mono mb-3">
-                        <img src="/pypi-logo.svg" alt="PyPI" className="w-3.5 h-3.5 object-contain" />
-                        <img src="/github-logo.svg" alt="GitHub" className="w-3.5 h-3.5 object-contain text-stone-800" />
-                        <span>{resource.badgeLabel}</span>
-                      </div>
-                    ) : resource.hfBadge ? (
-                      <div className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-md bg-amber-500/10 border border-amber-500/20 text-amber-900 text-xs font-mono mb-3">
-                        <img src="/huggingface-logo.svg" alt="HF" className="w-4 h-4 object-contain" />
-                        <span>{resource.hfBadge}</span>
-                      </div>
-                    ) : null}
-                    <div className="flex items-start gap-4 mb-3">
-                      <div className="w-12 h-12 rounded-xl bg-emerald-950/5 border border-emerald-900/10 flex items-center justify-center flex-shrink-0">
-                        <Icon className="text-emerald-900" size={24} />
-                      </div>
-                      <div className="flex-1">
-                        <h3 className="font-semibold text-lg text-stone-900 mb-1">
-                          {resource.title}
-                        </h3>
-                        <p className="text-sm text-stone-600 leading-relaxed">
-                          {resource.description}
-                        </p>
-                      </div>
+                    {/* Header: Type and License */}
+                    <div className="flex items-center justify-between gap-2 mb-3">
+                      <span className="inline-flex items-center gap-1.5 text-xs font-mono font-medium text-stone-500">
+                        <Icon size={14} className="text-[#064e3b]" />
+                        <span>{resource.type}</span>
+                      </span>
+                      <span className="text-[11px] font-mono px-2 py-0.5 rounded bg-stone-100 text-stone-600 border border-stone-200/70">
+                        {resource.license}
+                      </span>
                     </div>
 
-                    <div className="flex flex-wrap gap-3 text-xs font-mono text-stone-500 my-4 pt-3 border-t border-stone-200/60">
-                      <span className="flex items-center gap-1">
-                        <Download size={12} />
-                        {resource.format}
-                      </span>
-                      <span>•</span>
-                      <span>{resource.size}</span>
-                      <span>•</span>
-                      <span className="text-emerald-800 font-semibold">{resource.license}</span>
-                    </div>
+                    {/* Title */}
+                    <h3 className="font-semibold text-lg text-stone-900 mb-2 leading-snug">
+                      {resource.title}
+                    </h3>
+
+                    {/* Description */}
+                    <p className="text-sm text-stone-600 leading-relaxed mb-4">
+                      {resource.description}
+                    </p>
                   </div>
 
-                  <div className="flex flex-wrap items-center gap-3 pt-2">
-                    {resource.pypiUrl && (
-                      <a
-                        href={resource.pypiUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-emerald-900 text-amber-100 hover:bg-emerald-800 transition-all shadow-sm"
-                      >
+                  {/* Footer: Metadata and Action Buttons */}
+                  <div className="pt-4 border-t border-stone-100 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div className="text-xs font-mono text-stone-500 flex items-center gap-2">
+                      <Download size={13} className="text-stone-400" />
+                      <span>{resource.format}</span>
+                      <span>·</span>
+                      <span>{resource.size}</span>
+                    </div>
+
+                    <a
+                      href={resource.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-medium bg-[#064e3b] text-white hover:bg-[#04392b] transition-colors shadow-xs shrink-0"
+                    >
+                      {resource.url.includes('pypi.org') ? (
                         <img src="/pypi-logo.svg" alt="PyPI" className="w-3.5 h-3.5 object-contain" />
-                        View on PyPI
-                      </a>
-                    )}
-                    {resource.githubUrl && (
-                      <a
-                        href={resource.githubUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-stone-800 text-stone-100 hover:bg-stone-700 transition-all shadow-sm"
-                      >
+                      ) : resource.url.includes('github.com') ? (
                         <img src="/github-logo.svg" alt="GitHub" className="w-3.5 h-3.5 object-contain" />
-                        View on GitHub
-                      </a>
-                    )}
-                    {resource.url && (
-                      <a
-                        href={resource.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-flex items-center gap-2 px-3.5 py-2 rounded-lg text-xs font-medium bg-emerald-900 text-amber-100 hover:bg-emerald-800 transition-all shadow-sm"
-                      >
-                        {resource.hfBadge ? (
-                          <>
-                            <img src="/huggingface-logo.svg" alt="HF" className="w-3.5 h-3.5" />
-                            View on Hugging Face
-                          </>
-                        ) : (
-                          <>
-                            <ExternalLink size={14} />
-                            View Resource
-                          </>
-                        )}
-                      </a>
-                    )}
+                      ) : resource.url.includes('huggingface.co') ? (
+                        <img src="/huggingface-logo.svg" alt="HF" className="w-3.5 h-3.5 object-contain" />
+                      ) : (
+                        <ExternalLink size={13} />
+                      )}
+                      <span>{resource.buttonLabel}</span>
+                    </a>
                   </div>
                 </div>
               );

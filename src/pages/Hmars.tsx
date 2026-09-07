@@ -20,7 +20,7 @@ import PageHeader from '@/components/PageHeader';
 const stats = [
   { value: '~100K', label: 'Estimated speakers' },
   { value: '5', label: 'States across NE India' },
-  { value: '21', label: 'Customary clan branches' },
+  { value: '26', label: 'Customary clan branches' },
   { value: '1910', label: 'Earliest written grammar' },
 ];
 
@@ -86,8 +86,9 @@ export default function Hmars() {
             <p>
               The Hmar people are an indigenous community primarily inhabiting the
               hill regions of North East India, with significant populations across
-              Manipur, Mizoram, Assam, Meghalaya, and Tripura. They speak the Hmar
-              language, a member of the Zo language family (South-Central Tibeto-Burman).
+              Manipur, Mizoram, Assam, Meghalaya, and Tripura. They are part of the
+              broader Zohnathlak people, and speak the Hmar language, a member
+              of the Zo language family (South-Central Tibeto-Burman).
             </p>
             <p>
               The name "Hmar" is traditionally understood to mean "north" or
@@ -105,12 +106,12 @@ export default function Hmars() {
               form in many villages today.
             </p>
             <p>
-              The Hmar language was first rendered in the Latin script in the early
-              20th century, and a rich body of written literature has since grown
-              alongside the older oral tradition. Today, the language faces the
-              pressures of digital marginalization as it lacks keyboard support,
-              operating-system locales, and localized software. This is
-              precisely the gap this Foundation seeks to address.
+              From oral song chronicles and customary clan governance to written
+              literature and modern digital tools, Hmar heritage spans far more than
+              just speech. As generational transitions and digital divides accelerate,
+              preserving this broader tapestry—oral histories, customary knowledge,
+              clan genealogies, literature, and open digital infrastructure—is
+              the core work this Foundation is built to sustain.
             </p>
           </div>
         </div>
@@ -200,7 +201,7 @@ export default function Hmars() {
           <div className="max-w-2xl mb-12">
             <span className="section-label text-crimson-400">Customary Clans</span>
             <h2 className="mt-4 text-3xl md:text-4xl font-bold">
-              The 21 Hmar ancestral clans
+              The 26 Hmar ancestral clans
             </h2>
             <p className="mt-4 text-lg text-stone-300">
               Hmar social organization is built around customary clans, each with
