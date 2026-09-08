@@ -208,16 +208,16 @@ export default function Join() {
             <p className="text-stone-300 mb-8">
               Send us an email at{" "}
               <a
-                href="mailto:join@hmarheritage.org"
+                href="mailto:donalmuolhoi@gmail.com"
                 className="text-crimson-400 link-underline"
               >
-                join@hmarheritage.org
+                donalmuolhoi@gmail.com
               </a>{" "}
               with a brief note about how you would like to contribute. We
               respond within 5 business days.
             </p>
             <a
-              href="mailto:join@hmarheritage.org"
+              href="mailto:donalmuolhoi@gmail.com"
               className="inline-flex items-center gap-2 bg-crimson-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-crimson-800 transition-colors"
             >
               Email Us <ArrowRight size={18} />
