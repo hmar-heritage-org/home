@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://hmarheritage.org/sitemap.xml
+Sitemap: https://hmarheritage.pages.dev/sitemap.xml

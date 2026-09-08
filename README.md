@@ -28,7 +28,7 @@ npm run build
 ```
 
 ## Community & Contact
-- **Website**: [hmarheritage.org](https://hmarheritage.org)
+- **Website**: [hmarheritage.pages.dev](https://hmarheritage.pages.dev)
 - **GitHub**: [github.com/hmar-heritage-org](https://github.com/hmar-heritage-org)
 - **Hugging Face**: [huggingface.co/hmar-heritage-org](https://huggingface.co/hmar-heritage-org)
 - **Contact**: `donalmuolhoi@gmail.com`
