@@ -16,6 +16,7 @@ const footerLinks = {
   Contribute: [
     { label: 'Join the Foundation', to: '/join' },
     { label: 'Resources & Datasets', to: '/resources' },
+    { label: 'Brand Assets', to: 'https://github.com/hmar-heritage-org/assets' },
     { label: 'GitHub', to: 'https://github.com/hmar-heritage-org' },
     { label: 'Hugging Face Org', to: 'https://huggingface.co/hmar-heritage-org' },
   ],
@@ -29,7 +30,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="flex items-center gap-3 mb-4">
               <div className="w-10 h-10 rounded-lg bg-[#064e3b] flex items-center justify-center text-white">
-                <LogoIcon className="w-6 h-6 text-white" />
+                <LogoIcon className="w-7 h-7 text-white" />
               </div>
               <div>
                 <div className="font-semibold text-white text-sm leading-tight">

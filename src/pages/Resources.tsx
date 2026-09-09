@@ -9,6 +9,7 @@ import {
   Filter,
   FolderOpen,
   Cpu,
+  Palette,
 } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import { resources } from '@/data/content';
@@ -18,10 +19,11 @@ const categoryConfig = {
   model: { icon: Cpu, label: 'Models & Spaces' },
   keyboard: { icon: Keyboard, label: 'Keyboards & Software' },
   guide: { icon: FileText, label: 'Guides & Documentation' },
+  assets: { icon: Palette, label: 'Brand & Icons' },
   font: { icon: Type, label: 'Fonts' },
 };
 
-const categories = ['all', 'data', 'model', 'keyboard', 'guide', 'font'] as const;
+const categories = ['all', 'data', 'model', 'keyboard', 'guide', 'assets'] as const;
 
 export default function Resources() {
   const [filter, setFilter] = useState<(typeof categories)[number]>('all');

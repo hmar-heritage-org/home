@@ -84,12 +84,23 @@ export interface Resource {
   format: string;
   size: string;
   license: string;
-  category: 'keyboard' | 'data' | 'guide' | 'font' | 'model';
+  category: 'keyboard' | 'data' | 'guide' | 'font' | 'model' | 'assets';
   url: string;
   buttonLabel: string;
 }
 
 export const resources: Resource[] = [
+  {
+    title: 'Brand Assets & Icon Repository',
+    description: 'Official vector icons, emblems, lockups, favicons, typography specifications, and design metadata for the Hmar Heritage Foundation.',
+    type: 'Design Assets',
+    format: 'SVG / PNG / JSON',
+    size: '41 Vector & Master Files',
+    license: 'MIT',
+    category: 'assets',
+    url: 'https://github.com/hmar-heritage-org/assets',
+    buttonLabel: 'View on GitHub',
+  },
   {
     title: 'Dolma v2: Masked Language Model',
     description: 'Foundational BERT-base masked language model for the Hmar language (hmr), trained on the dolma-pretrain corpus across 6 epochs (110M parameters, eval loss 1.90, perplexity 6.68).',

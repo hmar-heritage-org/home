@@ -46,7 +46,7 @@ export default function Navbar() {
       <nav className="container-page flex items-center justify-between h-16 md:h-18">
         <Link to="/" className="flex items-center gap-3 group">
           <div className="w-10 h-10 rounded-lg bg-[#064e3b] flex items-center justify-center text-white transition-transform group-hover:scale-105">
-            <LogoIcon className="w-6 h-6 text-white" />
+            <LogoIcon className="w-7 h-7 text-white" />
           </div>
           <div className="hidden sm:block">
             <div className="font-semibold text-stone-900 text-sm leading-tight">
