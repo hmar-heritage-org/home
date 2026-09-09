@@ -1,4 +1,5 @@
-import { Compass, BookOpen, ExternalLink, ShieldCheck, AlertCircle } from 'lucide-react';
+import { useState } from 'react';
+import { Compass, BookOpen, ExternalLink, ShieldCheck, AlertCircle, ChevronDown, List } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 
 const IsoLink = ({ code, className = "" }: { code: string; className?: string }) => (
@@ -25,7 +26,135 @@ const GlottoLink = ({ id, className = "" }: { id: string; className?: string }) 
   </a>
 );
 
+const divisionISections = [
+  {
+    id: "rat-1",
+    num: "Section I",
+    title: "Governments Cannot Determine Our Identity",
+    desc: "Constitutional ST separation vs. search engines and digital platforms."
+  },
+  {
+    id: "rat-2",
+    num: "Section II",
+    title: "The Vacuum of Negative Identity",
+    desc: "Why rejecting an exonym requires an agreed positive autonym."
+  },
+  {
+    id: "rat-3",
+    num: "Section III",
+    title: "The Failure of CHIKIM and Other Hyphenated Hybrids",
+    desc: "Why artificial acronyms and composite labels like Kuki-Chin-Mizo do not exist."
+  },
+  {
+    id: "rat-4",
+    num: "Section IV",
+    title: 'The Never-Ending "Any Kuki Tribes" Investigation',
+    desc: "Colonial catch-all buckets driving endless administrative loops."
+  },
+  {
+    id: "rat-5",
+    num: "Section V",
+    title: "Academic Registries Don't Just Classify Language",
+    desc: "Why language defines cultural identity, and the real-world harm of mislabeling."
+  },
+  {
+    id: "rat-6",
+    num: "Section VI",
+    title: "Zo is Not a Political Identity",
+    desc: "Establishing our ancestral autonym in scholarship rather than state politics."
+  }
+];
+
+const divisionIISections = [
+  {
+    id: "sec-1",
+    num: "Section I",
+    title: "Policy Purpose",
+    desc: "Accountability in global databases, software pipelines, and taxonomy trees."
+  },
+  {
+    id: "sec-2",
+    num: "Section II",
+    title: "Historical Critique",
+    desc: "Methodological flaws in Grierson (1904) and Konow (1909)."
+  },
+  {
+    id: "sec-3",
+    num: "Section III",
+    title: "Shafer's Expansion",
+    desc: "Over-extension of the Kukish section and false genetic grouping."
+  },
+  {
+    id: "sec-4",
+    num: "Section IV",
+    title: "Modern Linguistic Refutation",
+    desc: "Dissolving composite groups via Post & Burling areal diffusion models."
+  },
+  {
+    id: "sec-5",
+    num: "Section V",
+    title: "Structural Registry Misalignment",
+    desc: "Identity miniaturization, ST scheduling, and the Thadou-Kuki discrepancy."
+  },
+  {
+    id: "sec-6",
+    num: "Section VI",
+    title: "Clan Diversity & Customary Registry",
+    desc: "The 14 ancestral clans, literary standard, and comparative frameworks."
+  },
+  {
+    id: "sec-7",
+    num: "Section VII",
+    title: "Methodological Inconsistencies",
+    desc: "Arbitrary tree splitting, duplicate nodes, and speech subsumption."
+  },
+  {
+    id: "sec-8",
+    num: "Section VIII",
+    title: "Re-Classification & Autonym Adoption",
+    desc: "Dissolving kuki1245 and establishing Zo across 55 speech varieties."
+  },
+  {
+    id: "sec-9",
+    num: "Section IX",
+    title: "Indigenous Self-Determination",
+    desc: "Autonomy for Naga, Karbi, and Meitei independent clades."
+  },
+  {
+    id: "sec-10",
+    num: "Section X",
+    title: "Governance & Educational Policy",
+    desc: "Mother-tongue textbook funding, NEP 2020, and cultural survival."
+  },
+  {
+    id: "sec-11",
+    num: "Section XI",
+    title: "Digital Implementation",
+    desc: "Open dataset schemas, language metadata, and tokenizer standards."
+  },
+  {
+    id: "sec-12",
+    num: "Section XII",
+    title: "Community Cultural Registries",
+    desc: "Living clan genealogies, Virthli archives, and customary tribal bodies."
+  }
+];
+
 export default function Standards() {
+  const [div1Open, setDiv1Open] = useState(true);
+  const [div2Open, setDiv2Open] = useState(true);
+
+  const allOpen = div1Open && div2Open;
+  const toggleAll = () => {
+    if (allOpen) {
+      setDiv1Open(false);
+      setDiv2Open(false);
+    } else {
+      setDiv1Open(true);
+      setDiv2Open(true);
+    }
+  };
+
   return (
     <div className="bg-stone-50 min-h-screen">
       <PageHeader
@@ -105,8 +234,310 @@ export default function Standards() {
             </h2>
           </div>
 
+          {/* Unified Expandable Table of Contents */}
+          <div className="bg-white rounded-xl border border-stone-200 shadow-xs overflow-hidden">
+            {/* Master Header */}
+            <div className="bg-stone-900 text-white px-5 py-3.5 flex flex-wrap items-center justify-between gap-3 border-b border-stone-950">
+              <div className="flex items-center gap-3">
+                <List className="w-4 h-4 text-emerald-400" />
+                <div>
+                  <h3 className="font-mono text-xs font-bold uppercase tracking-wider text-stone-100">
+                    Policy Architecture &amp; Table of Contents
+                  </h3>
+                  <p className="text-[11px] text-stone-400 font-sans">
+                    18 Total Sections across 2 Divisions
+                  </p>
+                </div>
+              </div>
+              <button
+                type="button"
+                onClick={toggleAll}
+                className="text-xs font-mono font-medium text-emerald-300 hover:text-emerald-200 bg-stone-800 hover:bg-stone-700/80 px-3 py-1.5 rounded-lg border border-stone-700 transition-colors cursor-pointer"
+              >
+                {allOpen ? 'Collapse All' : 'Expand All'}
+              </button>
+            </div>
+
+            {/* Division I Accordion */}
+            <div className="border-b border-stone-200">
+              <button
+                type="button"
+                onClick={() => setDiv1Open(!div1Open)}
+                className="w-full bg-stone-50/90 hover:bg-stone-100 px-4 py-3 flex items-center justify-between text-left transition-colors cursor-pointer group"
+                aria-expanded={div1Open}
+              >
+                <div className="flex items-center gap-2.5">
+                  <span className="text-xs font-mono font-bold text-emerald-900 bg-emerald-100 px-2 py-0.5 rounded">
+                    Division I
+                  </span>
+                  <span className="font-bold text-stone-900 text-sm">
+                    Sociopolitical Rationale
+                  </span>
+                  <span className="text-stone-500 text-xs hidden sm:inline">
+                    (6 Sections)
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-stone-500 group-hover:text-stone-900">
+                  <span className="text-xs font-mono">
+                    {div1Open ? 'Hide' : 'Show'}
+                  </span>
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${div1Open ? 'rotate-180' : ''}`} />
+                </div>
+              </button>
+
+              {div1Open && (
+                <div className="p-3 grid grid-cols-1 md:grid-cols-2 gap-2 bg-white">
+                  {divisionISections.map((sec) => (
+                    <a
+                      key={sec.id}
+                      href={`#${sec.id}`}
+                      className="p-2.5 rounded-lg border border-stone-100 hover:border-emerald-200 hover:bg-emerald-50/30 transition-all group block"
+                    >
+                      <div className="flex items-baseline gap-1.5">
+                        <span className="font-mono text-xs font-bold text-emerald-800 group-hover:underline">
+                          {sec.num}
+                        </span>
+                        <strong className="text-stone-900 text-xs font-semibold">
+                          {sec.title}
+                        </strong>
+                      </div>
+                      <p className="text-stone-500 text-[11px] leading-relaxed mt-1 line-clamp-2">
+                        {sec.desc}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+
+            {/* Division II Accordion */}
+            <div>
+              <button
+                type="button"
+                onClick={() => setDiv2Open(!div2Open)}
+                className="w-full bg-stone-50/90 hover:bg-stone-100 px-4 py-3 flex items-center justify-between text-left transition-colors cursor-pointer group"
+                aria-expanded={div2Open}
+              >
+                <div className="flex items-center gap-2.5">
+                  <span className="text-xs font-mono font-bold text-stone-800 bg-stone-200 px-2 py-0.5 rounded">
+                    Division II
+                  </span>
+                  <span className="font-bold text-stone-900 text-sm">
+                    Scientific Specification
+                  </span>
+                  <span className="text-stone-500 text-xs hidden sm:inline">
+                    (12 Sections)
+                  </span>
+                </div>
+                <div className="flex items-center gap-2 text-stone-500 group-hover:text-stone-900">
+                  <span className="text-xs font-mono">
+                    {div2Open ? 'Hide' : 'Show'}
+                  </span>
+                  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${div2Open ? 'rotate-180' : ''}`} />
+                </div>
+              </button>
+
+              {div2Open && (
+                <div className="p-3 grid grid-cols-1 md:grid-cols-2 gap-2 bg-white">
+                  {divisionIISections.map((sec) => (
+                    <a
+                      key={sec.id}
+                      href={`#${sec.id}`}
+                      className="p-2.5 rounded-lg border border-stone-100 hover:border-emerald-200 hover:bg-emerald-50/30 transition-all group block"
+                    >
+                      <div className="flex items-baseline gap-1.5">
+                        <span className="font-mono text-xs font-bold text-stone-700 group-hover:underline">
+                          {sec.num}
+                        </span>
+                        <strong className="text-stone-900 text-xs font-semibold">
+                          {sec.title}
+                        </strong>
+                      </div>
+                      <p className="text-stone-500 text-[11px] leading-relaxed mt-1 line-clamp-2">
+                        {sec.desc}
+                      </p>
+                    </a>
+                  ))}
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* DIVISION I: SOCIOPOLITICAL RATIONALE */}
+          <div className="pt-8 border-t-2 border-emerald-900/20">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-mono font-bold text-emerald-900 bg-emerald-100/80 px-2.5 py-1 rounded">
+                DIVISION I
+              </span>
+              <span className="text-xs font-mono text-stone-500 uppercase tracking-wider">
+                Community &amp; Institutional Rationale
+              </span>
+            </div>
+            <h3 className="text-2xl font-serif font-bold text-stone-900 mb-2">
+              The Case for Zo
+            </h3>
+            <p className="text-stone-600 text-sm leading-relaxed mb-10">
+              The real-world need, administrative contradictions, and practical reasons for replacing colonial exonyms in global registries.
+            </p>
+
+            <div className="space-y-12">
+              {/* Section I */}
+              <article id="rat-1" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-10">
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
+                    SECTION I
+                  </span>
+                  <h3 className="text-2xl font-bold text-stone-900">
+                    Governments Cannot Determine Our Identity
+                  </h3>
+                </div>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Decades ago, the Constitution of India formally recognized <strong>Hmar</strong> and <strong>Mizo</strong> as independent Scheduled Tribes, separating them from the generic colonial schedule of <em>"Any Kuki Tribes."</em> Domestically and legally, that separation was clear and complete.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Yet whenever international human rights groups, foreign news outlets, search engines, or digital knowledge bases reference our communities, we are still lumped together under the colonial "Kuki" label.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  This happens because international institutions and technology platforms do not read Indian government gazettes. They look up global linguistic registries (chiefly <strong>Glottolog</strong>, <strong>SIL International</strong>, and <strong>ISO 639-3</strong>). As long as those academic trees list our languages under colonial tags, search engines, databases, and journalists will keep repeating them.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  A government cannot decide an indigenous people's identity. <strong>Scheduled Tribe recognition is a legal acknowledgement, not an establishment of truth.</strong> The state did not produce the Hmar or Mizo people, and an administrative gazette cannot define or replace our ancestral reality.
+                </p>
+              </article>
+
+              {/* Section II */}
+              <article id="rat-2" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-10">
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
+                    SECTION II
+                  </span>
+                  <h3 className="text-2xl font-bold text-stone-900">
+                    The Vacuum of Negative Identity
+                  </h3>
+                </div>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  When customary bodies like the <strong>Thadou Inpi</strong> publicly rejected the "Kuki" label, they asserted a legitimate historical boundary. But rejecting an external label without agreeing on what to put in its place leaves a void.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  An identity built solely on what it rejects cannot function in modern documentation. Standards bodies, software systems, and comparative linguists need a name for the parent branch. When related communities state they are not "Kuki" without offering a unified, documented autonym, registries treat the matter as an unresolved local dispute and default straight back to Grierson's 1904 colonial terms.
+                </p>
+              </article>
+
+              {/* Section III */}
+              <article id="rat-3" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-10">
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
+                    SECTION III
+                  </span>
+                  <h3 className="text-2xl font-bold text-stone-900">
+                    The Failure of CHIKIM and Other Hyphenated Hybrids
+                  </h3>
+                </div>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  For years, civil society groups, student unions, and political organizers tried to paper over internal divides by inventing portmanteaus like <strong>CHIKIM</strong> (<em>Chin-Kuki-Mizo</em>) or hyphenated compromises like <strong>Kuki-Chin-Mizo</strong>. While well-intentioned as political bridges, these hybrid labels failed because they describe something that simply does not exist.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  There is no such thing as a "Kuki-Chin-Mizo" people, and no community speaks a language called "CHIKIM." No village elder ever grew up identifying with an acronym, and no ancestral song or customary record knows these hyphenated hybrids. They are artificial constructs: political patchworks stitched together from external colonial labels and domestic tribal schedules in an attempt to please every faction without addressing real roots.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Abroad, these invented terms carry zero weight. Academic registries like <strong>Glottolog</strong>, <strong>SIL International</strong>, and <strong>ISO 639-3</strong> do not classify human languages by political compromises. Global taxonomies only recognized the legacy colonial tags <em>"Kuki-Chin"</em> and <em>"Kuki-Chin-Naga."</em> Coining hybrid abbreviations did nothing to change that reality. International scholarship simply ignored them, leaving our languages filed under the very colonial headings we sought to escape.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  This is not to say that an indigenous people cannot forge new history, nor is the validity of our identity determined by what outside registries accept or reject. The failure of these synthetic hybrids lies in a deeper contradiction: they refer directly back to the very labels we are rejecting. An acronym built out of colonial exonyms does not liberate our communities from them; it simply recycles the same external tags and keeps us trapped in their orbit.
+                </p>
+              </article>
+
+              {/* Section IV */}
+              <article id="rat-4" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-10">
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
+                    SECTION IV
+                  </span>
+                  <h3 className="text-2xl font-bold text-stone-900">
+                    The Never-Ending "Any Kuki Tribes" Investigation
+                  </h3>
+                </div>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  The label <em>"Any Kuki Tribes"</em> began as a colonial catch-all for miscellaneous hill communities. More than a century later, that bureaucratic shortcut keeps producing endless administrative confusion and legal disputes.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Governments frequently announce reviews and inquiries into tribal schedules. But these inquiries never settle anything, because bureaucrats rely on academic references to determine tribal relationships. Even when a community wins administrative separation, uncorrected academic taxonomies pull everyone back into the same colonial bucket.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Linguists have known since Grierson (1904) that these terms were external slurs, yet scholars kept using them as standard classifications. Today, when search engines, library catalogues, and digital archives index our writing, they simply mirror those old academic records, pulling colonial tags along with our names.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  An administrative inquiry cannot fix a mistake that began in scholarship. To break the cycle, we have to correct the academic record ourselves, build our own datasets, and establish the facts under our authentic autonym: <strong>Zo</strong>.
+                </p>
+              </article>
+
+              {/* Section V */}
+              <article id="rat-5" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-10">
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
+                    SECTION V
+                  </span>
+                  <h3 className="text-2xl font-bold text-stone-900">
+                    Academic Registries Don't Just Classify Language
+                  </h3>
+                </div>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Skeptics sometimes ask why we care so much about academic classifications: <em>"Isn't language just a practical tool for communication, not real-world identity?"</em> While language is a tool, for an indigenous community it carries our oral history, customary laws, and ancestral memory. It is what defines our cultural identity.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Being mislabeled in public records is not a harmless clerical detail. For a community that transitioned to written corpora only a few generations ago, the written word carries disproportionate authority. When young people look up their mother tongue and find it cataloged as a mere dialect or appendage of an outside label, they are conditioned to trust foreign registries over their elders' living memories. That mislabeling invites cultural absorption and erodes confidence in our own history.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Modern technology multiplies this harm. Search engines, digital knowledge graphs, and AI models have no cultural intuition; they blindly pull from Glottolog and ISO trees. When a global registry files our speech under an inaccurate colonial tag, automated algorithms hardcode that mistake into every search query, dataset, and digital translation.
+                </p>
+              </article>
+
+              {/* Section VI */}
+              <article id="rat-6" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-10">
+                <div className="flex items-center gap-3">
+                  <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
+                    SECTION VI
+                  </span>
+                  <h3 className="text-2xl font-bold text-stone-900">
+                    Zo is Not a Political Identity
+                  </h3>
+                </div>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  For communities like <strong>Hmar</strong> and <strong>Mizo</strong>, adopting <strong>Zo</strong> is not about starting a new political agitation or lobbying to change Scheduled Tribe categories. Domestically, separate Scheduled Tribe status is settled law, and re-opening administrative disputes helps no one.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Science and technology operate on different rules than government administration. In linguistics, software, and digital databases, languages cannot sit in isolation without a classification. Every language family needs recognized roots. If we walk away from the colonial label without establishing our shared autonym in published research, academic and technical registries will simply re-group our languages under "Kuki-Chin" by default, or leave them as unclassified fragments.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  Establishing <strong>Zo</strong> in scholarly literature, open datasets, and language technology is not a political demand on the state. It is an effort to record the facts: our linguistic relationship as <strong>Zo</strong>, and not Kuki.
+                </p>
+                <p className="text-stone-700 leading-relaxed text-base">
+                  If related communities do not stand behind this autonym in published scholarship, international registries, software platforms, and publishers will keep using colonial labels simply because it is easier to stick with default conventions. This document sets down that standard.
+                </p>
+              </article>
+            </div>
+          </div>
+
+          {/* DIVISION II: EMPIRICAL SPECIFICATION */}
+          <div className="pt-8 border-t-2 border-stone-900/20">
+            <div className="flex items-center gap-2 mb-2">
+              <span className="text-xs font-mono font-bold text-stone-900 bg-stone-200 px-2.5 py-1 rounded">
+                DIVISION II
+              </span>
+              <span className="text-xs font-mono text-stone-500 uppercase tracking-wider">
+                Empirical Linguistic Specification
+              </span>
+            </div>
+            <h3 className="text-2xl font-serif font-bold text-stone-900 mb-2">
+              Scientific Evidence, Cladistic Restructuring &amp; Registry Standards
+            </h3>
+            <p className="text-stone-600 text-sm leading-relaxed mb-10">
+              Comparative phonological shifts, customary clan taxonomy, and peer-reviewed refutations of the legacy Sino-Tibetan macro-classifications.
+            </p>
+          </div>
+
           {/* Section I */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-1" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION I
@@ -127,7 +558,7 @@ export default function Standards() {
           </article>
 
           {/* Section II */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-2" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION II
@@ -181,7 +612,7 @@ export default function Standards() {
           </article>
 
           {/* Section III */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-3" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION III
@@ -205,7 +636,7 @@ export default function Standards() {
           </article>
 
           {/* Section IV */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-4" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION IV
@@ -232,7 +663,7 @@ export default function Standards() {
           </article>
 
           {/* Section V */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-5" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION V
@@ -271,7 +702,7 @@ export default function Standards() {
           </article>
 
           {/* Section VI */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-6" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION VI
@@ -463,7 +894,7 @@ export default function Standards() {
           </article>
 
           {/* Section VII */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-7" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION VII
@@ -483,7 +914,7 @@ export default function Standards() {
           </article>
 
           {/* Section VIII */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-8" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION VIII
@@ -598,7 +1029,7 @@ export default function Standards() {
           </article>
 
           {/* Section IX */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-9" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION IX
@@ -613,7 +1044,7 @@ export default function Standards() {
           </article>
 
           {/* Section X */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-10" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION X
@@ -631,7 +1062,7 @@ export default function Standards() {
           </article>
 
           {/* Section XI */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-11" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION XI
@@ -655,7 +1086,7 @@ export default function Standards() {
           </article>
 
           {/* Section XII */}
-          <article className="space-y-4 border-b border-stone-200 pb-12">
+          <article id="sec-12" className="space-y-4 scroll-mt-24 border-b border-stone-200 pb-12">
             <div className="flex items-center gap-3">
               <span className="text-xs font-mono font-bold text-emerald-800 bg-emerald-100 px-2.5 py-1 rounded-md">
                 SECTION XII
