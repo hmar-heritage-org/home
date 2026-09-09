@@ -183,7 +183,7 @@ export default function Standards() {
             </h2>
           </div>
 
-          {/* Unified Table of Contents */}
+          {/* Unified Expandable Table of Contents */}
           <div className="bg-white rounded-xl border border-stone-200 shadow-xs overflow-hidden">
             {/* Master Header */}
             <div className="bg-stone-900 text-white px-5 py-3.5 flex flex-wrap items-center justify-between gap-3 border-b border-stone-950">
@@ -194,7 +194,7 @@ export default function Standards() {
                     Policy Architecture &amp; Table of Contents
                   </h3>
                   <p className="text-[11px] text-stone-400 font-sans">
-                    12 Scientific &amp; Registry Sections
+                    12 Total Sections
                   </p>
                 </div>
               </div>
@@ -207,7 +207,6 @@ export default function Standards() {
               </button>
             </div>
 
-            {/* Section Links */}
             {tocOpen && (
               <div className="p-3 grid grid-cols-1 md:grid-cols-2 gap-2 bg-white">
                 {standardsSections.map((sec) => (
@@ -233,14 +232,14 @@ export default function Standards() {
             )}
           </div>
 
-          {/* EMPIRICAL SPECIFICATION */}
-          <div className="pt-4">
+          {/* SPECIFICATION */}
+          <div className="pt-8 border-t-2 border-stone-900/20">
             <div className="flex items-center gap-2 mb-2">
-              <span className="text-xs font-mono font-bold text-emerald-900 bg-emerald-100/80 px-2.5 py-1 rounded">
+              <span className="text-xs font-mono font-bold text-stone-900 bg-stone-200 px-2.5 py-1 rounded">
                 SPECIFICATION
               </span>
               <span className="text-xs font-mono text-stone-500 uppercase tracking-wider">
-                Empirical Linguistic Specification
+                Technical Architecture &amp; Lexical Specification
               </span>
             </div>
             <h3 className="text-2xl font-serif font-bold text-stone-900 mb-2">
@@ -427,7 +426,7 @@ export default function Standards() {
               </h3>
             </div>
             
-            <h4 className="text-lg font-bold text-stone-900 mt-4">The Ancestral Bedrock and Literary Standard</h4>
+            <h4 className="text-lg font-bold text-stone-900 mt-4">6.1 The Ancestral Bedrock and Literary Standard</h4>
             <p className="text-stone-700 leading-relaxed text-base">
               Ethnographic research documents 14 foundational ancestral clans, historically known as <em>Hnam 14</em> (Dr. H. Rochunga Pudaite, 1960): <strong>Lawitlang, Zote, Ngurte, Khawbung, Ṭhiek, Lungṭau, Leiri, Darngawn, Pakhuong, Hrangkhawl, Biate, Changsan, Khawlhring</strong>, and <strong>Faihriem (Saihriem)</strong>. Over centuries, these clans expanded into sub-clans (<em>pahnam</em>) and family lineages across Manipur, Mizoram, Assam, Meghalaya, and Tripura.
             </p>
@@ -438,11 +437,173 @@ export default function Standards() {
             <div className="my-6 p-4 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs sm:text-sm flex items-start gap-3 shadow-xs">
               <AlertCircle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
               <div>
-                <p className="font-bold text-amber-950 mb-1">Customary Clan Research Notice</p>
+                <p className="font-bold text-amber-950 mb-1">Disclaimer &amp; Ongoing Research Notice</p>
                 <p className="leading-relaxed text-amber-900/90">
-                  Ethnolinguistic cross-references, clan classifications, and database identifiers are undergoing active synthesis between historical documentation (Dr. H. Rochunga Pudaite 1960, J. Shakespear 1912) and international registries (ISO 639-3, Glottolog). Detailed comparative registry tables have been archived while ongoing community consultation and peer verification are finalized.
+                  The ethnolinguistic cross-references, clan classifications, and database identifiers presented in these tables reflect an ongoing synthesis of historical literature (Dr. H. Rochunga Pudaite 1960, J. Shakespear 1912) and international registries (ISO 639-3, Glottolog). Due to dialectal overlap, shifting historical terminology, and external indexing discrepancies, some cataloged entries may contain errors, omissions, or unverified classifications. <strong>The Foundation</strong> actively welcomes community feedback, academic review, and empirical field data to refine this living specification.
                 </p>
               </div>
+            </div>
+
+            <h4 className="text-lg font-bold text-stone-900 mt-8">6.2 Table II.A · Comparative Academic &amp; Customary Clan Frameworks</h4>
+            <div className="my-6 overflow-x-auto rounded-xl border border-stone-200 shadow-xs bg-white text-xs sm:text-sm font-sans">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-stone-100 font-mono text-stone-800 font-bold border-b border-stone-200 uppercase tracking-wider">
+                  <tr>
+                    <th className="px-4 py-3 border-r border-stone-200">Clan Name (Hnam)</th>
+                    <th className="px-4 py-3 border-r border-stone-200 text-center">Pudaite (1960)</th>
+                    <th className="px-4 py-3 border-r border-stone-200 text-center">Shakespear (1912)</th>
+                    <th className="px-4 py-3 border-r border-stone-200 text-center">Hmar Inpui (21)</th>
+                    <th className="px-4 py-3 text-center">Thangluaia &amp; Bungpui (25)</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-200 text-stone-700">
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawsak</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ṭhiek</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Lungṭau</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Leiri</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Zote</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Darngawn</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawbung</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Lawitlang</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ngurte</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pakhuong</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center text-stone-400">-</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Changsan (Changsen)</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawlhring (Khuolhring)</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Faihriem (Saihriem / Syriem)</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Biate (Biete / Baite)</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Hrangkhawl</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khelte (Khiengte)</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center text-stone-400">-</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pautu</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center text-stone-400">-</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Rawite</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center text-stone-400">-</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Sakum</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center text-stone-400">-</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Vangsie (Vangchhia)</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Sakachep</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ngente</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chawhte</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chawnthei</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Bawm (Bawmzo)</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chiru (Chawrai)</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pang (Pangkhua)</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Aimol</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Halam</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center border-r border-stone-200">Yes</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Darlong</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Kom</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center border-r border-stone-200 text-stone-400">-</td><td className="px-4 py-2.5 text-center">Yes</td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 className="text-lg font-bold text-stone-900 mt-8">6.3 Table II.B · Standard Hmar Literary Language Specification</h4>
+            <div className="my-4 overflow-x-auto rounded-xl border border-emerald-300 shadow-xs bg-emerald-50/40 text-xs sm:text-sm font-sans">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-emerald-100 font-mono text-emerald-950 font-bold border-b border-emerald-200 uppercase tracking-wider">
+                  <tr>
+                    <th className="px-4 py-3 border-r border-emerald-200">Language Standard</th>
+                    <th className="px-4 py-3 border-r border-emerald-200">ISO 639-3 Code</th>
+                    <th className="px-4 py-3 border-r border-emerald-200">Glottolog Identifier</th>
+                    <th className="px-4 py-3">Classification &amp; Literary Status</th>
+                  </tr>
+                </thead>
+                <tbody className="text-stone-800">
+                  <tr className="font-bold">
+                    <td className="px-4 py-3 border-r border-emerald-200 text-emerald-950">Written Standard Hmar</td>
+                    <td className="px-4 py-3 font-mono border-r border-emerald-200"><IsoLink code="hmr" /></td>
+                    <td className="px-4 py-3 font-mono border-r border-emerald-200"><GlottoLink id="hmar1241" /></td>
+                    <td className="px-4 py-3 font-sans text-emerald-900">Official Literary Standard for Bible translation, hymnbooks &amp; school textbooks</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 className="text-lg font-bold text-stone-900 mt-8">6.4 Table II.C · ISO 639-3 &amp; Glottolog Clan Registry Identifiers</h4>
+            <div className="my-6 overflow-x-auto rounded-xl border border-stone-200 shadow-xs bg-white text-xs sm:text-sm font-sans">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-stone-100 font-mono text-stone-800 font-bold border-b border-stone-200 uppercase tracking-wider">
+                  <tr>
+                    <th className="px-4 py-3 border-r border-stone-200">Clan Name (Hnam)</th>
+                    <th className="px-4 py-3 border-r border-stone-200">ISO 639-3 Code</th>
+                    <th className="px-4 py-3">Glottolog Identifier</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-200 text-stone-700">
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawsak</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 font-mono"><GlottoLink id="khaw1234" /></td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ṭhiek</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 font-mono"><GlottoLink id="thie1234" /></td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Lungṭau</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Leiri</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Zote</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Darngawn</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawbung</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Lawitlang</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ngurte</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pakhuong</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Changsan (Changsen)</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="chan" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="chan1312" /></td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawlhring (Khuolhring)</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Faihriem (Saihriem / Syriem)</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 font-mono"><GlottoLink id="syri1242" /></td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Biate (Biete / Baite)</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="biu" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="biet1238" /> / <GlottoLink id="bait1247" /></td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Hrangkhawl</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="hra" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="hran1239" /> / <GlottoLink id="hran1240" /></td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khelte (Khiengte)</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pautu</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Rawite</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Sakum</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Vangsie (Vangchhia)</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Sakachep</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="sch" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="saka1283" /></td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ngente</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="lus" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="ngen1250" /></td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chawhte</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chawnthei</td><td className="px-4 py-2.5 text-stone-500 font-sans border-r border-stone-200">Unlisted</td><td className="px-4 py-2.5 text-stone-500 font-sans">Unlisted (Subsumed under hmr)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Bawm (Bawmzo)</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="bms" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="bawm1236" /></td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chiru (Chawrai)</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="cdf" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="chir1283" /></td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pang (Pangkhua)</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="pbr" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="pank1249" /></td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Aimol</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="aim" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="aimo1244" /></td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Halam</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="rnl" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="rang1267" /></td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Darlong</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="dln" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="darl1242" /></td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Kom</td><td className="px-4 py-2.5 font-mono border-r border-stone-200"><IsoLink code="kmm" /></td><td className="px-4 py-2.5 font-mono"><GlottoLink id="komi1270" /></td></tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h4 className="text-lg font-bold text-stone-900 mt-8">6.5 Table II.D · Ethnolinguistic Status &amp; Clan Registry Notes</h4>
+            <div className="my-6 overflow-x-auto rounded-xl border border-stone-200 shadow-xs bg-white text-xs sm:text-sm font-sans">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-stone-100 font-mono text-stone-800 font-bold border-b border-stone-200 uppercase tracking-wider">
+                  <tr>
+                    <th className="px-4 py-3 border-r border-stone-200">Clan Name (Hnam)</th>
+                    <th className="px-4 py-3 border-r border-stone-200">Classification Status</th>
+                    <th className="px-4 py-3">Registry Notes &amp; Ethnolinguistic Context</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-200 text-stone-700">
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawsak</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Primary spoken basis of written standard Hmar (<GlottoLink id="khaw1234" />); subsumed under standard <IsoLink code="hmr" /> in ISO 639-3</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ṭhiek</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Foundational ancestral Hmar clan (<GlottoLink id="thie1234" />); subsumed under standard <IsoLink code="hmr" /> in ISO 639-3</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Lungṭau</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Leiri</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Ancestral Hmar clan variety; omitted from ISO 639-3 &amp; Ethnologue listings</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Zote</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Ancestral Hmar clan variety; omitted from ISO 639-3 &amp; Ethnologue listings</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Darngawn</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawbung</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Lawitlang</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ngurte</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pakhuong</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Changsan (Changsen)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Classified under Thadoic (<GlottoLink id="chan1312" /> / <IsoLink code="chan" />) in ISO, but native customary Hmar clan</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khawlhring (Khuolhring)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Faihriem (Saihriem / Syriem)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Maintained in Glottolog (<GlottoLink id="syri1242" />) under Sakachep-Chorei, but omitted from ISO 639-3</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Biate (Biete / Baite)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Native Hmar clan; cataloged as separate Hmaric language (<GlottoLink id="biet1238" /> / <IsoLink code="biu" />) and dialect (<GlottoLink id="bait1247" />) in ISO/Glottolog</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Hrangkhawl</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Duplicated in Glottolog under both Hmaric (<GlottoLink id="hran1239" />) and Halam (<GlottoLink id="hran1240" />); ISO (<IsoLink code="hra" />)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Khelte (Khiengte)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pautu</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Rawite</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Sakum</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Vangsie (Vangchhia)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Sakachep</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Cataloged under Western Northwestern (<GlottoLink id="saka1283" /> / <IsoLink code="sch" />) in ISO, but native customary Hmar clan</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Ngente</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Cataloged under Mizo (<GlottoLink id="ngen1250" /> / <IsoLink code="lus" />) in Glottolog/ISO, but native customary Hmar clan</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chawhte</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chawnthei</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-amber-100 text-amber-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Subsumed</span></td><td className="px-4 py-2.5">Native customary Hmar clan; subsumed under standard <IsoLink code="hmr" /> (Unlisted in ISO &amp; Glottolog)</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Bawm (Bawmzo)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Cataloged under Falamic (<GlottoLink id="bawm1236" /> / <IsoLink code="bms" />) in Glottolog/ISO, but native customary Hmar clan</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Chiru (Chawrai)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Cataloged under Central Old Kuki (<GlottoLink id="chir1283" /> / <IsoLink code="cdf" />) in Glottolog/ISO, but native customary Hmar clan</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Pang (Pangkhua)</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Cataloged under Mizoic (<GlottoLink id="pank1249" /> / <IsoLink code="pbr" />) in Glottolog/ISO, but native customary Hmar clan</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Aimol</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Cataloged under Central Old Kuki (<GlottoLink id="aimo1244" /> / <IsoLink code="aim" />) in Glottolog/ISO, but native customary Hmar clan</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Halam</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Cataloged as Western Northwestern language cluster (<GlottoLink id="rang1267" /> / <IsoLink code="rnl" />), but native Hmar clan cluster</td></tr>
+                  <tr className="bg-stone-50/50"><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Darlong</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Native Hmar clan; cataloged as Mizoic variety (<GlottoLink id="darl1242" /> / <IsoLink code="dln" />) in ISO/Glottolog</td></tr>
+                  <tr><td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Kom</td><td className="px-4 py-2.5 border-r border-stone-200"><span className="bg-emerald-100 text-emerald-900 font-mono text-xs px-2 py-0.5 rounded-full font-bold">Verified</span></td><td className="px-4 py-2.5">Discrepancy: Cataloged under Kolhrengic (<GlottoLink id="komi1270" /> / <IsoLink code="kmm" />) in Glottolog/ISO, but native customary Hmar clan</td></tr>
+                </tbody>
+              </table>
             </div>
           </article>
 
@@ -497,6 +658,88 @@ export default function Standards() {
                 — Stuart Lotven, Kenneth Van Bik, Stuart Davis, et al., "The syllable in Kuki-Chin", Journal of South Asian Languages and Linguistics, 2020, p. 1
               </span>
             </blockquote>
+
+            <h4 className="text-lg font-bold text-stone-900 mt-8">Proposed Cladistic Restructuring Table</h4>
+            <div className="my-6 overflow-x-auto rounded-xl border border-stone-200 shadow-xs bg-white text-xs sm:text-sm font-sans">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-stone-100 font-mono text-stone-800 font-bold border-b border-stone-200 uppercase tracking-wider">
+                  <tr>
+                    <th className="px-4 py-3 border-r border-stone-200">Glottolog ID</th>
+                    <th className="px-4 py-3 border-r border-stone-200">Legacy Glottolog Label</th>
+                    <th className="px-4 py-3 border-r border-stone-200">Proposed Cladistic Label</th>
+                    <th className="px-4 py-3">Scope &amp; Speech Varieties</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-200 text-stone-700 font-sans">
+                  <tr>
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200"><GlottoLink id="sino1245" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Sino-Tibetan</td>
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Sino-Tibetan / Trans-Himalayan</td>
+                    <td className="px-4 py-2.5">Top-level family root.</td>
+                  </tr>
+                  <tr className="bg-stone-50/50">
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200 text-stone-400 line-through"><GlottoLink id="kuki1245" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200 text-stone-400 line-through">Kuki-Chin-Naga (Legacy)</td>
+                    <td className="px-4 py-2.5 font-bold text-red-700 border-r border-stone-200">[NODE DISSOLUTION]</td>
+                    <td className="px-4 py-2.5 text-stone-500">Dissolve non-monophyletic geographical macro-node (94 varieties).</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200"><GlottoLink id="kuki1246" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Kuki-Chin</td>
+                    <td className="px-4 py-2.5 font-bold text-emerald-950 border-r border-stone-200">Zo Languages / South-Central</td>
+                    <td className="px-4 py-2.5 font-bold text-emerald-900">55 Speech Varieties sharing Proto-Zo phonology.</td>
+                  </tr>
+                  <tr className="bg-stone-50/50">
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200 pl-6">├── <GlottoLink id="cent2330" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Core Central Kuki-Chin</td>
+                    <td className="px-4 py-2.5 font-semibold text-stone-900 border-r border-stone-200">Central Zo (17 varieties)</td>
+                    <td className="px-4 py-2.5">Hmar, Mizo (Lushai), Lai/Hakha, Maraic, Pangkhua.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200 pl-6">├── <GlottoLink id="oldk1252" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Northwestern Kuki-Chin</td>
+                    <td className="px-4 py-2.5 font-semibold text-stone-900 border-r border-stone-200">Northwestern Zo (16 varieties)</td>
+                    <td className="px-4 py-2.5">Anal, Monsang, Moyon, Purum, Aimol, Lamkang, Tarao.</td>
+                  </tr>
+                  <tr className="bg-stone-50/50">
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200 pl-6">└── <GlottoLink id="peri1260" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Peripheral Kuki-Chin</td>
+                    <td className="px-4 py-2.5 font-semibold text-stone-900 border-r border-stone-200">Peripheral Zo (22 varieties)</td>
+                    <td className="px-4 py-2.5">Tedim, Paite, Thadou, Vaiphei, Simte, Khomic, Ashö.</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200"><GlottoLink id="anga1312" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Angami-Ao</td>
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Angami-Ao Branch (Independent)</td>
+                    <td className="px-4 py-2.5">Independent node outside Zo (18 varieties).</td>
+                  </tr>
+                  <tr className="bg-stone-50/50">
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200"><GlottoLink id="karb1240" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Karbic</td>
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Karbic Branch (Independent)</td>
+                    <td className="px-4 py-2.5">Independent node outside Zo (2 varieties).</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200"><GlottoLink id="mani1292" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Manipuri / Meitei</td>
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Meitei Branch (Independent)</td>
+                    <td className="px-4 py-2.5">Independent Sino-Tibetan node outside Zo.</td>
+                  </tr>
+                  <tr className="bg-stone-50/50">
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200"><GlottoLink id="tang1335" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Tangkhul-Maring</td>
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Tangkhul-Maring Branch (Independent)</td>
+                    <td className="px-4 py-2.5">Independent node outside Zo (11 varieties).</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2.5 font-mono border-r border-stone-200"><GlottoLink id="zeme1241" /></td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Zemeic</td>
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Zemeic Branch (Independent)</td>
+                    <td className="px-4 py-2.5">Independent node outside Zo (7 varieties).</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           {/* Section IX */}
@@ -572,6 +815,39 @@ export default function Standards() {
             <p className="text-stone-700 leading-relaxed text-base">
               Digital community portals document the broader spectrum of <strong>40 recognized Hmar clans</strong> and over <strong>200+ sub-clans (<em>pahnam</em>)</strong> that share the ancestral <em>Sinlung</em> origin tradition across Northeast India. By acknowledging these community archives alongside academic research, the Foundation bridges formal comparative linguistics with living indigenous heritage.
             </p>
+
+            <div className="my-6 overflow-x-auto rounded-xl border border-stone-200 shadow-xs bg-white text-xs sm:text-sm font-sans">
+              <table className="w-full text-left border-collapse">
+                <thead className="bg-stone-100 font-mono text-stone-800 font-bold border-b border-stone-200 uppercase tracking-wider">
+                  <tr>
+                    <th className="px-4 py-3 border-r border-stone-200">Source Portal / Registry</th>
+                    <th className="px-4 py-3 border-r border-stone-200">Scope &amp; Documented Clans</th>
+                    <th className="px-4 py-3 border-r border-stone-200">Ethnolinguistic Focus</th>
+                    <th className="px-4 py-3">Access Link</th>
+                  </tr>
+                </thead>
+                <tbody className="divide-y divide-stone-200 text-stone-700 font-sans">
+                  <tr>
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Virthli</td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">40 Clans &amp; 200+ Sub-Clans (<em>Pahnam</em>)</td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Living pan-Hmar cultural &amp; clan genealogy</td>
+                    <td className="px-4 py-2.5"><a href="https://www.virthli.in/2012/03/hmar-clans.html" target="_blank" rel="noopener noreferrer" className="text-emerald-800 hover:underline font-mono">virthli.in</a></td>
+                  </tr>
+                  <tr className="bg-stone-50/50">
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Hmar Inpui</td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">21 Customary Administrative Clans (<em>Hnam 21</em>)</td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Tribal governance &amp; customary law</td>
+                    <td className="px-4 py-2.5 text-stone-500 font-mono">Customary Archives</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 py-2.5 font-bold text-stone-900 border-r border-stone-200">Dr. Lal Dena</td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Ancestral &amp; Regional Clan History</td>
+                    <td className="px-4 py-2.5 border-r border-stone-200">Historical evolution &amp; migration records</td>
+                    <td className="px-4 py-2.5 text-stone-500 font-mono">Academic Publication (2008)</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </article>
 
           {/* References & Bibliography */}
