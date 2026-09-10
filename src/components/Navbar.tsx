@@ -44,8 +44,8 @@ export default function Navbar() {
       </div>
 
       <nav className="container-page flex items-center justify-between h-16 md:h-18">
-        <Link to="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 rounded-lg bg-[#064e3b] flex items-center justify-center text-white transition-transform group-hover:scale-105">
+        <Link to="/" className="flex items-center gap-3 group outline-none focus:outline-none">
+          <div className="w-10 h-10 rounded-lg bg-[#064e3b] flex items-center justify-center text-white transition-transform group-hover:scale-105 shadow-xs">
             <LogoIcon className="w-7 h-7 text-white" />
           </div>
           <div className="hidden sm:block">
@@ -66,10 +66,10 @@ export default function Navbar() {
               <Link
                 key={link.to}
                 to={link.to}
-                className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-800/30 ${
                   active
-                    ? 'text-[#064e3b] bg-emerald-50 font-semibold'
-                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
+                    ? 'text-[#064e3b] bg-emerald-50/90 font-semibold border border-emerald-800/15 shadow-xs'
+                    : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100/80 border border-transparent'
                 }`}
               >
                 {link.label}
@@ -79,10 +79,10 @@ export default function Navbar() {
 
           <Link
             to="/grantmakers"
-            className={`px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+            className={`px-3 py-1.5 rounded-lg text-sm font-medium transition-all duration-200 outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-800/30 ${
               isGrantmakersActive
-                ? 'text-[#064e3b] bg-emerald-50 font-semibold'
-                : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
+                ? 'text-[#064e3b] bg-emerald-50/90 font-semibold border border-emerald-800/15 shadow-xs'
+                : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100/80 border border-transparent'
             }`}
           >
             Grantmakers
@@ -90,22 +90,22 @@ export default function Navbar() {
 
           <Link
             to="/hmars"
-            className={`ml-1 text-sm py-1.5 px-3.5 rounded-lg font-semibold border border-stone-800/70 transition-all ${
+            className={`ml-1 text-sm py-1.5 px-3.5 rounded-lg font-semibold transition-all outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-800/30 ${
               isHmarsActive
-                ? 'bg-emerald-50 text-[#064e3b] border-[#064e3b]/80'
-                : 'text-stone-900 bg-transparent hover:bg-stone-100 hover:border-stone-900'
+                ? 'bg-emerald-50/90 text-[#064e3b] border border-emerald-800/25 shadow-xs'
+                : 'text-stone-800 bg-stone-100/80 hover:bg-stone-200/70 border border-stone-300/80'
             }`}
           >
             The Hmars
           </Link>
 
-          <Link to="/join" className="btn-primary ml-2 text-sm py-2 px-4">
+          <Link to="/join" className="btn-primary ml-2 text-sm py-2 px-4 outline-none focus:outline-none focus-visible:ring-2 focus-visible:ring-emerald-800/30">
             Join Us
           </Link>
         </div>
 
         <button
-          className="lg:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100"
+          className="lg:hidden p-2 rounded-lg text-stone-700 hover:bg-stone-100 outline-none focus:outline-none"
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label="Toggle menu"
         >
@@ -123,9 +123,9 @@ export default function Navbar() {
                 <Link
                   key={link.to}
                   to={link.to}
-                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
+                  className={`px-4 py-3 rounded-lg text-sm font-medium transition-all outline-none focus:outline-none ${
                     active
-                      ? 'text-[#064e3b] bg-emerald-50 font-semibold'
+                      ? 'text-[#064e3b] bg-emerald-50/90 font-semibold border border-emerald-800/15'
                       : 'text-stone-600 hover:bg-stone-100'
                   }`}
                 >
@@ -135,9 +135,9 @@ export default function Navbar() {
             })}
             <Link
               to="/grantmakers"
-              className={`px-4 py-3 rounded-lg text-sm font-medium transition-all ${
+              className={`px-4 py-3 rounded-lg text-sm font-medium transition-all outline-none focus:outline-none ${
                 isGrantmakersActive
-                  ? 'text-[#064e3b] bg-emerald-50 font-semibold'
+                  ? 'text-[#064e3b] bg-emerald-50/90 font-semibold border border-emerald-800/15'
                   : 'text-stone-600 hover:bg-stone-100'
               }`}
             >
@@ -146,15 +146,15 @@ export default function Navbar() {
             <div className="flex flex-col gap-2 mt-2">
               <Link
                 to="/hmars"
-                className={`text-sm py-2.5 px-4 rounded-lg font-semibold border border-stone-800/70 transition-all text-center ${
+                className={`text-sm py-2.5 px-4 rounded-lg font-semibold transition-all text-center outline-none focus:outline-none ${
                   isHmarsActive
-                    ? 'bg-emerald-50 text-[#064e3b] border-[#064e3b]/80'
-                    : 'text-stone-900 bg-transparent hover:bg-stone-100'
+                    ? 'bg-emerald-50/90 text-[#064e3b] border border-emerald-800/25'
+                    : 'text-stone-800 bg-stone-100/80 hover:bg-stone-200/70 border border-stone-300/80'
                 }`}
               >
                 The Hmars
               </Link>
-              <Link to="/join" className="btn-primary justify-center">
+              <Link to="/join" className="btn-primary justify-center outline-none focus:outline-none">
                 Join Us
               </Link>
             </div>

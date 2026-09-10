@@ -16,6 +16,15 @@
     @apply font-sans;
     letter-spacing: -0.02em;
   }
+  a:focus:not(:focus-visible),
+  button:focus:not(:focus-visible) {
+    outline: none;
+  }
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid rgba(6, 78, 59, 0.35);
+    outline-offset: 2px;
+  }
 }
 
 @layer components {
