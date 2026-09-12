@@ -26,7 +26,7 @@ export default function People() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {people.map((person) => {
-            const isOpenPosition = person.name.includes('Open Position');
+            const isOpenPosition = person.name.includes('Open Position') || person.role.includes('Open Position');
             return (
               <div
                 key={person.name}

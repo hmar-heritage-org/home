@@ -17,11 +17,11 @@ export const people: Person[] = [
     focus: ['Administration', 'Data Engineering', 'Hugging Face'],
   },
   {
-    name: 'Ephriam Pena',
-    role: 'Field Operator & Public Relations',
+    name: 'Field Operator & Public Relations',
+    role: 'Open Position (Volunteer Needed)',
     bio: 'Coordinates village outreach to collect physical books, out-of-print literature, rare folk songbooks, and oral history recordings from community elders and family archives.',
     location: 'Field Outreach',
-    initials: 'EP',
+    initials: 'OP',
     focus: ['Book Collection', 'Oral History', 'Community Outreach'],
   },
   {
