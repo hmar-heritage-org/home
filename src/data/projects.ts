@@ -35,7 +35,7 @@ export const projects: Project[] = [
     longDescription: [
       'The Archival & Datasets initiative is the primary project of the Foundation. Our current operational focus is digitizing and structuring public domain data already available on the internet as the most immediate and accessible starting point.',
       'We are actively collecting physical books, but we strictly hold off on scanning or digitizing them until formal copyright waivers are secured. We plan to engage with the Hmar Literature Society (HLS) and the Hmar MIL Monitoring Committee to secure waivers for their publications, while holding ongoing discussions on how to obtain copyright waivers from individual community members.',
-      'All structured master data is hosted open-access on Hugging Face under the hmar-heritage-org organization. Current active repositories include dolma-pretrain, wordlist, unigrams, hmingtluon, zo-bible, corpus-archive, numeral-words, and culture-dump, alongside software tools like hmaraniam. Once field equipment and grant funding are secured, we will pivot heavily to audio and video recording of oral heritage.',
+      'All structured master data is hosted open-access on Hugging Face under the hmar-heritage-org organization. Current repositories include sentences, wordlist, unigrams, hmingtluon, zo-bible, corpus-archive, numeral-words, culture-dump, and zo-cognates, alongside software tools like hmaraniam. Once field equipment and grant funding are secured, we will pivot heavily to audio and video recording of oral heritage.',
     ],
     status: 'active',
     lead: 'Archival & Datasets Team',
@@ -52,7 +52,7 @@ export const projects: Project[] = [
       },
       {
         heading: 'Hugging Face Datasets Hub',
-        body: 'Our active datasets are hosted publicly on Hugging Face at hmar-heritage-org. Live datasets include dolma-pretrain (89.6k+ sentences, ~2.4M tokens), hmingtluon naming registry, wordlist (43.5k+ entries), unigrams (45k+ surface words), numeral-words (1M+ entries), zo-bible, corpus-archive, and culture-dump.',
+        body: 'Our active datasets are hosted publicly on Hugging Face at hmar-heritage-org. Live datasets include sentences, hmingtluon naming registry, wordlist, unigrams, numeral-words, zo-bible, and corpus-archive, with culture-dump and zo-cognates planned.',
       },
       {
         heading: 'Future Roadmap: Audio, Video & Funding',
@@ -60,13 +60,15 @@ export const projects: Project[] = [
       },
     ],
     milestones: [
-      { title: 'Hugging Face hmar-heritage-org org setup', date: '2024', done: true },
-      { title: 'Dataset releases: hmingtluon, wordlist, numeral-words', date: '2024 - 2025', done: true },
-      { title: 'Corpus & Bible datasets (zo-bible, corpus-archive)', date: '2025 Q1', done: true },
-      { title: 'Pretraining Corpus & Language Tools (dolma-pretrain, hmaraniam)', date: '2026', done: true },
-      { title: 'Hmar Literature Society & MIL Committee waiver outreach', date: '2025 Q3', done: false },
-      { title: 'Community copyright waiver framework', date: '2025 Q4', done: false },
-      { title: 'Grant funding & Field audio/video recording hardware acquisition', date: '2026', done: false },
+      { title: 'Hugging Face organization and archive setup', date: '2024', done: true },
+      { title: 'Core lexical and naming datasets: wordlist, hmingtluon, numeral-words', date: '2024 - 2025', done: true },
+      { title: 'Sentence corpus and vocabulary: sentences, unigrams', date: '2025 - 2026', done: true },
+      { title: 'Parallel Bible corpus: zo-bible, 31,107 canonical verses', date: '2025 - 2026', done: true },
+      { title: 'Language identification tool: hmaraniam on PyPI and GitHub', date: '2026', done: true },
+      { title: 'Mobile Termux ingestion tools: corpus-archive-tool-for-termux, termux-yt-scraper', date: '2026', done: true },
+      { title: 'Hmar Literature Society and MIL Committee copyright waiver outreach', date: 'Planned', done: false },
+      { title: 'Community copyright waiver framework for private collections', date: 'Planned', done: false },
+      { title: 'Grant funding for field audio and video recording equipment', date: 'Planned', done: false },
     ],
     resources: [
       { label: 'Hugging Face hmar-heritage-org Hub', href: 'https://huggingface.co/hmar-heritage-org' },
@@ -82,8 +84,8 @@ export const projects: Project[] = [
     description:
       'Developing open-source keyboard layouts, Unicode locale data (CLDR), and software translations so that the Hmar language lives natively on modern devices.',
     longDescription: [
-      'The Hmar language (ISO 639-3: hmar) is spoken by communities across Manipur, Mizoram, Assam, Meghalaya, and Tripura. Yet despite a rich oral and literary tradition, the language has minimal digital footprint — no standardized keyboard layout, no operating-system locale, and virtually no localized software.',
-      'This project addresses that gap. We build and maintain open-source keyboard layouts for all major platforms (Windows, macOS, Linux, Android, iOS), contribute Hmar locale data to the Unicode CLDR project, and coordinate volunteer translators to localize essential software — from web browsers to educational tools.',
+      'The Hmar language (ISO 639-3: hmar) is spoken by communities across Manipur, Mizoram, Assam, Meghalaya, and Tripura. Yet despite a rich oral and literary tradition, the language has minimal digital footprint: no standardized keyboard layout, no operating-system locale, and virtually no localized software.',
+      'This project addresses that gap. We plan to build and maintain open-source keyboard layouts for major platforms (Windows, macOS, Linux, Android, iOS), contribute Hmar locale data to the Unicode CLDR project, and coordinate volunteer translators to localize essential open-source software.',
     ],
     status: 'planning',
     lead: 'Language Engineering Working Group',
@@ -92,11 +94,11 @@ export const projects: Project[] = [
     sections: [
       {
         heading: 'Keyboard Layouts',
-        body: 'We maintain a unified Hmar keyboard layout based on the Latin script used by the community, with dead-key support for tone diacritics and special characters. Layouts are available for Windows (via MSKLC), macOS (via Ukelele), Linux (via xkb), and mobile platforms (via Keyman). All layouts are released under the MIT license.',
+        body: 'We are designing a unified Hmar keyboard layout based on the Latin script used by the community, with dead-key support for tone diacritics and special characters. Target layouts include Windows via MSKLC, macOS via Ukelele, Linux via xkb, and mobile platforms via Keyman. All layouts will be released under the MIT license.',
       },
       {
         heading: 'CLDR Locale Data',
-        body: 'We contribute Hmar locale data to the Unicode Common Locale Data Repository (CLDR), including date formats, number patterns, calendar conventions, and display names. Our goal is full coverage in the CLDR survey tool so that operating systems and applications can offer Hmar as a system language.',
+        body: 'We plan to contribute Hmar locale data to the Unicode Common Locale Data Repository (CLDR), including date formats, number patterns, calendar conventions, and display names. Our goal is full coverage in the CLDR survey tool so that operating systems and applications can offer Hmar as a system language.',
       },
       {
         heading: 'Code Disambiguation',
@@ -104,20 +106,19 @@ export const projects: Project[] = [
       },
       {
         heading: 'Software Localization',
-        body: 'Our volunteer translator community localizes open-source software into Hmar. Current priorities include: the Firefox browser, the GNOME desktop environment, and the Kolibri educational platform. We use the open-source Weblate platform for translation management.',
+        body: 'Our planned volunteer translator pipeline will localize open-source software into Hmar, starting with web browsers, educational platforms, and desktop tools via open-source Weblate platform.',
       },
     ],
     milestones: [
-      { title: 'Hmar keyboard layout v1.0 (desktop)', date: '2024 Q2', done: true },
-      { title: 'Keyman mobile keyboard release', date: '2024 Q4', done: true },
-      { title: 'CLDR locale data submission', date: '2025 Q1', done: true },
-      { title: 'Firefox browser localization (50%)', date: '2025 Q3', done: false },
-      { title: 'GNOME desktop localization (30%)', date: '2025 Q4', done: false },
-      { title: 'CLDR full coverage', date: '2026 Q2', done: false },
+      { title: 'Tone diacritic and Hmar Latin orthography keyboard specification', date: 'Planned', done: false },
+      { title: 'Desktop keyboard layouts for Windows, macOS, and Linux', date: 'Planned', done: false },
+      { title: 'Keyman mobile keyboard layout for Android and iOS', date: 'Planned', done: false },
+      { title: 'CLDR Unicode locale data compilation and submission', date: 'Planned', done: false },
+      { title: 'Open-source software localization initiative', date: 'Planned', done: false },
     ],
     resources: [
-      { label: 'Hmar Keyboard Layout (Windows)', href: '/resources' },
-      { label: 'Hmar Keyboard Layout (macOS)', href: '/resources' },
+      { label: 'Hmar Keyboard Layout - Windows', href: '/resources' },
+      { label: 'Hmar Keyboard Layout - macOS', href: '/resources' },
       { label: 'Keyman Keyboard for Mobile', href: '/resources' },
     ],
   },
@@ -151,17 +152,17 @@ export const projects: Project[] = [
       },
     ],
     milestones: [
-      { title: 'Wikimedia Incubator Wp/hmr setup', date: '2024', done: true },
-      { title: 'Core templates, categories & 10–20 seed articles created', date: '2024 - 2025', done: true },
-      { title: 'Lead section list setup (Lead_section_cho_um)', date: '2025 Q1', done: true },
-      { title: 'Recruit first 5 regular community editors', date: '2025 Q3', done: false },
-      { title: 'Draft style guides & core orthography policies', date: '2025 Q4', done: false },
-      { title: 'Wikimedia LangCom audit & hmr.wikipedia.org subdomain launch', date: '2026', done: false },
+      { title: 'Wikimedia Incubator Wp/hmr workspace established', date: '2024', done: true },
+      { title: 'Core templates, categories, and seed articles created', date: '2024 - 2025', done: true },
+      { title: 'Lead section article list setup: Lead_section_cho_um', date: '2025', done: true },
+      { title: 'Recruit regular community editors and proofreaders', date: 'Ongoing', done: false },
+      { title: 'Draft community style guide and orthography conventions', date: 'Planned', done: false },
+      { title: 'Wikimedia LangCom review for standalone hmr.wikipedia.org subdomain', date: 'Planned', done: false },
     ],
     resources: [
       { label: 'Wikimedia Incubator Wp/hmr Home', href: 'https://incubator.wikimedia.org/wiki/Wp/hmr' },
       { label: 'Essential Info: Wp/hmr/Wikipedia:Hriet_ding_pawimaw', href: 'https://incubator.wikimedia.org/wiki/Wp/hmr/Wikipedia:Hriet_ding_pawimaw' },
-      { label: 'Lead Section Article List (Lead_section_cho_um)', href: 'https://incubator.wikimedia.org/wiki/Wp/hmr/Wikipedia:Lead_section_cho_um' },
+      { label: 'Lead Section Article List: Lead_section_cho_um', href: 'https://incubator.wikimedia.org/wiki/Wp/hmr/Wikipedia:Lead_section_cho_um' },
     ],
   },
   {
@@ -170,11 +171,11 @@ export const projects: Project[] = [
     shortTitle: 'Customary Lexicon',
     tagline: 'An open digital dictionary and terminology index for the Hmar language.',
     description:
-      'Building a community-maintained, open-source digital dictionary of Hmar words, customary terms, and phrases — with definitions in Hmar, English, and Mizo.',
+      'Building a community-maintained, open-source digital dictionary of Hmar words, customary terms, and phrases with definitions in Hmar, English, and Mizo.',
     longDescription: [
-      'The Hmar Customary Lexicon is a living, community-maintained dictionary. Unlike a traditional print dictionary, it grows continuously as community members contribute words, definitions, example sentences, and audio pronunciations.',
-      'The lexicon covers three domains: (1) general vocabulary — everyday words and their meanings; (2) customary terms — words specific to Hmar clan governance, land tenure, and ritual practice that have no direct English equivalent; (3) oral literature vocabulary — archaic and poetic terms found in Hmar Hla (songs) and folktales.',
-      'All data is published under the Creative Commons Attribution-ShareAlike license and is available as downloadable JSON, CSV, and TEI-XML for use in apps, research, and language learning tools.',
+      'The Hmar Customary Lexicon is a living, community-maintained dictionary initiative. While the Foundation has already aggregated 43,509 baseline entries in the open wordlist dataset, customary and oral terms require specialized anthropological indexing.',
+      'The lexicon covers three domains: (1) general vocabulary: everyday words and their meanings; (2) customary terms: words specific to Hmar clan governance, land tenure, and ritual practice that have no direct English equivalent; (3) oral literature vocabulary: archaic and poetic terms found in Hmar Hla (songs) and folktales.',
+      'All data will be published under the Creative Commons Attribution-ShareAlike license and will be available as downloadable JSON, CSV, and TEI-XML for use in apps, research, and language learning tools.',
     ],
     status: 'planning',
     lead: 'Lexicon Working Group',
@@ -183,28 +184,27 @@ export const projects: Project[] = [
     sections: [
       {
         heading: 'Dictionary Architecture',
-        body: 'Each entry contains: headword (in Hmar), part of speech, definition (in Hmar and English), example sentence, audio pronunciation (where available), etymology notes, and cross-references to related entries. Entries are tagged by domain (general, customary, literary) and by clan dialect where variants exist.',
+        body: 'Each entry contains: headword in Hmar, part of speech, definition in Hmar and English, example sentence, audio pronunciation where available, etymology notes, and cross-references to related entries. Entries are tagged by domain (general, customary, literary) and by clan dialect where variants exist.',
       },
       {
         heading: 'Customary Terminology',
-        body: 'A special focus of the lexicon is customary terms — words that describe Hmar-specific concepts of governance, land, kinship, and ritual. For example, "Inpui" refers to the great clan assembly, a concept central to Hmar social organization. These entries include anthropological notes and references to the customary literature.',
+        body: 'A special focus of the lexicon is customary terms: words that describe Hmar-specific concepts of governance, land, kinship, and ritual. For example, "Inpui" refers to the great clan assembly, a concept central to Hmar social organization. These entries include anthropological notes and references to the customary literature.',
       },
       {
         heading: 'Data Formats & API',
-        body: 'The lexicon is available as downloadable JSON and CSV for developers, and as TEI-XML for digital humanities researchers. A read-only REST API provides programmatic access to search and retrieval. All data is versioned and citable via persistent identifiers.',
+        body: 'The lexicon will be available as downloadable JSON and CSV for developers, and as TEI-XML for digital humanities researchers. A read-only REST API will provide programmatic access to search and retrieval.',
       },
     ],
     milestones: [
-      { title: 'Schema design & data model', date: '2024 Q3', done: true },
-      { title: 'Seed corpus: 1,000 entries', date: '2024 Q4', done: true },
-      { title: 'Audio pronunciation framework', date: '2025 Q1', done: true },
-      { title: 'Public API launch', date: '2025 Q3', done: false },
-      { title: '5,000 entries', date: '2026 Q1', done: false },
-      { title: 'TEI-XML export', date: '2026 Q2', done: false },
+      { title: 'Baseline multi-source dictionary compilation: wordlist dataset, 43,509 entries', date: '2024 - 2025', done: true },
+      { title: 'Customary schema design for clan governance, kinship, and land tenure terms', date: 'Planned', done: false },
+      { title: 'Oral literature terminology indexing from traditional folk songs', date: 'Planned', done: false },
+      { title: 'Community submission and editorial verification workflow', date: 'Planned', done: false },
+      { title: 'Standardized TEI-XML and programmatic API export', date: 'Planned', done: false },
     ],
     resources: [
-      { label: 'Lexicon Data (JSON)', href: '/resources' },
-      { label: 'Lexicon Data (CSV)', href: '/resources' },
+      { label: 'Lexicon Data - JSON', href: '/resources' },
+      { label: 'Lexicon Data - CSV', href: '/resources' },
       { label: 'API Documentation', href: '/resources' },
     ],
   },
@@ -214,11 +214,11 @@ export const projects: Project[] = [
     shortTitle: 'Cultural Artifacts',
     tagline: 'Documenting physical village relics, musical instruments, and loom patterns.',
     description:
-      'A photographic and descriptive catalog of Hmar cultural artifacts — from traditional looms and musical instruments to ceremonial objects and everyday tools.',
+      'A photographic and descriptive catalog of Hmar cultural artifacts: from traditional looms and musical instruments to ceremonial objects and everyday tools.',
     longDescription: [
       'Hmar villages hold a rich material culture that is rapidly disappearing. Wooden looms, bamboo flutes, ceremonial dao (machetes), woven shawls, and ritual objects are still found in homes and community spaces, but younger generations increasingly lack the context to understand their significance.',
       'This project documents these artifacts through high-resolution photography, 3D scanning where feasible, and detailed descriptive records. Each artifact is photographed in context, cataloged with its customary name, function, and provenance, and published in an open catalog.',
-      'We do not collect or remove artifacts from their communities. Our work is purely documentary — we create a digital record that preserves knowledge about these objects for future generations.',
+      'We do not collect or remove artifacts from their communities. Our work is purely documentary: we create a digital record that preserves knowledge about these objects for future generations.',
     ],
     status: 'planning',
     lead: 'Artifacts Documentation Team',
@@ -231,7 +231,7 @@ export const projects: Project[] = [
       },
       {
         heading: 'Categories',
-        body: 'We document five categories: (1) Textiles — Puon (woven wraps), shawls, and their patterns; (2) Musical instruments — bamboo flutes, drums, and the penghleng (mouth harp); (3) Tools — dao, weaving implements, and agricultural tools; (4) Ceremonial objects — ritual items used in festivals and life-cycle events; (5) Everyday objects — baskets, utensils, and household items.',
+        body: 'We document five categories: (1) Textiles: Puon (woven wraps), shawls, and their patterns; (2) Musical instruments: bamboo flutes, drums, and the penghleng (mouth harp); (3) Tools: dao, weaving implements, and agricultural tools; (4) Ceremonial objects: ritual items used in festivals and life-cycle events; (5) Everyday objects: baskets, utensils, and household items.',
       },
       {
         heading: 'Community Consent',
@@ -239,12 +239,11 @@ export const projects: Project[] = [
       },
     ],
     milestones: [
-      { title: 'Documentation framework design', date: '2025 Q1', done: true },
-      { title: 'Pilot: 20 artifacts in 2 villages', date: '2025 Q2', done: false },
-      { title: 'Photography equipment acquisition', date: '2025 Q3', done: false },
-      { title: '100 artifacts documented', date: '2026 Q1', done: false },
-      { title: '3D scanning pilot', date: '2026 Q2', done: false },
-      { title: 'Public catalog launch', date: '2026 Q3', done: false },
+      { title: 'Archival documentation guidelines and cataloging standards', date: 'Planned', done: false },
+      { title: 'Community consent and protocol framework for sacred relics', date: 'Planned', done: false },
+      { title: 'Field photography pilot for traditional textiles, looms, and instruments', date: 'Planned', done: false },
+      { title: 'Oral history audio recordings with clan artifact custodians', date: 'Planned', done: false },
+      { title: 'Open-access photographic catalog publication', date: 'Planned', done: false },
     ],
     resources: [
       { label: 'Artifact Documentation Template', href: '/resources' },

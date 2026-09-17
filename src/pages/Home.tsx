@@ -119,23 +119,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Founder's Note (Authentic First-Person Narrative Imported from Old Website) */}
+      {/* Lead's Note (Authentic First-Person Narrative Imported from Old Website) */}
       <section className="bg-parchment border-y border-stone-200 py-16 md:py-24">
         <div className="container-page">
           <div className="max-w-prose mx-auto">
             <div className="flex items-center gap-3 mb-6 justify-center text-center">
               <Quote className="text-[#064e3b]" size={28} />
-              <span className="section-label">Founder&apos;s Note</span>
+              <span className="section-label">Lead&apos;s Note</span>
             </div>
             <div className="prose-institutional">
               <p>
-                I started this project of collecting books and creating datasets, working on it on and off since 2024 because I realized the Hmar community has almost zero digital footprint. Anything that exists is fragmented uploads by the occasional academic that you can only find buried in the Internet Archive or Wayback Machine, and most remaining material exists as raw deposits in separate repositories. Building this open foundation lets us connect these scattered resources into a structured community owned dataset, while opening doors to partner with international institutions to access essential resources.
+                Hello there! I&apos;m Dodo. I started collecting books and putting together datasets on and off back in 2024, mostly out of frustration. Our community barely has any digital footprint. If you search online, almost everything is scattered: a few random uploads by researchers buried deep in the Internet Archive, or old files forgotten in separate corners of the web. The idea here is simple: pull all those loose pieces together into one open, community-owned archive so we actually have something to build on.
               </p>
               <p>
-                Language is not just a tool for communication, it is also how we preserve our history, traditions, and culture. As we transitioned to preserving our cultural knowledge with books, the world moved on to the digital realm and transformed how information is distributed, and so did the need and the form and formats of data. The sudden rise of artificial intelligence over the past five years has undoubtedly transformed how we consume information and interact with screens. Whether one is pro-AI or anti-AI, this technology is unlikely to disappear, and will only become more integral to daily life. But this initiative is not just about AI and technology. It is about active participation so we do not get left behind and are ready to change on our own terms, rather than surrendering control to governments and corporations who control these systems.
+                For generations, our culture and history were carried by word of mouth, and later in printed books. But today, everything lives on screens. Over the last few years, artificial intelligence has completely changed how information moves around. Whether you like AI or hate it, it probably isn&apos;t going away, and it&apos;s already deciding which languages exist in modern tech and which get ignored. We can&apos;t sit around waiting for tech companies or governments to care about preserving Hmar. We have to do it ourselves, on our own terms.
               </p>
               <p>
-                This foundation is not about grand claims or controlling external platforms, but about self-determination: providing open tools, cultural archives, and language resources so our community can write its own history and shape its digital presence. What began as a solo effort is now an open door for anyone who wants to help.
+                We aren&apos;t making grand promises or trying to build an empire. The work itself is dead simple: scan books, scrape text, clean up typos, and organize data. Even though it feeds into computer science, linguistics, and other smart people stuff, none of this requires a PhD. It&apos;s just practical groundwork, and nobody is coming to do it for us. If we want our words to exist in modern software, we have to do the legwork ourselves. Even if we don&apos;t hand people polished, ready-made datasets right away, getting the raw groundwork down is what matters. What started as a solo project is now an open door for anyone willing to lend a hand.
               </p>
             </div>
           </div>

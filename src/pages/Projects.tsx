@@ -194,38 +194,66 @@ export default function Projects() {
       {/* Status summary */}
       <section className="bg-parchment border-t border-stone-200 py-16">
         <div className="container-page">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-2xl font-bold text-stone-900 mb-6">
-              Project Milestones at a Glance
-            </h2>
+          <div className="max-w-4xl mx-auto">
+            <div className="mb-8">
+              <span className="text-xs font-mono font-bold uppercase tracking-wider text-emerald-900 bg-emerald-100/90 px-2.5 py-1 rounded-md">
+                Roadmap & Progress
+              </span>
+              <h2 className="text-2xl font-bold text-stone-900 mt-3 font-serif">
+                Project Milestones at a Glance
+              </h2>
+              <p className="text-stone-600 text-sm mt-1">
+                Completed deliverables and active roadmap across all Foundation initiatives.
+              </p>
+            </div>
             <div className="space-y-6">
               {projects.map((project) => (
-                <div key={project.slug}>
-                  <Link
-                    to={`/projects/${project.slug}`}
-                    className="font-semibold text-stone-900 hover:text-crimson-700 transition-colors"
-                  >
-                    {project.shortTitle}
-                  </Link>
-                  <div className="mt-2 flex flex-wrap gap-3">
+                <div
+                  key={project.slug}
+                  className="bg-white rounded-xl border border-stone-200 p-5 shadow-xs"
+                >
+                  <div className="flex items-center justify-between gap-3 mb-4 pb-3 border-b border-stone-100 flex-wrap">
+                    <Link
+                      to={`/projects/${project.slug}`}
+                      className="font-serif font-bold text-lg text-stone-900 hover:text-emerald-900 transition-colors inline-flex items-center gap-2"
+                    >
+                      <span>{project.shortTitle}</span>
+                      <ArrowRight size={15} className="text-stone-400" />
+                    </Link>
+                    <span
+                      className={`text-xs font-mono font-medium px-2.5 py-0.5 rounded-full ${
+                        project.status === 'active'
+                          ? 'bg-emerald-100 text-emerald-800 border border-emerald-200'
+                          : 'bg-stone-100 text-stone-600 border border-stone-200'
+                      }`}
+                    >
+                      {project.status === 'active' ? 'Active Project' : 'In Planning'}
+                    </span>
+                  </div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-2.5">
                     {project.milestones.map((m) => (
                       <div
                         key={m.title}
-                        className={`flex items-center gap-1.5 text-sm ${
-                          m.done ? 'text-stone-400' : 'text-stone-700'
+                        className={`flex items-start gap-2.5 text-sm p-2 rounded-lg ${
+                          m.done
+                            ? 'bg-emerald-50/40 text-stone-600'
+                            : 'bg-stone-50/50 text-stone-700'
                         }`}
                       >
                         {m.done ? (
-                          <CheckCircle2 size={15} className="text-green-600" />
+                          <CheckCircle2 size={16} className="text-emerald-700 shrink-0 mt-0.5" />
                         ) : (
-                          <Circle size={15} className="text-stone-400" />
+                          <Circle size={16} className="text-stone-300 shrink-0 mt-0.5" />
                         )}
-                        <span className={m.done ? 'line-through' : ''}>
-                          {m.title}
-                        </span>
-                        <span className="text-xs text-stone-400 font-mono">
-                          ({m.date})
-                        </span>
+                        <div className="min-w-0 flex-1">
+                          <span className={m.done ? 'line-through text-stone-500 font-normal' : 'font-medium text-stone-800'}>
+                            {m.title}
+                          </span>
+                          <span className="block text-[11px] font-mono text-stone-400 mt-0.5">
+                            {m.date}
+                          </span>
+                        </div>
                       </div>
                     ))}
                   </div>

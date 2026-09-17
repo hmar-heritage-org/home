@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { MapPin, ArrowRight, Users, BookOpen, UserCheck } from 'lucide-react';
+import { MapPin, ArrowRight, Users, BookOpen, UserCheck, MessageCircle } from 'lucide-react';
 import PageHeader from '@/components/PageHeader';
 import { people } from '@/data/content';
 
@@ -84,6 +84,29 @@ export default function People() {
             );
           })}
         </div>
+
+        {/* Where We Need Help (Horizontal Prose Card) */}
+        <div className="mt-10 bg-amber-50/50 border border-amber-200/80 rounded-2xl p-6 sm:p-8 max-w-5xl mx-auto shadow-xs">
+          <div className="flex items-center gap-2 mb-3">
+            <span className="text-xs font-mono font-bold uppercase tracking-wider text-amber-900 bg-amber-100/90 px-2.5 py-1 rounded-md">
+              Open Coordination Roles
+            </span>
+          </div>
+          <h3 className="text-xl font-bold text-stone-900 mb-3 font-serif">
+            Where We Need Help
+          </h3>
+          <div className="space-y-3 text-sm sm:text-base text-stone-700 leading-relaxed max-w-3xl">
+            <p>
+              Right now, the two of us are juggling everything between ourselves. We already have community members who have shown interest in volunteering, but what we really need are coordinators to help organize and guide them. We&apos;re looking for people who want to step up across three specific areas: someone to take point on <strong className="text-stone-900 font-semibold">software and web tools</strong>, someone to coordinate <strong className="text-stone-900 font-semibold">outreach and book collection</strong> across villages, and someone to organize <strong className="text-stone-900 font-semibold">proofreading, transcription, and leading the Wikipedia Incubator project</strong>.
+            </p>
+            <p>
+              You don&apos;t need fancy credentials or a degree in anything, just the willingness to help keep a small working group moving. If any of those sound like something you&apos;d like to take on, let us know or jump into our WhatsApp chat below.
+            </p>
+            <p className="text-xs text-stone-500 font-mono">
+              PS: These are unpaid volunteer roles.
+            </p>
+          </div>
+        </div>
       </section>
 
       {/* Advisory Council & Scholar Network */}
@@ -107,11 +130,26 @@ export default function People() {
         <div className="max-w-2xl mx-auto text-center">
           <Users className="mx-auto mb-4 text-[#064e3b]" size={36} />
           <h2 className="text-3xl font-bold text-stone-900 mb-4">
-            Beyond Operational Leads
+            Volunteer Work in Progress
           </h2>
-          <p className="text-lg text-stone-600 leading-relaxed">
-            In addition to project leads, the Foundation relies on a network of community contributors across the Hmar homeland: software translators, village coordinators, oral history storytellers, and proofreaders.
-          </p>
+          <div className="space-y-4 text-stone-600 leading-relaxed text-base md:text-lg">
+            <p>
+              We are a 100% unpaid, volunteer effort with no formal staff or neat task queues. Our WhatsApp group is just an informal space where community members follow along as we get things off the ground. That&apos;s mostly where we share our updates, talk through plans, and figure out what to tackle next.
+            </p>
+            <p>
+              We have people interested in helping, but we&apos;re actively looking for coordinators who can help turn this group into real working pipelines. There is no rigid structure and no pressure to take on work. Whether you&apos;re interested in coordinating, want to help out with tasks, or just want to follow our progress from the sidelines, you&apos;re welcome to join.
+            </p>
+          </div>
+          <div className="mt-8">
+            <a
+              href="https://chat.whatsapp.com/LqYrTGZgkhhCNqbHnWHhor"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#20ba5a] text-white font-medium px-6 py-3 rounded-xl text-sm transition-colors shadow-xs"
+            >
+              <MessageCircle size={18} /> Join our WhatsApp Group
+            </a>
+          </div>
         </div>
 
         <div className="mt-12 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
