@@ -19,16 +19,36 @@
     <meta name="twitter:description" content="An open, community-driven foundation dedicated to preserving Hmar heritage, language, and cultural artifacts across North East India." />
     <meta name="twitter:image" content="https://images.pexels.com/photos/24738158/pexels-photo-24738158.jpeg?auto=compress&cs=tinysrgb&w=1200" />
 
+    <link rel="canonical" href="https://hmarheritage.pages.dev/" />
+
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "NGO",
-      "name": "Hmar Heritage Foundation",
-      "alternateName": "Hmar Heritage Org",
-      "url": "https://hmarheritage.pages.dev",
-      "logo": "https://hmarheritage.pages.dev/favicon.svg",
-      "description": "An open, community-driven foundation dedicated to preserving Hmar heritage, language, and cultural artifacts across North East India.",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://hmarheritage.pages.dev/#website",
+          "url": "https://hmarheritage.pages.dev/",
+          "name": "Hmar Heritage Foundation",
+          "alternateName": [
+            "Hmar Heritage Org",
+            "HHF"
+          ],
+          "description": "An open, community-driven foundation dedicated to preserving Hmar heritage, language, and cultural artifacts across North East India.",
+          "publisher": {
+            "@id": "https://hmarheritage.pages.dev/#organization"
+          },
+          "inLanguage": "en"
+        },
+        {
+          "@type": "NGO",
+          "@id": "https://hmarheritage.pages.dev/#organization",
+          "name": "Hmar Heritage Foundation",
+          "alternateName": "Hmar Heritage Org",
+          "url": "https://hmarheritage.pages.dev",
+          "logo": "https://hmarheritage.pages.dev/favicon.svg",
+          "description": "An open, community-driven foundation dedicated to preserving Hmar heritage, language, and cultural artifacts across North East India.",
       "founder": [
         {
           "@type": "Person",
@@ -87,6 +107,8 @@
         "Low-resource language NLP"
       ],
       "keywords": "Hmar, Hmar language, Hmar culture, Hmar heritage, Zo people, North East India, indigenous preservation, open access datasets, low-resource NLP"
+        }
+      ]
     }
     </script>
   </head>
