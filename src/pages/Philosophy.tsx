@@ -23,9 +23,9 @@ const summaryPrinciples = [
   },
   {
     icon: Users,
-    title: 'Community Stewardship',
+    title: 'Organizing Human Effort',
     description:
-      'Built by the community, for the community. We synthesize data and build low-barrier tools for native speakers.',
+      'This is not a high-tech initiative so much as it is organizing human effort. 90% of language AI is the quiet, collective work of collecting and structuring data.',
   },
   {
     icon: Compass,
@@ -279,8 +279,14 @@ export default function Philosophy() {
             <p className="text-stone-700 leading-relaxed text-base">
               Furthermore, academic papers alone cannot build working language tools, much like you can't cook a meal with just a recipe book. It is straightforward to generate audio programmatically even without artificial intelligence, but without an open, standardized map of how written words actually sound out loud, making a computer pronounce a language correctly is essentially trying to paint in the dark. To build functional software, voice assistants, or translation tools, you need the actual ingredients: standardized phonetic sound maps, real-world language usage data, authentic speech audio, raw document scans, and clean transcriptions. Collecting and packaging these real-world ingredients at scale is something even well-funded academic institutions struggle to do alone without open, community-driven platforms. We exist to bridge that exact gap.
             </p>
+            <p className="text-stone-900 text-base border-l-4 border-emerald-800 pl-4 py-2 bg-emerald-50/60 rounded-r-md">
+              <span className="italic font-bold">This is not a technical initiative so much as it is organizing human effort.</span>
+            </p>
             <p className="text-stone-700 leading-relaxed text-base">
-              While the core task itself is simple, <em>create datasets</em>, it still requires thoughtful engineering to structure data so it is clean, usable, and standardized. It does not require a PhD in computer science, but it does require a basic understanding of modern data structures and experience in data manipulation, which is something we definitely need help with. So if you are a developer, data wrangler, or hobbyist with free time and want to help, do not hesitate to reach out and join us.
+              YouTube tutorials tend to mask the fact that 90% of &ldquo;making&rdquo; an AI is in the quiet, routine work of collecting, scanning, digitizing, and structuring data, with the remaining 10% divided among generating scripts, fine-tuning, and testing models. There is no proprietary genius required in this pipeline anymore because so much intelligence has already been built into modern open systems. Anything that requires frontier scientific breakthroughs requires a team of scientists and tens of millions in funding—that work has already been done for us. All we need to do is organize our collective human effort and build the data bridge so our language can cross over into the digital era.
+            </p>
+            <p className="text-stone-700 leading-relaxed text-base">
+              While the core task itself is simple—<em>create datasets</em>—it still requires thoughtful engineering to structure data so it is clean, usable, and standardized. It does not require a PhD in computer science, but it does require a basic understanding of modern data structures and experience in data manipulation, which is something we definitely need help with. So if you are a developer, data wrangler, or hobbyist with free time and want to help, do not hesitate to reach out and join us.
             </p>
           </article>
 

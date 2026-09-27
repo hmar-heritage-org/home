@@ -135,7 +135,10 @@ export default function Home() {
                 For generations, our culture and history were carried by word of mouth, and later in printed books. But today, everything lives on screens. Over the last few years, artificial intelligence has completely changed how information moves around. Whether you like AI or hate it, it probably isn&apos;t going away, and it&apos;s already deciding which languages exist in modern tech and which get ignored. We can&apos;t sit around waiting for tech companies or governments to care about preserving Hmar. We have to do it ourselves, on our own terms.
               </p>
               <p>
-                We aren&apos;t making grand promises or trying to build an empire. The work itself is dead simple: scan books, scrape text, clean up typos, and organize data. Even though it feeds into computer science, linguistics, and other smart people stuff, none of this requires a PhD. It&apos;s just practical groundwork, and nobody is coming to do it for us. If we want our words to exist in modern software, we have to do the legwork ourselves. Even if we don&apos;t hand people polished, ready-made datasets right away, getting the raw groundwork down is what matters. What started as a solo project is now an open door for anyone willing to lend a hand.
+                We aren&apos;t making grand promises or trying to build an empire. The work itself is dead simple: scan books, scrape text, clean up typos, and organize data. YouTube tutorials tend to mask the reality that 90% of &ldquo;making&rdquo; an AI is in the quiet, routine work of collecting, scanning, digitizing, and structuring data, with only 10% in code and fine-tuning.
+              </p>
+              <p>
+                The technology has matured enough that the complex algorithms and heavy science have already been built by researchers worldwide. We don&apos;t need a team of scientists or millions in venture capital to do our part. <strong>This isn&apos;t a technical initiative so much as it is organizing human effort.</strong> All we need to do is build the data bridge so our community can cross over. What started as a solo project is now an open door for anyone willing to lend a hand.
               </p>
             </div>
           </div>
