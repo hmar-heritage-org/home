@@ -1,3 +1,4 @@
+import { useForm, ValidationError } from '@formspree/react';
 import { Link } from 'react-router-dom';
 import {
   Languages,
@@ -10,6 +11,9 @@ import {
   Users,
   ArrowRight,
   CheckCircle2,
+  AlertCircle,
+  Loader2,
+  Send,
 } from 'lucide-react';
 
 const roles = [
@@ -93,6 +97,8 @@ const steps = [
 ];
 
 export default function Join() {
+  const [state, handleSubmit] = useForm('xwlpzwrl');
+
   return (
     <div>
       {/* Hero */}
@@ -201,27 +207,148 @@ export default function Join() {
       {/* Contact form */}
       <section className="bg-stone-900 text-white py-16 md:py-24">
         <div className="container-page">
-          <div className="max-w-xl mx-auto text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">
-              Ready to start?
-            </h2>
-            <p className="text-stone-300 mb-8">
-              Send us an email at{" "}
-              <a
-                href="mailto:donalmuolhoi@gmail.com"
-                className="text-crimson-400 link-underline"
-              >
-                donalmuolhoi@gmail.com
-              </a>{" "}
-              with a brief note about how you would like to contribute. We
-              respond within 5 business days.
-            </p>
-            <a
-              href="mailto:donalmuolhoi@gmail.com"
-              className="inline-flex items-center gap-2 bg-crimson-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-crimson-800 transition-colors"
-            >
-              Email Us <ArrowRight size={18} />
-            </a>
+          <div className="max-w-xl mx-auto">
+            <div className="text-center mb-10">
+              <h2 className="text-2xl md:text-3xl font-bold mb-4">
+                Ready to start?
+              </h2>
+              <p className="text-stone-300">
+                Tell us how you would like to contribute. We review every note and respond within 5 business days.
+              </p>
+            </div>
+
+            {state.succeeded ? (
+              <div className="bg-stone-800/90 border border-emerald-500/30 rounded-2xl p-8 text-center space-y-4 shadow-xl">
+                <div className="w-12 h-12 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto">
+                  <CheckCircle2 size={28} />
+                </div>
+                <h3 className="text-xl font-bold text-white">Message Sent!</h3>
+                <p className="text-stone-300 text-sm max-w-md mx-auto">
+                  Thank you for reaching out. We have received your note and will be in touch with you within 5 business days.
+                </p>
+              </div>
+            ) : (
+              <form onSubmit={handleSubmit} className="bg-stone-800/90 border border-stone-700/80 rounded-2xl p-6 md:p-8 space-y-5 shadow-2xl">
+                {state.errors && (
+                  <div className="bg-red-950/50 border border-red-500/40 rounded-xl p-4 flex items-start gap-3 text-red-200 text-sm">
+                    <AlertCircle size={20} className="text-red-400 shrink-0 mt-0.5" />
+                    <div>
+                      <p className="font-semibold text-red-300">Submission error</p>
+                      <p className="text-red-200/90 mt-0.5">Please check your inputs and try again.</p>
+                    </div>
+                  </div>
+                )}
+
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-stone-200 mb-1.5">
+                    Your Name <span className="text-crimson-400">*</span>
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    placeholder="e.g. Lalramlien"
+                    className="w-full bg-stone-900/90 border border-stone-700 rounded-lg px-4 py-2.5 text-white placeholder-stone-500 text-sm focus:outline-none focus:ring-2 focus:ring-crimson-500/50 focus:border-crimson-500 transition-colors"
+                  />
+                  <ValidationError prefix="Name" field="name" errors={state.errors} className="text-xs text-red-400 mt-1 block" />
+                </div>
+
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-stone-200 mb-1.5">
+                    Email Address <span className="text-crimson-400">*</span>
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="you@example.com"
+                    className="w-full bg-stone-900/90 border border-stone-700 rounded-lg px-4 py-2.5 text-white placeholder-stone-500 text-sm focus:outline-none focus:ring-2 focus:ring-crimson-500/50 focus:border-crimson-500 transition-colors"
+                  />
+                  <ValidationError prefix="Email" field="email" errors={state.errors} className="text-xs text-red-400 mt-1 block" />
+                </div>
+
+                <div>
+                  <label htmlFor="phone" className="block text-sm font-medium text-stone-200 mb-1.5">
+                    Phone Number <span className="text-stone-400 text-xs font-normal">(Optional)</span>
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+91 98765 43210"
+                    className="w-full bg-stone-900/90 border border-stone-700 rounded-lg px-4 py-2.5 text-white placeholder-stone-500 text-sm focus:outline-none focus:ring-2 focus:ring-crimson-500/50 focus:border-crimson-500 transition-colors"
+                  />
+                  <ValidationError prefix="Phone" field="phone" errors={state.errors} className="text-xs text-red-400 mt-1 block" />
+                </div>
+
+                <div>
+                  <label htmlFor="role" className="block text-sm font-medium text-stone-200 mb-1.5">
+                    Area of Interest / Role
+                  </label>
+                  <select
+                    id="role"
+                    name="role"
+                    defaultValue="Translators"
+                    className="w-full bg-stone-900/90 border border-stone-700 rounded-lg px-4 py-2.5 text-white text-sm focus:outline-none focus:ring-2 focus:ring-crimson-500/50 focus:border-crimson-500 transition-colors"
+                  >
+                    <option value="Translators">Translators (Weblate localization)</option>
+                    <option value="Community Archivists">Community Archivists (Oral history & manuscripts)</option>
+                    <option value="Photographers">Photographers (Cultural artifacts & events)</option>
+                    <option value="Lexicon Contributors">Lexicon Contributors (Customary terms & words)</option>
+                    <option value="Wikipedia Editors">Wikipedia Editors (Hmar Wikipedia Incubator)</option>
+                    <option value="Developers">Developers (Open-source tools & pipelines)</option>
+                    <option value="Keyboard Testers">Keyboard Testers (Layout & input testing)</option>
+                    <option value="General Volunteer / Other">General Volunteer / Other</option>
+                  </select>
+                  <ValidationError prefix="Role" field="role" errors={state.errors} className="text-xs text-red-400 mt-1 block" />
+                </div>
+
+                <div>
+                  <label htmlFor="message" className="block text-sm font-medium text-stone-200 mb-1.5">
+                    Message / Note <span className="text-crimson-400">*</span>
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={4}
+                    placeholder="Tell us a bit about your background, what village/region you're from, or how you'd like to get involved..."
+                    className="w-full bg-stone-900/90 border border-stone-700 rounded-lg px-4 py-2.5 text-white placeholder-stone-500 text-sm focus:outline-none focus:ring-2 focus:ring-crimson-500/50 focus:border-crimson-500 transition-colors resize-y"
+                  />
+                  <ValidationError prefix="Message" field="message" errors={state.errors} className="text-xs text-red-400 mt-1 block" />
+                </div>
+
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="w-full inline-flex items-center justify-center gap-2 bg-crimson-700 text-white px-6 py-3 rounded-lg font-medium hover:bg-crimson-800 disabled:opacity-60 disabled:cursor-not-allowed transition-all shadow-md active:scale-[0.99]"
+                >
+                  {state.submitting ? (
+                    <>
+                      <Loader2 size={18} className="animate-spin" />
+                      <span>Sending message...</span>
+                    </>
+                  ) : (
+                    <>
+                      <Send size={18} />
+                      <span>Submit Application</span>
+                    </>
+                  )}
+                </button>
+
+                <p className="text-center text-xs text-stone-400 pt-2">
+                  Prefer direct email? Send a message to{" "}
+                  <a
+                    href="mailto:donalmuolhoi@gmail.com"
+                    className="text-crimson-400 hover:underline"
+                  >
+                    donalmuolhoi@gmail.com
+                  </a>
+                </p>
+              </form>
+            )}
           </div>
         </div>
       </section>
