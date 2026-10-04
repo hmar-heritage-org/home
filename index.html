@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Favicon & Touch Icons (Google Search & Browsers) -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hmar Heritage Foundation — Preserving Hmar Culture, Language & Heritage</title>
     <meta name="description" content="An open, community-driven foundation dedicated to preserving Hmar heritage, language, and cultural artifacts across North East India." />
@@ -42,37 +48,59 @@
           "inLanguage": "en"
         },
         {
-          "@type": "NGO",
+          "@type": ["NGO", "NonprofitOrganization"],
           "@id": "https://hmarheritage.pages.dev/#organization",
+          "identifier": [
+            "https://www.wikidata.org/wiki/Q141635438"
+          ],
           "name": "Hmar Heritage Foundation",
-          "alternateName": "Hmar Heritage Org",
+          "alternateName": [
+            "Hmar Heritage Org",
+            "HHF"
+          ],
           "url": "https://hmarheritage.pages.dev",
           "logo": "https://hmarheritage.pages.dev/favicon.svg",
+          "image": "https://images.pexels.com/photos/24738158/pexels-photo-24738158.jpeg?auto=compress&cs=tinysrgb&w=1200",
           "description": "An open, community-driven foundation dedicated to preserving Hmar heritage, language, and cultural artifacts across North East India.",
-      "founder": [
-        {
-          "@type": "Person",
-          "name": "Donal Muolhoi",
-          "jobTitle": "Project Lead",
-          "email": "donalmuolhoi@gmail.com",
-          "url": "https://thingpuisen.pages.dev",
+          "founder": [
+            {
+              "@type": "Person",
+              "@id": "https://thingpuisen.pages.dev/#developer",
+              "identifier": [
+                "kg:/g/11yf0bzxbq",
+                "https://www.wikidata.org/wiki/Q134733823"
+              ],
+              "name": "Donal Muolhoi",
+              "alternateName": [
+                "D. Muolhoi",
+                "Donal Hmar",
+                "Donald Muolhoi"
+              ],
+              "jobTitle": "Project Lead & Cultural Activist",
+              "disambiguatingDescription": "Cultural activist and community representative from Northeast India. Technical creator and digital archivist for indigenous literature and research archives.",
+              "email": "donalmuolhoi@gmail.com",
+              "url": "https://thingpuisen.pages.dev",
+              "mainEntityOfPage": "https://thingpuisen.pages.dev",
+              "sameAs": [
+                "https://www.wikidata.org/wiki/Q134733823",
+                "https://www.google.com/search?kgmid=/g/11yf0bzxbq",
+                "https://thingpuisen.pages.dev",
+                "https://github.com/azinamotoe",
+                "https://huggingface.co/azinamotoe"
+              ]
+            },
+            {
+              "@type": "Person",
+              "name": "Stephen Huolngo",
+              "jobTitle": "Project Co-Lead"
+            }
+          ],
           "sameAs": [
-            "https://github.com/azinamotoe",
-            "https://huggingface.co/azinamotoe",
-            "https://www.youtube.com/@phxlm"
-          ]
-        },
-        {
-          "@type": "Person",
-          "name": "Stephen Huolngo",
-          "jobTitle": "Project Co-Lead"
-        }
-      ],
-      "sameAs": [
-        "https://github.com/hmar-heritage-org",
-        "https://huggingface.co/hmar-heritage-org",
-        "https://thehmars.onrender.com"
-      ],
+            "https://www.wikidata.org/wiki/Q141635438",
+            "https://github.com/hmar-heritage-org",
+            "https://huggingface.co/hmar-heritage-org",
+            "https://thehmars.onrender.com"
+          ],
       "publishingPrinciples": "https://hmarheritage.pages.dev/standards",
       "areaServed": [
         "North East India",
